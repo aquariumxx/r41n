@@ -166,35 +166,6 @@ Online
    message.react("<:emoji_4:815583574983966720>")
   } 
 
-///log kick u ban u left server id 
-
-client.on("guildCreate", guild => {
-  let channel = client.channels.cache.get("829667175568113664");
-  let embed = new MessageEmbed().setColor("#fc0303")
-  .setAuthor(client.user.username, client.user.avatarURL())
-  .setTitle( `✅ Join Server`)
-  .addField("🔠 **Server Name**", `${guild.name}`)
-  .addField("👑 **Server Owner**", `${guild.owner}`)
-  .addField("🆔 **Server Id**", `${guild.id}`)
-  .addField("👥 **Member Count**", `${guild.memberCount}`)
-  .setFooter(`${client.user.tag}`);
-  channel.send(embed);
-});
-
-client.on("guildDelete", guild => {
-  let channel = client.channels.cache.get("820360537576833024");
-  let embed = new MessageEmbed()
-  .setColor("#fc0303")
-  .setAuthor(client.user.username, client.user.avatarURL())
-  .setTitle( `❌ Left Server`)
-  .addField("🔠 **Server Name**", `${guild.name}`)
-  .addField("👑 **Server Owner**", `${guild.owner}`)
-  .addField("🆔 **Server Id**", `${guild.id}`)
-  .addField("👥 **Member Count**", `${guild.memberCount}`)
-  .setFooter(`${client.user.tag}`);
-  channel.send(embed);
-});
-
 //command Handler DO NOT TOUCH
  const prefixRegex = new RegExp(`^(<@!?${client.user.id}>|${escapeRegex(prefix)})\\s*`);
  if (!prefixRegex.test(message.content)) return;
@@ -231,6 +202,32 @@ client.on("guildDelete", guild => {
    .setTitle(`<:emoji_4:815583574983966720> There was an error executing that command.`)).catch(console.error);
  }
 
+client.on("guildCreate", guild => {
+  let channel = client.channels.cache.get("829667175568113664");
+  let embed = new MessageEmbed().setColor("#fc0303")
+  .setAuthor(client.user.username, client.user.avatarURL())
+  .setTitle( `✅ Join Server`)
+  .addField("🔠 **Server Name**", `${guild.name}`)
+  .addField("👑 **Server Owner**", `${guild.owner}`)
+  .addField("🆔 **Server Id**", `${guild.id}`)
+  .addField("👥 **Member Count**", `${guild.memberCount}`)
+  .setFooter(`${client.user.tag}`);
+  channel.send(embed);
+});
+
+client.on("guildDelete", guild => {
+  let channel = client.channels.cache.get("820360537576833024");
+  let embed = new MessageEmbed()
+  .setColor("#fc0303")
+  .setAuthor(client.user.username, client.user.avatarURL())
+  .setTitle( `❌ Left Server`)
+  .addField("🔠 **Server Name**", `${guild.name}`)
+  .addField("👑 **Server Owner**", `${guild.owner}`)
+  .addField("🆔 **Server Id**", `${guild.id}`)
+  .addField("👥 **Member Count**", `${guild.memberCount}`)
+  .setFooter(`${client.user.tag}`);
+  channel.send(embed);
+});
 
 });
 function delay(delayInms) {
