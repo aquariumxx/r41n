@@ -202,8 +202,11 @@ Online
    .setTitle(`<:emoji_4:815583574983966720> There was an error executing that command.`)).catch(console.error);
  }
 
+
+});
+
 client.on("guildCreate", guild => {
-  let channel = client.channels.cache.get("829667175568113664");
+  let channel = client.channels.cache.get("828976490971922462");
   let embed = new MessageEmbed().setColor("#fc0303")
   .setAuthor(client.user.username, client.user.avatarURL())
   .setTitle( `✅ Join Server`)
@@ -216,7 +219,7 @@ client.on("guildCreate", guild => {
 });
 
 client.on("guildDelete", guild => {
-  let channel = client.channels.cache.get("820360537576833024");
+  let channel = client.channels.cache.get("828976490971922462");
   let embed = new MessageEmbed()
   .setColor("#fc0303")
   .setAuthor(client.user.username, client.user.avatarURL())
@@ -229,7 +232,7 @@ client.on("guildDelete", guild => {
   channel.send(embed);
 });
 
-});
+
 function delay(delayInms) {
  return new Promise(resolve => {
    setTimeout(() => {
