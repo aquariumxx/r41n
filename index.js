@@ -97,16 +97,6 @@ client.on(`message`, async (message) => {
     message.channel.send(embed)
   }
 
-
-//An join announcement for everyone but no one knows so fine ^w^
-
-client.on("guildCreate" , DarkMan => {
-  if(DarkMan.memberCount < 500 ){
-    console.log(`  name ( ${DarkMan.name} ) zhmaray memberakan ( ${DarkMan.memberCount}) created by DarkMan`)//by DarkMan
-    DarkMan.leave();
-  }
-})
-
 //An about announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}about`)){
     //define saymsg
