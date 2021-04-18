@@ -32,7 +32,7 @@ execute(message) {
     let ms = (Number(minutes)*60+Number(seconds));
     //get thumbnail
     let thumb;
-    if (song.thumbnail === undefined) thumb = "https://cdn.discordapp.com/attachments/748095614017077318/769672148524335114/unknown.png";
+    if (song.thumbnail === undefined) thumb = "https://cdn.discordapp.com/avatars/806840212608909344/bf2d9853ffc2b48775c0cf9f8932a189.webp?size=1024";
     else thumb = song.thumbnail.url;
     //define current time
     const seek = (queue.connection.dispatcher.streamTime - queue.connection.dispatcher.pausedTime) / 1000;
@@ -43,7 +43,7 @@ execute(message) {
       .setTitle("<:emoji_4:815583574983966720> Now playing")
       .setDescription(`[**${song.title}**](${song.url})`)
       .setThumbnail(song.thumbnail.url)
-      .setColor("RED")
+      .setColor("#FF0000")
       .setFooter("Time Remaining: " + new Date(left * 1000).toISOString().substr(11, 8));
       //if its a stream
       if(ms >= 10000) {
