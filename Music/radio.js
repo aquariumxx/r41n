@@ -127,7 +127,7 @@
           { name: `***🇵🇱 Polska RADIO:***`, value: `**33: ** [\`${Radiostations[33-1].split(" ")[0]}\`](${Radiostations[33-1].split(" ")[1]})
   **34: ** [\`${Radiostations[34-1].split(" ")[0]}\`](${Radiostations[34-1].split(" ")[1]})`, inline: true },
         )		
-        .setColor("RED")
+        .setColor("#FF0000")
         .setFooter(`Type: ${prefix}radio <1-34>`,  client.user.displayAvatarURL())
         .setTimestamp();
           //if not guild send this
@@ -135,10 +135,10 @@
         return message.author.send(resultsEmbed);      
       //if no args
       if (args[0] == null) {
-        message.channel.send(    new MessageEmbed().setColor("RED")
+        message.channel.send(    new MessageEmbed().setColor("#FF0000")
         .setDescription(`**<:emoji_3:815583549326360635> ${message.author} Check your \`direct messages\` for a list of Radio Stations!**`)
         );
-        message.author.send(new MessageEmbed().setColor("RED")
+        message.author.send(new MessageEmbed().setColor("#FF0000")
         .setDescription(`**<:emoji_3:815583549326360635> Sent from <#${message.channel.id}>**`))
         return message.author.send(resultsEmbed);
       }
@@ -180,7 +180,7 @@
   if(Number(i) === 35) {
     channel.leave();
     return message.reply(  new MessageEmbed()
-  .setColor("RED")
+  .setColor("#FF0000")
   .setTitle( `Not a valid radio station please use a Number between \`1\` and \`${Radiostations.length}\``));}
   //define the Radio Args like title and url
   const args2 = Radiostations[i-1].split(` `);
@@ -215,12 +215,12 @@
   queueConstruct.connection = await channel.join().catch(console.error);
   //Send info message for joining 
   if(!serverQueue)
-  message.channel.send(    new MessageEmbed().setColor("RED")
-  .setDescription(`**👍 Joined \`${channel.name}\` 📄 bouned \`#${message.channel.name}\`**`)
+  message.channel.send(    new MessageEmbed().setColor("#FF0000")
+  .setDescription(`**<:emoji_2:815583500623282207> Joined \`${channel.name}\` 📄 bouned \`#${message.channel.name}\`**`)
   .setFooter(`${message.author.username}#${message.author.discriminator}`));
   //send Search something embed
-  message.channel.send(new MessageEmbed().setColor("RED")
-  .setDescription(`**<:youtube:769675858431705109> Searching 🔍 \`${Radiostations[i-1].split(" ")[0]}\`**`));
+  message.channel.send(new MessageEmbed().setColor("#FF0000")
+  .setDescription(`**<:emoji_6:813090602135584840> Searching <:emoji_1:815583474400493568> \`${Radiostations[i-1].split(" ")[0]}\`**`));
   //mute yourself
   await queueConstruct.connection.voice.setSelfDeaf(true);
   await queueConstruct.connection.voice.setDeaf(true);
@@ -251,8 +251,8 @@
     serverQueue.songs.push(song);
     //the new song embed
     const newsong = new MessageEmbed()
-      .setTitle("<:Playing:769665713124016128> " + song.title)
-      .setColor("#c219d8")
+      .setTitle("<:emoji_3:815583549326360635> " + song.title)
+      .setColor("#FF0000")
       .setThumbnail(song.thumbnail)
       .setURL(song.url)
       .setDescription(`\`\`\`Has been added to the Queue.\`\`\``)
