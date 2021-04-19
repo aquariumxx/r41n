@@ -23,6 +23,7 @@ module.exports = {
 \`.invite\` - \`.support\` - \`.about\`
 \`.ping\` - \`.prefix\` - \`.uptime\`
 \`.se\` - \`.avatar\` - \`.embed\`
+\`.invites\`
 
 **Music Commands**
 \`.play\` - \`.skip\` - \`.skipto\`
@@ -35,7 +36,7 @@ module.exports = {
 \`.server\` - \`.clear\`
 \`.lock\` - \`unlock\`
 \`.ban\` - \`.unban\`
-\`slowmode\` - \`giveaway\`
+\`.slowmode\` - \`.giveaway\`
 
 **Gifs Commands**
 \`.boy\` - \`.girl\` - \`.baby\`
