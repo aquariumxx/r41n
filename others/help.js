@@ -35,6 +35,7 @@ module.exports = {
 \`.server\` - \`.clear\`
 \`.lock\` - \`unlock\`
 \`.ban\` - \`.unban\`
+\`slowmode\` - \`giveaway\`
 
 **Gifs Commands**
 \`.boy\` - \`.girl\` - \`.baby\`
