@@ -22,8 +22,7 @@ module.exports = {
 **User Commands**
 \`.invite\` - \`.support\` - \`.about\`
 \`.ping\` - \`.prefix\` - \`.uptime\`
-\`.avatar\` - \`.se\` - \`lock\`
-\`unlock\` - \`.ban\` - \`.unban\`
+\`.se\` - \`.avatar\` - \`.embed\`
 
 **Music Commands**
 \`.play\` - \`.skip\` - \`.skipto\`
