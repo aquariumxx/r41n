@@ -23,7 +23,7 @@ module.exports = {
 \`.invite\` - \`.support\` - \`.about\`
 \`.ping\` - \`.prefix\` - \`.uptime\`
 \`.avatar\` - \`.se\` - \`lock\`
-\`unlock\` - 
+\`unlock\` - \`.ban\` - \`.unban\`
 
 **Music Commands**
 \`.play\` - \`.skip\` - \`.skipto\`
