@@ -40,11 +40,11 @@ execute(message) {
     const left = ms - seek;
     //define embed
     let nowPlaying = new MessageEmbed()
-      .setTitle("<:emoji_4:815583574983966720> Now playing")
-      .setDescription(`[**${song.title}**](${song.url})`)
-      .setThumbnail(song.thumbnail.url)
-      .setColor("#FF0000")
-      .setFooter("Time Remaining: " + new Date(left * 1000).toISOString().substr(11, 8));
+          .setTitle("**Now playing**")
+          .addField("<:emoji_4:815583574983966720> Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
+          .addField("<:emoji_6:815597861651611698> Length:", `\`${song.duration} Minutes\``, true)
+          .setColor("#FF0000")
+          
       //if its a stream
       if(ms >= 10000) {
         nowPlaying.addField("\u200b", "🔴 LIVE", false);
@@ -53,7 +53,7 @@ execute(message) {
       }
       //If its not a stream
       if (ms > 0 && ms<10000) {
-        nowPlaying.addField("\u200b", "**[" + createBar((ms == 0 ? seek : ms), seek, 25, "▬", "<:currentposition:770098066552258611>")[0] + "]**\n**" + new Date(seek * 1000).toISOString().substr(11, 8) + " / " + (ms == 0 ? " ◉ LIVE" : new Date(ms * 1000).toISOString().substr(11, 8))+ "**" , false );
+       
         //send approve msg
         return message.channel.send(nowPlaying);
       }
