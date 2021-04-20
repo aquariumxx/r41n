@@ -38,7 +38,7 @@ module.exports = {
 > \`.ban\` - \`.unban\`
 > \`.mute\` - \`.unmute\`
 > \`.slowmode\` - \`.giveaway\`
-\`.clear\` - \`.say\`
+> \`.clear\` - \`.say\`
 
 **Gifs Commands**
 > \`.boy\` - \`.girl\` - \`.baby\`
