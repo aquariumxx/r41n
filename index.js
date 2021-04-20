@@ -260,6 +260,43 @@ client.on("message", message => {
   }
 });
 
+client.on("message", message => {
+  if (message.content.startsWith(PREFIX + "boy")) {
+    let man = [
+      "https://cdn.discordapp.com/attachments/694693923486171177/737013617538629722/a_fb64ba0c5d3b48b24d4334d7ac2b70af.gif",
+      "https://cdn.discordapp.com/attachments/806591479677321246/827053056864419850/image1.gif",
+      "https://cdn.discordapp.com/attachments/806591479677321246/824901137375297596/18.gif",
+      "https://cdn.discordapp.com/attachments/806591479677321246/822479012185505832/image0.gif",
+      "https://cdn.discordapp.com/attachments/806591479677321246/822478959760375828/image0.gif",
+      "https://cdn.discordapp.com/attachments/806591479677321246/820956532808089620/image0.gif",
+      "https://cdn.discordapp.com/attachments/694693923486171177/737203415339499621/a_c3451f3e42065b560180028d3a62ef5a.gif",
+      "https://cdn.discordapp.com/attachments/810651927334748180/810651982611742750/image0.gif",
+      "https://cdn.discordapp.com/attachments/630159060162838568/804791175729905764/641c084d12619535.gif",
+      "https://cdn.discordapp.com/attachments/608711476219478045/806879646956257290/a_6b252acb2f2bcf57dfb4747ecdd768a7.gif",
+      "https://cdn.discordapp.com/attachments/608711476219478045/807013802733862942/aaaaaaaa.gif",
+      "https://cdn.discordapp.com/attachments/694693923486171177/800432438223437874/hit_gif_42.gif",
+      "https://cdn.discordapp.com/attachments/737803513052266622/798100644471898152/image0.gif",
+      "https://cdn.discordapp.com/attachments/742107775475253259/818630984421343303/image0.gif",
+      "https://media.discordapp.net/attachments/761565276243623937/778542684859793418/a_d75ef1e2dc504f248dd5a79d055aafcf.gif"
+    ];
+
+    message.channel
+      .send({
+        embed: {
+          description: `**Gif Boy**`,
+          footer: `Requested by ${message.author.username}`,
+          color: `#FF0000`,
+          image: {
+            url: man[Math.floor(Math.random() * man.length)]
+          }
+        }
+      })
+
+.catch(e => {
+        client.log.error(e);
+      });
+  }
+});
 
 function delay(delayInms) {
  return new Promise(resolve => {
