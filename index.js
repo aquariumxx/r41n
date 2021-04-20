@@ -324,25 +324,7 @@ client.on("message", message => {
       "https://cdn.discordapp.com/attachments/608711476219478045/806879646956257290/a_6b252acb2f2bcf57dfb4747ecdd768a7.gif",
       "https://cdn.discordapp.com/attachments/608711476219478045/807013802733862942/aaaaaaaa.gif",
       "https://cdn.discordapp.com/attachments/694693923486171177/800432438223437874/hit_gif_42.gif",
-      "https://cdn.discordapp.com/attachments/737803513052266622/798100644471898152/image0.gif",
-      "https://cdn.discordapp.com/attachments/742107775475253259/818630984421343303/image0.gif",
-      "https://media.discordapp.net/attachments/761565276243623937/778542684859793418/a_d75ef1e2dc504f248dd5a79d055aafcf.gif",
-      "https://cdn.discordapp.com/attachments/694693923486171177/737013649058824252/a_ee0eab432a8d1eb6521c1a932dd04e22.gif",
-      "https://cdn.discordapp.com/attachments/608711476219478045/834083054242889768/archex5_2.gif",
-      "https://cdn.discordapp.com/attachments/608711476219478045/834083144344403998/archex13.gif",
-      "https://cdn.discordapp.com/attachments/608711476219478045/834040712882290738/erkeks_70.gif",
-      "https://cdn.discordapp.com/attachments/608711476219478045/834038852543971349/a_62356f5caa18a1d9119b7f6a99c89df4_1.gif",
-      "https://cdn.discordapp.com/attachments/608711476219478045/834033286715670528/hhhhh.gif",
-      "https://cdn.discordapp.com/attachments/608711476219478045/834013416876015646/a_d754646abccc2ef7bb1ee1998ec07a86.gif",
-      "https://cdn.discordapp.com/attachments/608711476219478045/833988861977821224/image0.gif",
-      "https://cdn.discordapp.com/attachments/608711476219478045/833988515054223380/1gif5.gif",
-      "https://cdn.discordapp.com/attachments/608711476219478045/833980821177106442/a_00763ffb06320132368f2abe116527ab.gif",
-      "https://cdn.discordapp.com/attachments/608711476219478045/833982700875939880/a_7d8733c42cbbc774da11edf92089cf12.gif",
-      "https://cdn.discordapp.com/attachments/608711476219478045/833940802568454204/75.gif",
-      "https://cdn.discordapp.com/attachments/608711476219478045/833939244354633748/image0_2.gif",
-‌      "https://cdn.discordapp.com/attachments/608711476219478045/833816711357923368/Alkolik_Hayalet_74.gif",
-      "https://cdn.discordapp.com/attachments/608711476219478045/833792144765354005/JanTeL_4.gif",
-      "https://cdn.discordapp.com/attachments/608711476219478045/833757805211156500/ronesa_man_gif_2.gif"
+      "https://cdn.discordapp.com/attachments/737803513052266622/798100644471898152/image0.gif"
     ];
 
     message.channel
