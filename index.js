@@ -255,7 +255,24 @@ client.on("message", message => {
       "https://cdn.discordapp.com/attachments/787757651752779826/800850872401657886/dfdc034aab34632039e45f23a089278f.gif",
       "https://cdn.discordapp.com/attachments/737803232600129608/799869125601918996/g5.gif",
       "https://cdn.discordapp.com/attachments/787757651752779826/800859020608405514/gif1460.gif",
-      "https://media.discordapp.net/attachments/711468868924604537/801769423602057286/239.gif"
+      "https://media.discordapp.net/attachments/711468868924604537/801769423602057286/239.gif",
+      "https://cdn.discordapp.com/attachments/787757651752779826/800859929871253584/gif2294.gif",
+      "https://media.discordapp.net/attachments/711468868924604537/801933521139531846/received_235006021413313.gif",
+      "https://cdn.discordapp.com/attachments/787757651752779826/800852457621422080/image3.gif",
+      "https://media.discordapp.net/attachments/711468868924604537/801935138866331648/1282579cc2b6456322f9954a71bad773.gif",
+      "https://media.discordapp.net/attachments/711468868924604537/801822372885037066/379.gif",
+      "https://cdn.discordapp.com/attachments/787757651752779826/800852701654417468/image4.gif",
+      "https://media.discordapp.net/attachments/687763784902770691/802943076841685002/a_ec53b39696d290c29525e63937a54753.gif",
+      "https://media.discordapp.net/attachments/711468868924604537/802218051399319561/a_bd64995f97106974f1521805c8729f50.gif",
+      "https://cdn.discordapp.com/attachments/787757651752779826/800850947181510666/girl10-4-1.gif",
+      "https://cdn.discordapp.com/attachments/787757651752779826/800852457914892308/image0.gif",
+      "https://cdn.discordapp.com/attachments/787757651752779826/800849524448690186/image0.gif",
+      "https://cdn.discordapp.com/attachments/787757651752779826/800852700647522304/image7.gif",
+      "https://cdn.discordapp.com/attachments/787757651752779826/800849524708605983/kokokoko.gif",
+      "https://cdn.discordapp.com/attachments/787757651752779826/800850647737565204/image0.gif",
+      "https://media.discordapp.net/attachments/711466145764343899/803297206466904095/a_6668c6cb37bdee73dc4129ba6de95aad.gif",
+      "https://media.discordapp.net/attachments/711468868924604537/801773930326392862/a_5a14cc0370da659981c90e698f3e7602.gif",
+      "https://media.discordapp.net/attachments/711468868924604537/801765536508674078/idlgif78.gif"
     ];
 
     message.channel
