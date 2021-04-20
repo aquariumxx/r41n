@@ -21,28 +21,28 @@ module.exports = {
 
 **User Commands**
 > \`.invite\` - \`.support\` - \`.about\`
-\`.ping\` - \`.prefix\` - \`.uptime\`
-\`.se\` - \`.avatar\` - \`.embed\`
-\`.invites\`
+> \`.ping\` - \`.prefix\` - \`.uptime\`
+> \`.se\` - \`.avatar\` - \`.embed\`
+> \`.invites\`
 
 **Music Commands**
 > \`.play\` - \`.skip\` - \`.skipto\`
-\`.stop\` - \`.volume\` - \`.nowplaying\`
-\`.shuffle\` - \`.search\` - \`.resume\`
-\`.remove\` - \`.queue\` - \`.filter\`
-\`.loop\` - \`.lyrics\` - \`.radio\`
+> \`.stop\` - \`.volume\` - \`.nowplaying\`
+> \`.shuffle\` - \`.search\` - \`.resume\`
+> \`.remove\` - \`.queue\` - \`.filter\`
+> \`.loop\` - \`.lyrics\` - \`.radio\`
 
 **Fun Commands**
 > \`.server\` - \`.clear\`
-\`.lock\` - \`unlock\`
-\`.ban\` - \`.unban\`
-\`.mute\` - \`.unmute\`
-\`.slowmode\` - \`.giveaway\`
+> \`.lock\` - \`unlock\`
+> \`.ban\` - \`.unban\`
+> \`.mute\` - \`.unmute\`
+> \`.slowmode\` - \`.giveaway\`
 
 **Gifs Commands**
 > \`.boy\` - \`.girl\` - \`.baby\`
-\`.neon\` - \`.couple\` - \`.animal\`
-\`.anime\` - \`.emoji\`
+> \`.neon\` - \`.couple\` - \`.animal\`
+> \`.anime\` - \`.emoji\`
 
 Links
 [support](https://discord.gg/jcs4XwcExv)    -    [invite](https://discord.com/oauth2/authorize?client_id=806840212608909344&permissions=70346817&scope=bot)
