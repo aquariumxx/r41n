@@ -272,7 +272,23 @@ client.on("message", message => {
       "https://cdn.discordapp.com/attachments/787757651752779826/800850647737565204/image0.gif",
       "https://media.discordapp.net/attachments/711466145764343899/803297206466904095/a_6668c6cb37bdee73dc4129ba6de95aad.gif",
       "https://media.discordapp.net/attachments/711468868924604537/801773930326392862/a_5a14cc0370da659981c90e698f3e7602.gif",
-      "https://media.discordapp.net/attachments/711468868924604537/801765536508674078/idlgif78.gif"
+      "https://media.discordapp.net/attachments/711468868924604537/801765536508674078/idlgif78.gif",
+      "https://cdn.discordapp.com/attachments/742107775475253259/834079908556701716/image3.gif",
+      "https://cdn.discordapp.com/attachments/742107775475253259/834079908035952660/image2.gif",
+      "https://cdn.discordapp.com/attachments/742107775475253259/834079907516645436/image1.gif",
+      "https://cdn.discordapp.com/attachments/742107775475253259/834079907000614962/image0.gif",
+      "https://cdn.discordapp.com/attachments/742107775475253259/834079857419485204/image1.gif",
+      "https://cdn.discordapp.com/attachments/742107775475253259/834078196462125136/image3.gif",
+      "https://cdn.discordapp.com/attachments/742107775475253259/834074306823585802/image1.gif",
+      "https://cdn.discordapp.com/attachments/742107775475253259/833937816751702036/image3.gif",
+      "https://cdn.discordapp.com/attachments/742107775475253259/833937806639628298/image1.gif",
+      "https://cdn.discordapp.com/attachments/742107775475253259/832106696469512232/image0-25.gif",
+      "https://cdn.discordapp.com/attachments/742107775475253259/832106695677313054/image0-23.gif",
+      "https://cdn.discordapp.com/attachments/757298003823427745/777462258510331934/a_702f87a38a181170e63d84348685f82f.gif",
+      "https://cdn.discordapp.com/attachments/757298003823427745/775307152297558026/image2-1.gif",
+      "https://cdn.discordapp.com/attachments/757298003823427745/775307149890682920/image1-1.gif",
+      "https://cdn.discordapp.com/attachments/757298003823427745/775307149688438824/image0-5.gif",
+      "https://cdn.discordapp.com/attachments/757298003823427745/775307116369674260/image2-2.gif"
     ];
 
     message.channel
