@@ -20,26 +20,27 @@ module.exports = {
     .setDescription(`
 
 **User Commands**
-\`.invite\` - \`.support\` - \`.about\`
+> \`.invite\` - \`.support\` - \`.about\`
 \`.ping\` - \`.prefix\` - \`.uptime\`
 \`.se\` - \`.avatar\` - \`.embed\`
 \`.invites\`
 
 **Music Commands**
-\`.play\` - \`.skip\` - \`.skipto\`
+> \`.play\` - \`.skip\` - \`.skipto\`
 \`.stop\` - \`.volume\` - \`.nowplaying\`
 \`.shuffle\` - \`.search\` - \`.resume\`
 \`.remove\` - \`.queue\` - \`.filter\`
 \`.loop\` - \`.lyrics\` - \`.radio\`
 
 **Fun Commands**
-\`.server\` - \`.clear\`
+> \`.server\` - \`.clear\`
 \`.lock\` - \`unlock\`
 \`.ban\` - \`.unban\`
+\`.mute\` - \`.unmute\`
 \`.slowmode\` - \`.giveaway\`
 
 **Gifs Commands**
-\`.boy\` - \`.girl\` - \`.baby\`
+> \`.boy\` - \`.girl\` - \`.baby\`
 \`.neon\` - \`.couple\` - \`.animal\`
 \`.anime\` - \`.emoji\`
 
