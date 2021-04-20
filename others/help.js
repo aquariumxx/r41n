@@ -33,11 +33,12 @@ module.exports = {
 > \`.loop\` - \`.lyrics\` - \`.radio\`
 
 **Fun Commands**
-> \`.server\` - \`.clear\`
+> \`.serverinfo\` - \`.userinfo\`
 > \`.lock\` - \`unlock\`
 > \`.ban\` - \`.unban\`
 > \`.mute\` - \`.unmute\`
 > \`.slowmode\` - \`.giveaway\`
+\`.clear\` - \`.say\`
 
 **Gifs Commands**
 > \`.boy\` - \`.girl\` - \`.baby\`
