@@ -262,7 +262,7 @@ client.on("message", message => {
       .send({
         embed: {
           description: `**Gif Girl**`,
-          Footer: `Requested by ${message.author.username}#${message.author.discriminator}`,message.member.user.displayAvatarURL({ dynamic: true }))
+          footer: `Requested by ${message.author.username}#${message.author.discriminator}`,message.member.user.displayAvatarURL({ dynamic: true }))
           color: `#FF0000`,
           image: {
             url: man[Math.floor(Math.random() * man.length)]
