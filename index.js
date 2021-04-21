@@ -626,6 +626,62 @@ client.on("message", message => {
   }
 });
 
+client.on("message", message => {
+  if (message.content.startsWith(PREFIX + "emoji")) {
+    let man = [
+      "https://cdn.discordapp.com/attachments/772439349056634890/800056809553002546/image0.gif",
+      "https://media.discordapp.net/attachments/762954136744099842/799807874905669632/seytankus_Invicta.gif",
+      "https://cdn.discordapp.com/attachments/772439349056634890/800057099727536148/image0.gif",
+      "https://media.discordapp.net/attachments/762954136744099842/799810448664821760/3505_thumps_down.gif",
+      "https://cdn.discordapp.com/emojis/779961566367055874.gif",
+      "https://media.discordapp.net/attachments/762954136744099842/799811567650471996/Enes_Acar_19.gif",
+      "https://media.discordapp.net/attachments/699520919328129055/803610061255213106/Haraketli_Emoji_101.gif",
+      "https://cdn.discordapp.com/attachments/772439349056634890/800056826837467159/image0.gif",
+      "https://cdn.discordapp.com/attachments/772439349056634890/794117939515228160/image0.gif",
+      "https://cdn.discordapp.com/emojis/793415129324322836.gif",
+      "https://cdn.discordapp.com/emojis/793414854509199381.gif",
+      "https://cdn.discordapp.com/emojis/793415054371323905.gif",
+      "https://cdn.discordapp.com/emojis/793415290548781087.gif",
+      "https://cdn.discordapp.com/emojis/793415033283543051.gif",
+      "https://cdn.discordapp.com/emojis/793415216041033761.gif",
+      "https://cdn.discordapp.com/emojis/793415108382162955.gif",
+      "https://cdn.discordapp.com/emojis/793415088961880075.gif",
+      "https://cdn.discordapp.com/emojis/793415190531276850.gif",
+      "https://cdn.discordapp.com/emojis/793415244264636426.gif",
+      "https://cdn.discordapp.com/emojis/793219066991083561.gif",
+      "https://cdn.discordapp.com/emojis/793219133159243817.gif",
+      "https://cdn.discordapp.com/emojis/793219222309437481.gif",
+      "https://cdn.discordapp.com/emojis/793218957628276736.gif",
+      "https://cdn.discordapp.com/emojis/793218913470382101.gif",
+      "https://cdn.discordapp.com/emojis/793218844558098453.gif",
+      "https://cdn.discordapp.com/emojis/772402619070152725.gif",
+      "https://cdn.discordapp.com/emojis/772402483279691797.gif",
+      "https://cdn.discordapp.com/emojis/793219623389626398.gif",
+      "https://cdn.discordapp.com/emojis/793219644202287124.gif",
+      "https://cdn.discordapp.com/emojis/793405575500660746.gif",
+      "https://cdn.discordapp.com/emojis/787762520085495829.gif",
+      "https://cdn.discordapp.com/emojis/793219501088702474.gif",
+      "https://cdn.discordapp.com/emojis/793219531644338177.gif"
+    ];
+
+    message.channel
+      .send({
+        embed: {
+          description: `**Gif Emoji**`,
+          footer: `Requested by ${message.author.username}`,
+          color: `#FF0000`,
+          image: {
+            url: man[Math.floor(Math.random() * man.length)]
+          }
+        }
+      })
+
+.catch(e => {
+        client.log.error(e);
+      });
+  }
+});
+
 function delay(delayInms) {
  return new Promise(resolve => {
    setTimeout(() => {
