@@ -474,6 +474,51 @@ client.on("message", message => {
   }
 });
 
+client.on("message", message => {
+  if (message.content.startsWith(PREFIX + "couple")) {
+    let man = [
+      "https://cdn.discordapp.com/attachments/787757651752779826/800870200563073075/image0.gif",
+      "https://cdn.discordapp.com/attachments/787757651752779826/800871282342101053/image2.gif",
+      "https://cdn.discordapp.com/attachments/694694675679936585/814441253524865064/couple-1.gif",
+      "https://cdn.discordapp.com/attachments/672961356412092416/809824375557324850/a_6249c4388698252f938931a30f6eec73.gif",
+      "https://cdn.discordapp.com/attachments/694694675679936585/801547744543899708/agabefloransa1.gif",
+      "https://cdn.discordapp.com/attachments/737807251825360977/805157436281454672/image2.gif",
+      "https://cdn.discordapp.com/attachments/737807251825360977/799659072424771594/image0.gif",
+      "https://cdn.discordapp.com/attachments/787757651752779826/800871281264033802/image0.gif",
+      "https://cdn.discordapp.com/attachments/787757651752779826/800873426163728384/image2.gif",
+      "https://cdn.discordapp.com/attachments/787757651752779826/800870999155146772/image1.gif",
+      "https://cdn.discordapp.com/attachments/787757651752779826/800870999155146772/image1.gif",
+      "https://cdn.discordapp.com/attachments/787757651752779826/800870911968018442/image2.gif",
+      "https://cdn.discordapp.com/attachments/694694675679936585/801547951390326884/a_211be57987d0618ccccc9e0a6cbb5472.gif",
+      "https://cdn.discordapp.com/attachments/737807251825360977/809515129909542942/image0.gif",
+      "https://cdn.discordapp.com/attachments/672961356412092416/810960039149305866/a_d8fe322eef2273c659378db6f05023a8.gif",
+      "https://cdn.discordapp.com/attachments/787757651752779826/800874142051991612/image3.gif",
+      "https://cdn.discordapp.com/attachments/694694675679936585/800434435136421888/hit_gif_18.gif",
+      "https://cdn.discordapp.com/attachments/737807251825360977/809515181884833862/image0.gif",
+      "https://cdn.discordapp.com/attachments/737807251825360977/799657981729308703/image0.gif",
+      "https://cdn.discordapp.com/attachments/694694675679936585/800540805848236092/a_1ce7b937e5e5b1ac4d8a540e3d1dcf39.gif",
+      "https://cdn.discordapp.com/attachments/694694675679936585/800546050196111370/image0-1.gif",
+      "https://cdn.discordapp.com/attachments/694694675679936585/800464338020204564/lietra50.gif"
+    ];
+
+    message.channel
+      .send({
+        embed: {
+          description: `**Gif Couple**`,
+          footer: `Requested by ${message.author.username}`,
+          color: `#FF0000`,
+          image: {
+            url: man[Math.floor(Math.random() * man.length)]
+          }
+        }
+      })
+
+.catch(e => {
+        client.log.error(e);
+      });
+  }
+});
+
 function delay(delayInms) {
  return new Promise(resolve => {
    setTimeout(() => {
