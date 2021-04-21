@@ -546,7 +546,24 @@ client.on("message", message => {
     let man = [
       "https://media.discordapp.net/attachments/697505578972348436/833326270594416690/1508558338__.gif",
       "https://media.discordapp.net/attachments/694694884459937862/797094656122683412/a_80133297a8a819f10e44ad8e95a5ff81.gif",
-      "https://media.discordapp.net/attachments/608711485849337856/832938867744702470/anim7.gif"
+      "https://media.discordapp.net/attachments/608711485849337856/832938867744702470/anim7.gif",
+      "https://media.discordapp.net/attachments/737803741037854750/791307773039214652/image0.gif",
+      "https://media.discordapp.net/attachments/608711485849337856/833094452335345712/13.gif",
+      "https://media.discordapp.net/attachments/737803741037854750/822619401496559616/f82abffafd1d1912e70ec97c1be4e5d18971b3b2_hq.gif",
+      "https://media.discordapp.net/attachments/608711485849337856/833019544372117514/3d752e372b97b592c3abea2374bdf9be.gif",
+      "https://media.discordapp.net/attachments/811224229244436490/831226210079211560/1618250160466.gif",
+      "https://media.discordapp.net/attachments/608711485849337856/833132555309416508/tenor.gif",
+      "https://media.discordapp.net/attachments/694694884459937862/791631676882681856/anime36.gif",
+      "https://media.discordapp.net/attachments/737803741037854750/780814686329110575/image0.gif",
+      "https://media.discordapp.net/attachments/770397639857668168/829127792649043978/image1-4.gif",
+      "https://media.discordapp.net/attachments/694694884459937862/796668829169614858/a_ce421161aa7135a555768c4f349c11cb.gif",
+      "https://media.discordapp.net/attachments/737803741037854750/824257214536744970/p2.gif",
+      "https://media.discordapp.net/attachments/608711485849337856/832445218283323462/4492f2948473a9271158bc37246f4e3f.gif",
+      "https://media.discordapp.net/attachments/694694884459937862/793415212635521024/141.gif",
+      "https://media.discordapp.net/attachments/694694884459937862/790235751056277564/971f0b5b-d225-4b27-9027-5445e21f4322.gif",
+      "https://media.discordapp.net/attachments/694694884459937862/795922584981471243/image0-4-1.gif",
+      "https://media.discordapp.net/attachments/608711485849337856/832445378137686016/image1.gif",
+      "https://media.discordapp.net/attachments/811224229244436490/831226211119267870/1618250160475.gif"
     ];
 
     message.channel
