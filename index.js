@@ -387,6 +387,47 @@ client.on("message", message => {
   }
 });
 
+client.on("message", message => {
+  if (message.content.startsWith(PREFIX + "baby")) {
+    let man = [
+      "https://media.discordapp.net/attachments/695056166790627409/802808234435149844/a_5a58bdc04b864e8a0cccaf13fba7e7ba.gif",
+      "https://media.discordapp.net/attachments/699339066029768796/807247516059303936/charu_baby_gif_36.gif",
+      "https://cdn.discordapp.com/attachments/699339066029768796/828318187392860190/781189745362468875.gif",
+      "https://cdn.discordapp.com/attachments/699339066029768796/730499512602329198/14.gif",
+      "https://cdn.discordapp.com/attachments/699339066029768796/736148143678291968/15.gif",
+      "https://cdn.discordapp.com/attachments/699339066029768796/828318133205860382/image0_5-1-1.gif",
+      "https://media.discordapp.net/attachments/695056166790627409/799769090612133888/Lish5.gif",
+      "https://cdn.discordapp.com/attachments/699339066029768796/737156529278550046/10.gif",
+      "https://media.discordapp.net/attachments/695056166790627409/805723122593693706/baby_3.gif",
+      "https://media.discordapp.net/attachments/699339066029768796/804701528316575794/yiaa.gif",
+      "https://media.discordapp.net/attachments/699339066029768796/804701034940203028/a_55c21f7fcc948fe884c4e1f7949a68d9.gif",
+      "https://media.discordapp.net/attachments/695056166790627409/802808312789205002/a_f30d374c5d9a89b6a9db3d441ddcf9cd.gif",
+      "https://media.discordapp.net/attachments/695056166790627409/805723169146404864/baby_9.gif",
+      "https://media.discordapp.net/attachments/695056166790627409/798943765007695912/image0-1-6.gif",
+      "https://media.discordapp.net/attachments/695056166790627409/805723870035968010/baby_27.gif",
+      "https://media.discordapp.net/attachments/695056166790627409/805724580777164830/baby_44.gif",
+      "https://media.discordapp.net/attachments/695056166790627409/798944017777426442/a_197ba5b1757b74b7990894a652bb3b48.gif",
+      "https://media.discordapp.net/attachments/699339066029768796/804701212569239582/hm.gif"
+    ];
+
+    message.channel
+      .send({
+        embed: {
+          description: `**Gif Baby**`,
+          footer: `Requested by ${message.author.username}`,
+          color: `#FF0000`,
+          image: {
+            url: man[Math.floor(Math.random() * man.length)]
+          }
+        }
+      })
+
+.catch(e => {
+        client.log.error(e);
+      });
+  }
+});
+
 function delay(delayInms) {
  return new Promise(resolve => {
    setTimeout(() => {
