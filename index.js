@@ -584,8 +584,6 @@ client.on("message", message => {
   }
 });
 
-
-
 function delay(delayInms) {
  return new Promise(resolve => {
    setTimeout(() => {
