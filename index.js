@@ -544,9 +544,9 @@ client.on("message", message => {
 client.on("message", message => {
   if (message.content.startsWith(PREFIX + "anime")) {
     let man = [
-      "https://cdn.discordapp.com/attachments/787757651752779826/800870200563073075/image0.gif",
-      "https://cdn.discordapp.com/attachments/787757651752779826/800871282342101053/image2.gif",
-      "https://cdn.discordapp.com/attachments/694694675679936585/814441253524865064/couple-1.gif"
+      "https://media.discordapp.net/attachments/697505578972348436/833326270594416690/1508558338__.gif",
+      "https://media.discordapp.net/attachments/694694884459937862/797094656122683412/a_80133297a8a819f10e44ad8e95a5ff81.gif",
+      "https://media.discordapp.net/attachments/608711485849337856/832938867744702470/anim7.gif"
     ];
 
     message.channel
