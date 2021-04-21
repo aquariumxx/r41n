@@ -92,7 +92,6 @@ client.on(`message`, async (message) => {
     const embed = new Discord.MessageEmbed()
     .setColor("#FF0000")
     .setDescription(saymsg)
-    .setFooter("Reyna", client.user.displayAvatarURL())
     //delete the Command
     message.delete({timeout: 300})
     //send the Message
