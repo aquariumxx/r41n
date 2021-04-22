@@ -132,7 +132,7 @@ ${process.version}
 4/2/2021
 
 **Servers** :
-${client.servers.cache.size} Servers
+${client.guild.cache.size} Servers
 
 **Users** :
 ${client.users.cache.size} Users
