@@ -119,11 +119,26 @@ client.on(`message`, async (message) => {
 **Set Status** :
 Online
 
+**Name** :
+${client.user.tag}
+
+**ID** :
+${client.user.id}
+
+**Version** :
+${process.version}
+
 **Time Create** :
 4/2/2021
 
+**Servers** :
+${client.guilds.cache.size} Servers
+
+**Users** :
+${client.users.cache.size} Users
+
 **Prefix Bot** :
-.
+${prefix}
 
 `)
 
