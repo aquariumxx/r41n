@@ -14,6 +14,7 @@ module.exports = {
         const servericonEmbed = new Discord.MessageEmbed()
         .setDescription(`Server icon for ${guild.name}:`)
         .setImage(icon)
+        .setColor("#FF0000")
         .setFooter(`Requested by ${message.author.tag}`)
         .setTimestamp();
 
