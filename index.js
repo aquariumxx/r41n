@@ -682,6 +682,43 @@ client.on("message", message => {
   }
 });
 
+client.on("message", message => {
+  if (message.content.startsWith(PREFIX + "pboy")) {
+    let man = [
+      "https://cdn.discordapp.com/attachments/752914781941268563/825347506912755722/image0.jpg",
+      "https://cdn.discordapp.com/attachments/737803397314510849/793394311101415424/image0.jpg",
+      "https://cdn.discordapp.com/attachments/694694407278034944/815641038512980008/81ea521b5816b8a3a0712791b3fcacd2.png",
+      "https://cdn.discordapp.com/attachments/737803397314510849/782242896862380102/cb15548a4f3e47190aebafe2b35728cc.jpg",
+      "https://cdn.discordapp.com/attachments/737803397314510849/802038773864988692/image1.jpg",
+      "https://cdn.discordapp.com/attachments/737803397314510849/793394316495552542/image0.jpg",
+      "https://cdn.discordapp.com/attachments/737803397314510849/803985248534790164/image9.png",
+      "https://cdn.discordapp.com/attachments/694694407278034944/815995959845716028/Lucent_6.jpg",
+      "https://cdn.discordapp.com/attachments/737803397314510849/770004598941286460/image1.jpg",
+      "https://cdn.discordapp.com/attachments/737803397314510849/802038857452486656/image1.jpg",
+      "https://cdn.discordapp.com/attachments/694694407278034944/815996248510169098/e56f2687c624865b3fc5d801e8562fc4.jpg",
+      "https://cdn.discordapp.com/attachments/737803397314510849/801421780388282388/ICON_.jpg",
+      "https://cdn.discordapp.com/attachments/737803397314510849/803984953422905354/image9.png",
+      "https://cdn.discordapp.com/attachments/694694407278034944/815640752113319976/52f68e1ddf672fab5f465562497d73c1.jpg"
+    ];
+
+    message.channel
+      .send({
+        embed: {
+          description: `**Boy Photo**`,
+          footer: `Requested by ${message.author.username}`,
+          color: `#FF0000`,
+          image: {
+            url: man[Math.floor(Math.random() * man.length)]
+          }
+        }
+      })
+
+.catch(e => {
+        client.log.error(e);
+      });
+  }
+});
+
 function delay(delayInms) {
  return new Promise(resolve => {
    setTimeout(() => {
