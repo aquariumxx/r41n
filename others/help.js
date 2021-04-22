@@ -31,6 +31,7 @@ module.exports = {
 > \`.shuffle\` - \`.search\` - \`.resume\`
 > \`.remove\` - \`.queue\` - \`.filter\`
 > \`.loop\` - \`.lyrics\` - \`.radio\`
+> \`.join\` - \`.disconnct\` - \`.move\`
 
 **Fun Commands**
 > \`.serverinfo\` - \`.userinfo\`
