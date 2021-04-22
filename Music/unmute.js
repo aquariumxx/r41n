@@ -12,7 +12,7 @@ module.exports = {
           }
       
           if (!message.guild.me.hasPermission("MANAGE_ROLES")) {
-            return message.channel.send("The bot does not have permission to mute.");
+            return message.channel.send("**The bot does not have permission to mute.**");
           }
 
           const user = message.mentions.members.first();
@@ -31,7 +31,7 @@ module.exports = {
 
     user.roles.remove(muterole)
     
-    await message.channel.send(`✅ ${message.mentions.users.first().username} unmuted!`)
+    await message.channel.send(`**✅ ${message.mentions.users.first().username} unmuted from the text! :zipper_mouth:**`)
     
     user.send(``)
 
