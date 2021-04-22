@@ -148,6 +148,26 @@ ${prefix}
   } 
 
 
+//An join announcement for everyone but no one knows so fine ^w^
+client.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "join") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**I came**");
+        })
+        .catch(console.log);
+    } else {
+      message.reply(
+        "**Let's go to the voice**"
+      );
+    }
+  }
+});
+
 //An suuport announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}support`)){
     //define saymsg
