@@ -733,6 +733,30 @@ client.on("message", message => {
   }
 });
 
+client.on("message", message => {
+  if (message.content.startsWith(PREFIX + "TextKurdish")) {
+    let man = [
+      "بـمـرێ ئـەو دڵـەیـی تـەنـھـا بـەنـاو ھـێـنـانـت پـڕ دەبـێ"
+    ];
+
+    message.channel
+      .send({
+        embed: {
+          description: `**Kurdish writings**`,
+          footer: `Requested by ${message.author.username}`,
+          color: `#FF0000`,
+          image: {
+            url: man[Math.floor(Math.random() * man.length)]
+          }
+        }
+      })
+
+.catch(e => {
+        client.log.error(e);
+      });
+  }
+});
+
 function delay(delayInms) {
  return new Promise(resolve => {
    setTimeout(() => {
