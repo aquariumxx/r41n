@@ -765,6 +765,38 @@ client.on("message", message => {
   }
 });
 
+client.on("message", message => {
+  if (message.content.startsWith(PREFIX + "panime")) {
+    let man = [
+      "https://media.discordapp.net/attachments/737803691565907991/804092905035005982/mary_saotome_icons.jpg",
+      "https://media.discordapp.net/attachments/737803691565907991/814871062239903764/d2059068eedf5211dfd5a0c689b38fca.jpg",
+      "https://media.discordapp.net/attachments/737803691565907991/814871298621571083/3e00cb772cb221c347d098031b4640a9.jpg",
+      "https://media.discordapp.net/attachments/737803691565907991/810183657021112320/image1.jpg",
+      "https://media.discordapp.net/attachments/737803691565907991/804092873443508224/aesthetic_usernames.jpg",
+      "https://media.discordapp.net/attachments/737803691565907991/799748816202760192/Anime_Pics__Gifs_on_Twitter.png",
+      "https://media.discordapp.net/attachments/737803691565907991/804092913956945991/S_H_O_P.jpg",
+      "https://media.discordapp.net/attachments/737803691565907991/805865446028607559/image0.jpg",
+      "https://media.discordapp.net/attachments/737803691565907991/799748816316006440/matching_icons.jpg"
+    ];
+
+    message.channel
+      .send({
+        embed: {
+          description: `**Anime Photo**`,
+          footer: `Requested by ${message.author.username}`,
+          color: `#FF0000`,
+          image: {
+            url: man[Math.floor(Math.random() * man.length)]
+          }
+        }
+      })
+
+.catch(e => {
+        client.log.error(e);
+      });
+  }
+});
+
 function delay(delayInms) {
  return new Promise(resolve => {
    setTimeout(() => {
