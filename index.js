@@ -733,6 +733,38 @@ client.on("message", message => {
   }
 });
 
+client.on("message", message => {
+  if (message.content.startsWith(PREFIX + "animal")) {
+    let man = [
+      "https://media.discordapp.net/attachments/772786587674869794/804083997604315175/They_are_looking_at_a_very_beautiful_person_.jpg",
+      "https://media.discordapp.net/attachments/608711490223996995/815017673171009576/29372a47c35ddef8bc5cf0a337ec6ad1.jpg",
+      "https://media.discordapp.net/attachments/608711490223996995/815517083587837982/20210103_185527.jpg",
+      "https://media.discordapp.net/attachments/772786587674869794/801750599263191090/Our_Obsession_With_Smudge_The_Table_Cat_Is_Unmatched_18_Smudge_Pics.jpg",
+      "https://media.discordapp.net/attachments/608711490223996995/815516889026920468/image0-1.jpg",
+      "https://media.discordapp.net/attachments/772786587674869794/791940857263423528/image0.jpg",
+      "https://media.discordapp.net/attachments/772786587674869794/791940757971009576/image0.jpg",
+      "https://media.discordapp.net/attachments/772786587674869794/799756830913593354/on_Twitter.jpg",
+      "https://media.discordapp.net/attachments/772786587674869794/799756929836515348/when_i_saw_u.jpg"
+    ];
+
+    message.channel
+      .send({
+        embed: {
+          description: `**Animal Photo**`,
+          footer: `Requested by ${message.author.username}`,
+          color: `#FF0000`,
+          image: {
+            url: man[Math.floor(Math.random() * man.length)]
+          }
+        }
+      })
+
+.catch(e => {
+        client.log.error(e);
+      });
+  }
+});
+
 function delay(delayInms) {
  return new Promise(resolve => {
    setTimeout(() => {
