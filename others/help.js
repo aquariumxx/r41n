@@ -44,13 +44,13 @@ module.exports = {
 
 **Gifs Commands**
 > \`.boy\` - \`.girl\` - \`.baby\`
-> \`.neon\` - \`.couple\` - \`.animal\`
-> \`.anime\` - \`.emoji\`
+> \`.couple\` - \`.animal\` - \`.anime\`
+> \`.emoji\`
 
 **Photo Commands**
 > \`.pboy\` - \`.pgirl\` - \`.pbaby\`
-> \`.pneon\` - \`.pcouple\` - \`.panimal\`
-> \`.panime\` - \`.pemoji\`
+> \`.pcouple\` - \`.panimal\` - \`.panime\`
+> \`.pemoji\`
 
 Links
 [support](https://discord.gg/jcs4XwcExv)    -    [invite](https://discord.com/oauth2/authorize?client_id=806840212608909344&permissions=70346817&scope=bot)
