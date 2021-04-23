@@ -734,7 +734,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(PREFIX + "animal")) {
+  if (message.content.startsWith(PREFIX + "panimal")) {
     let man = [
       "https://media.discordapp.net/attachments/772786587674869794/804083997604315175/They_are_looking_at_a_very_beautiful_person_.jpg",
       "https://media.discordapp.net/attachments/608711490223996995/815017673171009576/29372a47c35ddef8bc5cf0a337ec6ad1.jpg",
