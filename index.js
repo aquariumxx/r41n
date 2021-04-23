@@ -134,9 +134,6 @@ ${process.version}
 **Servers** :
 ${client.guilds.cache.size} Servers
 
-**Users** :
-${client.users.cache.size} Users
-
 **Prefix Bot** :
 ${prefix}
 
