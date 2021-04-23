@@ -797,15 +797,15 @@ client.on("message", message => {
 client.on("message", message => {
   if (message.content.startsWith(PREFIX + "pcouple")) {
     let man = [
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
+      "https://cdn.discordapp.com/attachments/764935873526628462/803987516624470016/image4.jpg",
+      "https://cdn.discordapp.com/attachments/764935873526628462/802051130540294144/Radio_rediscovered_.jpg",
+      "https://cdn.discordapp.com/attachments/764935873526628462/802041794673901578/image1.jpg",
+      "https://cdn.discordapp.com/attachments/764935873526628462/803987535810265098/image3.jpg",
+      "https://cdn.discordapp.com/attachments/764935873526628462/793828190170775562/d71.PNG",
+      "https://cdn.discordapp.com/attachments/764935873526628462/793827737805520906/d89.PNG",
+      "https://cdn.discordapp.com/attachments/764935873526628462/803987535415214130/image2.jpg",
+      "https://cdn.discordapp.com/attachments/764935873526628462/802051098621509652/b59f9753c350fad0.jpg",
+      "https://cdn.discordapp.com/attachments/764935873526628462/802041450338582568/image8.jpg"
     ];
 
     message.channel
