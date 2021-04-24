@@ -6,7 +6,7 @@ module.exports = {
     category: "moderation",
     async execute(message, args) {
         if (!message.member.hasPermission('BAN_MEMBERS')) {
-            return message.channel.send(`You are unable to ban members`)
+            return message.channel.send(`**You are unable to ban members**`)
         }
         if (!args[0]) {
             return message.channel.send(`**Please mention a user!**`)
