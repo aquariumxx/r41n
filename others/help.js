@@ -42,9 +42,6 @@ module.exports = {
 > \`.clear\` - \`.say\`
 > \`.bans\` - \`.cv\`
 
-**Game Commands**
-> \`.slap\` - \`.hug\`
-
 **Gifs Commands**
 > \`.boy\` - \`.girl\` - \`.baby\`
 > \`.couple\` - \`.animal\` - \`.anime\`
@@ -55,7 +52,7 @@ module.exports = {
 > \`.pcouple\` - \`.panimal\` - \`.panime\`
 > \`.pemoji\`
 
-Links
+**Links**
 [support](https://discord.gg/jcs4XwcExv) - [invite](https://discord.com/oauth2/authorize?client_id=806840212608909344&permissions=70346817&scope=bot)
 `)
 
