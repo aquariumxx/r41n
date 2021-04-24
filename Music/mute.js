@@ -36,7 +36,7 @@ module.exports = {
     
     
       if(!muterole) {
-      return message.channel.send("The guild does not have a mute role. Please create one within Server Settings.")
+      return message.channel.send("**The guild does not have a mute role. Please create one within Server Settings.**")
     }
 
     if(user.roles.cache.has(muterole)) {
