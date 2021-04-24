@@ -19,12 +19,12 @@ module.exports = {
 
     if (!user) {
       return message.channel.send(
-        "You are required to mention a user you wish to mute."
+        "**You are required to mention a user you wish to mute.**"
       );
     }
  
     if(user.id === message.author.id) {
-      return message.channel.send("You cannot mute yourself.");
+      return message.channel.send("**You cannot mute yourself.**");
     }
 
     let reason = args.slice(1).join(" ")
