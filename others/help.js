@@ -15,7 +15,8 @@ module.exports = {
     let commands = message.client.commands.array();
 
     let helpEmbed = new MessageEmbed()
-    .setThumbnail(`https://cdn.discordapp.com/avatars/806840212608909344/bf2d9853ffc2b48775c0cf9f8932a189.png?size=1024`)
+    .setThumbnail(message.member.user.displayAvatarURL({ dynamic: true }))
+    .setImage("https://cdn.discordapp.com/avatars/806840212608909344/bf2d9853ffc2b48775c0cf9f8932a189.webp?size=1024")
     .setTitle(`**Reyna Help**`)
     .setDescription(`
 
@@ -41,6 +42,9 @@ module.exports = {
 > \`.slowmode\` - \`.giveaway\`
 > \`.clear\` - \`.say\`
 > \`.bans\` - \`.cv\`
+
+**Game Commands**
+\`.slap\` - \`.hug\`
 
 **Gifs Commands**
 > \`.boy\` - \`.girl\` - \`.baby\`
