@@ -834,27 +834,28 @@ client.on("guildMemberAdd", member => {
   if (!channel) return;
   const joinembed = new Discord.MessageEmbed()
     .setTitle(
-      `**A new member just arrived**`
+      `**Welcome**`
     )
     .setColor("#FF0000")
     .setThumbnail(client)
     .addField(
-      "| **name** : ",
+      "┃**Name** : ",
       `${member}`)
     .addField(
-      "| **Welcome**",
-      `Welcome to the server, ${member}`)
+      "┃**Welcome**",
+      `Welcome to the server, 
+      ${member}`)
     .addField(
-      "| **User** :",
+      "┃**User** :",
       "**[" + `${member.id}` + "]**")
     .addField(
-      "| **Your are the member**",
+      "┃**Your are the member**",
       `${member.guild.memberCount}`)
     .addField("Server", `${member.guild.name}`, true)
     .setFooter(`**${member.guild.name}**`)
     .setTimestamp()
     .setImage(
-      "https://cdn.discordapp.com/attachments/756491435229839410/756491623592099890/image0-14.gif"
+      ""
     )
     .setFooter(`${member.guild.name}`)
     .setTimestamp();
