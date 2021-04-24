@@ -42,6 +42,9 @@ module.exports = {
 > \`.clear\` - \`.say\`
 > \`.bans\` - \`.cv\`
 
+**Game Commands**
+\`.slap\` - \`.hug\`
+
 **Gifs Commands**
 > \`.boy\` - \`.girl\` - \`.baby\`
 > \`.couple\` - \`.animal\` - \`.anime\`
