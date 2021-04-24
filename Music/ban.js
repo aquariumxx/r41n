@@ -9,15 +9,15 @@ module.exports = {
             return message.channel.send(`You are unable to ban members`)
         }
         if (!args[0]) {
-            return message.channel.send(`Please mention a user!`)
+            return message.channel.send(`**Please mention a user!**`)
         }
         const member = message.mentions.members.first() || message.guild.members.cache.get(args[0]);
 
         try {
             await member.ban();
-            await message.channel.send(`${member} has been banned!`)
+            await message.channel.send(`**${member} has been banned!**`)
         } catch (e) {
-            return message.channel.send(`User is not in the server!`)
+            return message.channel.send(`**User is not in the server!**`)
         }
 
     }
