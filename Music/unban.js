@@ -26,8 +26,8 @@ module.exports = {
             const user = bans.find(ban => ban.user.id === member.id );
 
             if (user) {
-                embed.setTitle(`Successfully Unbanned ${user.user.tag}`)
-                    .setColor('#00ff00')
+                embed.setTitle(`**Successfully Unbanned ${user.user.tag}**`)
+                    .setColor('#FF0000')
                     .addField('User ID', user.user.id, true)
                     .addField('user Tag', user.user.tag, true)
                     .addField('Banned Reason', user.reason != null ? user.reason : 'no reason')
@@ -35,7 +35,7 @@ module.exports = {
                 message.guild.members.unban(user.user.id, reason).then(() => message.channel.send(embed))
             } else {
                 embed.setTitle(`User ${member.tag} isn't banned!`)
-                    .setColor('#ff0000')
+                    .setColor('#FF0000')
                 message.channel.send(embed)
             }
 
