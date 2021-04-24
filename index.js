@@ -836,7 +836,7 @@ client.on("guildMemberAdd", member => {
     .setTitle(
       `**A new member just arrived**`
     )
-    .setColor("RANDOM")
+    .setColor("#FF0000")
     .setThumbnail(client)
     .addField(
       "| **name** : ",
