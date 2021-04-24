@@ -828,7 +828,7 @@ client.on("message", message => {
 
 client.on("guildMemberAdd", member => {
   const channel = member.guild.channels.cache.find(
-    channel => channel.name === "general"
+    channel => channel.name === "greetings-and-boosts"
   );
   let client = member.user.avatarURL();
   if (!channel) return;
