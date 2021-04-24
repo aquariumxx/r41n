@@ -5,7 +5,7 @@ module.exports = {
     async execute(message, args) {
         if (!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send('You are missing **BAN_MEMBERS** permission!').then(m => m.delete({ timeout: 5000 }));
 
-        if (!args[0]) return message.channel.send('please enter a users id to unban!').then(m => m.delete({ timeout: 5000 }));
+        if (!args[0]) return message.channel.send('**please enter a users id to unban!**').then(m => m.delete({ timeout: 5000 }));
 
         let member;
 
