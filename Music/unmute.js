@@ -31,7 +31,7 @@ module.exports = {
 
     user.roles.remove(muterole)
     
-    await message.channel.send(`✅ ${message.mentions.users.first().username} unmuted!`)
+    await message.channel.send(`✅ **${message.mentions.users.first().username} muted from the text! 🤐**`)
     
     user.send(``)
 
