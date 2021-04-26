@@ -887,6 +887,41 @@ client.on("guildMemberRemove", member => {
   channel.send(joinembed);
 });
 
+client.on("message", message => {
+  if (message.content.startsWith(prefix + "status")) {
+    if (!message.channel.guild) return;
+    let user = message.mentions.users.first();
+    var men = message.mentions.users.first();
+    var heg;
+    if (men) {
+      heg = men;
+    } else {
+      heg = message.author;
+    }
+    var mentionned = message.mentions.members.first();
+    var h;
+    if (mentionned) {
+      h = mentionned;
+    } else {
+      h = message.member;
+    }
+    const embed = new Discord.MessageEmbed()
+        .setThumbnail(heg.avatarURL())
+        .setDescription(`
+Guilds  ${client.guilds.cache.size}
+Users  ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}
+Channels**  ${client.channels.cache.size}
+ 
+`)
+ 
+        .setFooter(`Requested by ${message.author.username}#${message.author.discriminator}`)
+        .setColor("#FF0000")     
+        .setFooter("Reyna");
+ 
+    message.channel.send(embed);
+  }
+});
+
 function delay(delayInms) {
  return new Promise(resolve => {
    setTimeout(() => {
