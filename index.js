@@ -200,7 +200,7 @@ if(message.content.startsWith(`${prefix}gifsbot`)){
     .setDescription("**Click Here Projekt Gifs:** [Projekt Gifs](https://github.com/wolfwolf12/bot-gifs-by-wolf.git)")
     .setColor("#FF0000")
     //send the Message
-    message.author.send(embed)
+    message.channel.send(embed)
   } 
 
 //command Handler DO NOT TOUCH
