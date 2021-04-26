@@ -197,7 +197,7 @@ if(message.content.startsWith(`${prefix}gifsbot`)){
     //define embed
      message.react("<:emoji_4:815583574983966720>").catch(console.error);
     const embed = new Discord.MessageEmbed()
-    .setDescription("**Click Here Projekt Gifs:** [Projekt Gifs](https://github.com/wolfwolf12/bot-gifs-by-wolf.git)")
+    .setDescription("**Click Here Projekt Gifs:** [**Projekt Gifs**](https://github.com/wolfwolf12/bot-gifs-by-wolf.git)")
     .setColor("#FF0000")
     //send the Message
     message.channel.send(embed)
@@ -210,7 +210,7 @@ if(message.content.startsWith(`${prefix}partnerbot`)){
     //define embed
      message.react("<:emoji_4:815583574983966720>").catch(console.error);
     const embed = new Discord.MessageEmbed()
-    .setDescription("**Click Here Projekt Patner:** [Projekt Patner](https://github.com/wolfwolf12/Partner-Bot.git)")
+    .setDescription("**Click Here Projekt Patner:** [**Projekt Patner**](https://github.com/wolfwolf12/Partner-Bot.git)")
     .setColor("#FF0000")
     //send the Message
     message.channel.send(embed)
@@ -223,7 +223,7 @@ if(message.content.startsWith(`${prefix}spamacc`)){
     //define embed
      message.react("<:emoji_4:815583574983966720>").catch(console.error);
     const embed = new Discord.MessageEmbed()
-    .setDescription("**Click Here Projekt SpamAcc:** [Projekt SpamAcc](https://github.com/wolfwolf12/spam.git)")
+    .setDescription("**Click Here Projekt SpamAcc:** [**Projekt SpamAcc**](https://github.com/wolfwolf12/spam.git)")
     .setColor("#FF0000")
     //send the Message
     message.channel.send(embed)
