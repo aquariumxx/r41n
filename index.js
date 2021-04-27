@@ -548,43 +548,6 @@ if(message.content.startsWith(`${prefix}codeallbot`)){
     message.channel.send(embed)
   }
 
-//An code announcement for everyone but no one knows so fine ^w^
-if(message.content.startsWith(`${prefix}codes`)){
-    //define saymsg
-    const saymsg = message.content.slice(Number(prefix.length) + 5)
-    //define embed
-     message.react("<:emoji_4:815583574983966720>").catch(console.error);
-    const embed = new Discord.MessageEmbed()
-    .setDescription("
-
-**Moderator Command Codes**
-\`.codelock\` - \`.codeunlock\`
-\`.codemute\` - \`.codeunmute\`
-\`.codeban\` - \`.codeunban\`
-\`.codeclear\`
-
-**Info Command Codes**
-\`.codegif\` - \`.codecount\`
-\`.codeinvite\` - \`.codereport\`
-\`.codeserver\` - \`.codebot\`
-\`.codestatus\` - \`.codeprofile\`
-\`.codeavatar\` - \`codeplaying\`
-\`.codegoogle\` - \`.codeactionlog\`
-
-**Poject Command Codes**
-\`.securitybot\` - \`.musicbot\`
-\`.gifsbot\` - \`.partnerbot\`
-\`.spamacc\`
-
-**Links**
-**[Invite](https://discord.com/api/oauth2/authorize?client_id=806840212608909344&permissions=8&scope=bot) - [Support](https://discord.gg/DXJVbuuJdq)**
-")
-    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-    .setColor("#FF0000")
-    //send the Message
-    message.channel.send(embed)
-  }
-
 //command Handler DO NOT TOUCH
  const prefixRegex = new RegExp(`^(<@!?${client.user.id}>|${escapeRegex(prefix)})\\s*`);
  if (!prefixRegex.test(message.content)) return;
