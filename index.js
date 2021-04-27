@@ -117,7 +117,7 @@ Channels ${client.channels.cache.size}
 
     //send the Message
     message.channel.send(embed)
-    message.react("")
+    message.react("<:emoji_4:815583574983966720>")
   } 
 
 //An about announcement for everyone but no one knows so fine ^w^
