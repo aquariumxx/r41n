@@ -274,6 +274,20 @@ if(message.content.startsWith(`${prefix}codeunlock`)){
     message.channel.send(embed)
   }
 
+//An code announcement for everyone but no one knows so fine ^w^
+if(message.content.startsWith(`${prefix}codemute`)){
+    //define saymsg
+    const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+     message.react("<:emoji_4:815583574983966720>").catch(console.error);
+    const embed = new Discord.MessageEmbed()
+    .setDescription("**Click Here Code Mute:** **[Code Mute](https://pastebin.com/amfKYtYi)**")
+    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
+    .setColor("#FF0000")
+    //send the Message
+    message.channel.send(embed)
+  }
+
 //command Handler DO NOT TOUCH
  const prefixRegex = new RegExp(`^(<@!?${client.user.id}>|${escapeRegex(prefix)})\\s*`);
  if (!prefixRegex.test(message.content)) return;
