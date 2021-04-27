@@ -198,7 +198,7 @@ if(message.content.startsWith(`${prefix}gifsbot`)){
      message.react("<:emoji_4:815583574983966720>").catch(console.error);
     const embed = new Discord.MessageEmbed()
     .setDescription("**Click Here Projekt Gifs:** **[Projekt Gifs](https://github.com/wolfwolf12/bot-gifs-by-wolf.git)**")
-    .setFooter(`${message.author.tag} `, message.author.avatarURL)
+    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setColor("#FF0000")
     //send the Message
     message.channel.send(embed)
@@ -212,7 +212,7 @@ if(message.content.startsWith(`${prefix}partnerbot`)){
      message.react("<:emoji_4:815583574983966720>").catch(console.error);
     const embed = new Discord.MessageEmbed()
     .setDescription("**Click Here Projekt Patner:** **[Projekt Patner](https://github.com/wolfwolf12/Partner-Bot.git)**")
-    .setFooter(`${message.author.tag} `, message.author.avatarURL)
+    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setColor("#FF0000")
     //send the Message
     message.channel.send(embed)
@@ -226,7 +226,7 @@ if(message.content.startsWith(`${prefix}spamacc`)){
      message.react("<:emoji_4:815583574983966720>").catch(console.error);
     const embed = new Discord.MessageEmbed()
     .setDescription("**Click Here Projekt SpamAcc:** **[Projekt SpamAcc](https://github.com/wolfwolf12/spam.git)**")
-    .setFooter(`${message.author.tag} `, message.author.avatarURL)
+    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setColor("#FF0000")
     //send the Message
     message.channel.send(embed)
@@ -240,7 +240,7 @@ if(message.content.startsWith(`${prefix}musicbot`)){
      message.react("<:emoji_4:815583574983966720>").catch(console.error);
     const embed = new Discord.MessageEmbed()
     .setDescription("**Click Here Projekt Music:** **[Projekt Music](https://github.com/wolfwolf12/embed-music.git)**")
-    .setFooter(`${message.author.tag} `, message.author.avatarURL)
+    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setColor("#FF0000")
     //send the Message
     message.channel.send(embed)
@@ -254,7 +254,7 @@ if(message.content.startsWith(`${prefix}codelock`)){
      message.react("<:emoji_4:815583574983966720>").catch(console.error);
     const embed = new Discord.MessageEmbed()
     .setDescription("**Click Here Code Lock:** **[Code Lock](https://pastebin.com/b7eR4JNF)**")
-    .setFooter(`${message.author.tag} `, message.author.avatarURL)
+    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setColor("#FF0000")
     //send the Message
     message.channel.send(embed)
@@ -268,7 +268,7 @@ if(message.content.startsWith(`${prefix}codeunlock`)){
      message.react("<:emoji_4:815583574983966720>").catch(console.error);
     const embed = new Discord.MessageEmbed()
     .setDescription("**Click Here Code UnLock:** **[Code UnLock](https://pastebin.com/ZXmvShc1)**")
-    .setFooter(`${message.author.tag} `, message.author.avatarURL)
+    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setColor("#FF0000")
     //send the Message
     message.channel.send(embed)
