@@ -549,7 +549,7 @@ if(message.content.startsWith(`${prefix}codeallbot`)){
   }
 
 //An code announcement for everyone but no one knows so fine ^w^
-if(message.content.startsWith(`${prefix}help`)){
+if(message.content.startsWith(`${prefix}codes`)){
     //define saymsg
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
