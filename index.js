@@ -325,13 +325,27 @@ if(message.content.startsWith(`${prefix}codeunmute`)){
   }
 
 //An code announcement for everyone but no one knows so fine ^w^
-if(message.content.startsWith(`${prefix}ban`)){
+if(message.content.startsWith(`${prefix}codeban`)){
     //define saymsg
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
      message.react("<:emoji_4:815583574983966720>").catch(console.error);
     const embed = new Discord.MessageEmbed()
     .setDescription("**Click Here Code Ban:** **[Code Ban](https://pastebin.com/hkH2EHmH)**")
+    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
+    .setColor("#FF0000")
+    //send the Message
+    message.channel.send(embed)
+  }
+
+//An code announcement for everyone but no one knows so fine ^w^
+if(message.content.startsWith(`${prefix}codeunban`)){
+    //define saymsg
+    const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+     message.react("<:emoji_4:815583574983966720>").catch(console.error);
+    const embed = new Discord.MessageEmbed()
+    .setDescription("**Click Here Code UnBan:** **[Code UnBan](https://pastebin.com/0tW6v7XH)**")
     .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setColor("#FF0000")
     //send the Message
