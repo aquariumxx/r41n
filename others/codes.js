@@ -34,12 +34,12 @@ module.exports = {
 \`.codegoogle\` - \`.codeactionlog\`
 
 **Poject Command Codes**
-\`.securitybot - \`.partnerbot\`
+\`.securitybot\` - \`.partnerbot\`
 \`.musicbot\` - \`.gifsbot\`
 \`.spamacc\`
 
 **Links**
-[support](https://discord.gg/7UXqeRbXk9) - [invite](https://discord.com/oauth2/authorize?client_id=776824647080738828&permissions=2201352512&scope=bot)
+[support](https://discord.gg/DXJVbuuJdq) - [invite](https://discord.com/api/oauth2/authorize?client_id=806840212608909344&permissions=8&scope=bot)
 `)
 
    .setFooter(`Requested by ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
