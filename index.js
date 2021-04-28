@@ -37,7 +37,7 @@ client.on(`ready`, () => {
       });
       
 
-    client.user.setActivity(`${PREFIX}help`, { type: "LISTENING"});
+    client.user.setActivity(`${PREFIX}help ┃ Ramadan`, { type: "LISTENING"});
 
     client.user.setActivity(`${client.guilds.cache.size} Server,Users ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)},`, { type: "LISTENING"});
 
