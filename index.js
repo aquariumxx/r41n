@@ -105,14 +105,14 @@ if(message.content.startsWith(`${prefix}status`)){
     //define embed
     const embed = new Discord.MessageEmbed()
     .setColor("#FF0000")
-    .setAuthor("", "")
+    .setAuthor("")
     .setThumbnail(` `)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setTimestamp()
     .setDescription(`
-Servers ${client.guilds.cache.size}
-Users ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}
-Channels ${client.channels.cache.size}
+Servers ┃ ${client.guilds.cache.size}
+Users ┃ ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}
+Channels ┃ ${client.channels.cache.size}
 `)
 
     //send the Message
