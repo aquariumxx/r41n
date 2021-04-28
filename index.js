@@ -133,7 +133,7 @@ Channels ${client.channels.cache.size}
     .setTimestamp()
     .setDescription(`
 
-[Support](https://discord.gg/7UXqeRbXk9) - [Invite](https://discord.com/oauth2/authorize?client_id=776824647080738828&permissions=2201352512&scope=bot)
+[Support](https://discord.gg/DXJVbuuJdq) - [Invite](https://discord.com/api/oauth2/authorize?client_id=806840212608909344&permissions=8&scope=bot)
 
 **Developers Bot** :
 <@790233637580832788>
@@ -176,9 +176,9 @@ ${prefix}
     .setDescription (`
     Links
 
-[Support](https://discord.gg/7UXqeRbXk9)
+[Support](https://discord.gg/DXJVbuuJdq)
 -
-[Invite](https://discord.com/oauth2/authorize?client_id=776824647080738828&permissions=2201352512&scope=bot)`)
+[Invite](https://discord.com/api/oauth2/authorize?client_id=806840212608909344&permissions=8&scope=bot)`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setImage(``)
     .setTitle(`**Support Reyna**`) 
