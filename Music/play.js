@@ -58,7 +58,7 @@ const search = args.join(" ");
       if (serverQueue) {
         if (urlValid) {
           message.channel.send(new MessageEmbed().setColor("#FF0000")
-            .setDescription(`**<:emoji_6:813090602135584840> Searching <:emoji_1:815583474400493568> **[LINK]**(${args.join(" ")})**`))
+            .setDescription(`**<:emoji_6:813090602135584840> Searching <:emoji_1:815583474400493568> [Links](${args.join(" ")})**`))
         }
         else {
           message.channel.send(new MessageEmbed().setColor("#FF0000")
@@ -71,7 +71,7 @@ const search = args.join(" ");
           .setFooter(`By: ${message.author.username}#${message.author.discriminator}`))
         if (urlValid) { 
           message.channel.send(new MessageEmbed().setColor("#FF0000")
-            .setDescription(`**<:emoji_6:813090602135584840> Searching <:emoji_1:815583474400493568> **[LINK]**(${args.join(" ")})**`))
+            .setDescription(`**<:emoji_6:813090602135584840> Searching <:emoji_1:815583474400493568> [Links](${args.join(" ")})**`))
         }
         else {
           message.channel.send(new MessageEmbed().setColor("#FF0000")
