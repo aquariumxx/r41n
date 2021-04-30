@@ -1245,6 +1245,18 @@ client.on("guildMemberRemove", member => {
   channel.send(joinembed);
 });
 
+client.on("message", message => {
+  if (!message.channel.guild) return;
+  if (message.content == prefix + "count")
+    var wolf = new Discord.RichEmbed()
+      .setThumbnail(message.author.avatarURL)
+      .setFooter(message.author.username, message.author.avatarURL)
+      .setTitle("Info member", `__${message.guild.name}__`)
+      .addBlankField(true) //wolf
+      .addField("Member count", `__${message.guild.memberCount}__`);
+  message.channel.send(wolf);
+});
+
 function delay(delayInms) {
  return new Promise(resolve => {
    setTimeout(() => {
