@@ -21,7 +21,7 @@ module.exports = {
     .setImage(message.guild.iconURL())
     .setFooter(message.author.username,message.author.avatarURL())
     .setTimestamp()
-    message.react("✅")
+    message.react("<:emoji_4:815583574983966720>")
 
     return message.channel.send(wolf).catch(console.error);
 
