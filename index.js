@@ -555,7 +555,7 @@ if(message.content.startsWith(`${prefix}membercount`)){
     //define embed
      message.react("<:emoji_4:815583574983966720>").catch(console.error);
     const embed = new Discord.MessageEmbed()
-    .setDescription("┃**All Member** :", `${member.guild.memberCount}`)
+    .addField("┃**All Member** :", `${member.guild.memberCount}`)
     .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setColor("#FF0000")
     //send the Message
