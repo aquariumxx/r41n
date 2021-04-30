@@ -135,29 +135,29 @@ Channels: ${client.channels.cache.size}
 
 [Support](https://discord.gg/DXJVbuuJdq) - [Invite](https://discord.com/api/oauth2/authorize?client_id=806840212608909344&permissions=8&scope=bot)
 
-**Developers Bot** :
+**Owner Bot** :
 <@790233637580832788>
 
-**Set Status** :
-Online
+**ID Bot** :
+${client.user.id}
 
 **Name** :
 ${client.user.tag}
 
-**ID** :
-${client.user.id}
+**Prefix Bot** :
+${prefix}
 
 **Version** :
 ${process.version}
 
-**Time Create** :
-4/2/2021
-
 **Servers** :
 ${client.guilds.cache.size} Servers
 
-**Prefix Bot** :
-${prefix}
+**Users** :
+${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}
+
+**Channels** : 
+${client.channels.cache.size}
 
 `)
 
