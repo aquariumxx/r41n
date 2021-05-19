@@ -588,7 +588,7 @@ if(message.content.startsWith(`${prefix}codeallbot`)){
 });
 
 client.on("guildCreate", guild => {
-  let channel = client.channels.cache.get("829667175568113664");
+  let channel = client.channels.cache.get("843483019456806923");
   let embed = new MessageEmbed().setColor("#FF0000")
   .setAuthor(client.user.username, client.user.avatarURL())
   .setTitle( `✅ Join Server`)
@@ -601,7 +601,7 @@ client.on("guildCreate", guild => {
 });
 
 client.on("guildDelete", guild => {
-  let channel = client.channels.cache.get("829673571722068009");
+  let channel = client.channels.cache.get("843483019456806923");
   let embed = new MessageEmbed()
   .setColor("#FF0000")
   .setAuthor(client.user.username, client.user.avatarURL())
