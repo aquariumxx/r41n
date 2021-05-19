@@ -24,7 +24,6 @@ module.exports = {
 > \`.ping\` - \`.prefix\` - \`.uptime\`
 > \`.se\` - \`.avatar\` - \`.embed\`
 > \`.invites\`
-
 **Music Commands**
 > \`.play\` - \`.skip\` - \`.skipto\`
 > \`.stop\` - \`.volume\` - \`.nowplaying\`
@@ -32,7 +31,6 @@ module.exports = {
 > \`.remove\` - \`.queue\` - \`.filter\`
 > \`.loop\` - \`.lyrics\` - \`.radio\`
 > \`.join\` - \`.disconnct\` - \`.move\`
-
 **Fun Commands**
 > \`.serverinfo\` - \`.userinfo\`
 > \`.lock\` - \`unlock\`
@@ -41,20 +39,16 @@ module.exports = {
 > \`.slowmode\` - \`.giveaway\`
 > \`.clear\` - \`.say\`
 > \`.bans\` - \`.cv\`
-
 **Game Commands**
 > \`.slap\` - \`.hug\`
-
 **Gifs Commands**
 > \`.boy\` - \`.girl\` - \`.baby\`
 > \`.couple\` - \`.animal\` - \`.anime\`
 > \`.emoji\`
-
 **Photo Commands**
 > \`.pboy\` - \`.pgirl\` - \`.pbaby\`
 > \`.pcouple\` - \`.panimal\` - \`.panime\`
 > \`.pemoji\`
-
 **Links**
 [support](https://discord.gg/DXJVbuuJdq) - [invite](https://discord.com/api/oauth2/authorize?client_id=806840212608909344&permissions=8&scope=bot)
 `)
