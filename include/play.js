@@ -136,7 +136,7 @@ module.exports = {
         .setTitle("<:emoji_3:815583549326360635> "+song.title)
         .setURL(song.url)
         .setColor("#FF0000")
-        .setImage(thumb)
+        .setThumbnail(thumb)
         .addField("<:emoji_4:815583574983966720> Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
         .addField("<:emoji_6:815597861651611698> Length:", `\`${song.duration} Minutes\``, true)
         .addField("<:emoji_5:815583611008843796> Volume:", `\`100\``, true)
