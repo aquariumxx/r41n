@@ -191,6 +191,7 @@ ${client.channels.cache.size}
   } 
 
 ///////////////////////////////
+const fetch = require('discord.js');
 client.on('message',async message => {
   if(message.content.startsWith(prefix + "covid")) {
  
