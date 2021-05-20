@@ -191,7 +191,6 @@ ${client.channels.cache.size}
   } 
 
 ///////////////////////////////
-const fetch = require('node-fetch');
 client.on('message',async message => {
   if(message.content.startsWith(prefix + "covid")) {
  
