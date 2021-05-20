@@ -190,61 +190,6 @@ ${client.channels.cache.size}
    message.react("<:emoji_4:815583574983966720>")
   } 
 
-///////////////////////////////
-const fetch = require('discord.js');
-client.on('message',async message => {
-  if(message.content.startsWith(prefix + "covid")) {
- 
-  let args = message.content.split(" ").slice(1)
- 
-        let countries = args.join(" ");
-        const noArgs = new Discord.MessageEmbed()
-        .setTitle('Missing arguments')
-        .setColor(0xFF0000)
-        .setDescription('bnusa [covid all]')
-        .setTimestamp()
- 
-        if(!args[0]) return message.channel.send(noArgs);
- 
-        if(args[0] === "all"){
-            fetch(`https://covid19.mathdro.id/api`)
-            .then(response => response.json())
-            .then(data => {
-                let confirmed = data.confirmed.value.toLocaleString()
-                let recovered = data.recovered.value.toLocaleString()
-                let deaths = data.deaths.value.toLocaleString()
- 
-                const embed = new Discord.MessageEmbed()
-                .setTitle(`Worldwide COVID-19 Stats 🌎`)
-                .addField('Confirmed Cases', confirmed)
-                .addField('Recovered', recovered)
-                .addField('Deaths', deaths)
- 
-                message.channel.send(embed)
-            })
-        } else {
-            fetch(`https://covid19.mathdro.id/api/countries/${countries}`)
-            .then(response => response.json())
-            .then(data => {
-                let confirmed = data.confirmed.value.toLocaleString()
-                let recovered = data.recovered.value.toLocaleString()
-                let deaths = data.deaths.value.toLocaleString()
- 
-                const embed = new Discord.MessageEmbed()
-                .setTitle(`COVID-19 Stats for **${countries}**`)
-                .addField('Confirmed Cases', confirmed)
-                .addField('Recovered', recovered)
-                .addField('Deaths', deaths)
-      ‌          .setFooter('Create By Wolf')
-                message.channel.send(embed)
-            }).catch(e => {
-                return message.channel.send('Invalid country provided')
-            })
-        }
-    }
-}
-          )
-
 //An cv announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}cv`)){
     //define saymsg
