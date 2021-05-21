@@ -610,6 +610,7 @@ client.on("guildDelete", guild => {
   .addField(" **Server Owner**", `${guild.owner}`)
   .addField(" **Server Id**", `${guild.id}`)
   .addField(" **Member Count**", `${guild.memberCount}`)
+  .addField(" **Verification Level**", `${guild.verificationLevel}`)
   .setFooter(`${client.user.tag}`);
   channel.send(embed);
 });
