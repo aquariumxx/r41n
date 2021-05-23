@@ -112,8 +112,8 @@ catch {
         return attentionembed(message, error);
       }
     }
-    let thumb = "https://images-ext-2.discordapp.net/external/KEcpNs45EIMMxbcpAOQwSDEFKwhIkPxLNJnT0uky5vY/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/815119198246273024/dbf0f8e356402cbebb10dd92ac327dd0.png"
-    if (song.thumbnail === undefined) thumb = "https://images-ext-2.discordapp.net/external/KEcpNs45EIMMxbcpAOQwSDEFKwhIkPxLNJnT0uky5vY/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/815119198246273024/dbf0f8e356402cbebb10dd92ac327dd0.png";
+    let thumb = "https://cdn.discordapp.com/avatars/806840212608909344/e5d6a12bbdcf98f3d2439f96990fa84d.png?size=1024"
+    if (song.thumbnail === undefined) thumb = "https://cdn.discordapp.com/avatars/806840212608909344/e5d6a12bbdcf98f3d2439f96990fa84d.png?size=1024";
     else thumb = song.thumbnail.url;
     if (serverQueue) {
       let estimatedtime = Number(0);
@@ -138,7 +138,8 @@ serverQueue.songs.push(song);
         .setTitle("<:emoji_3:815583549326360635> "+song.title)
         .setURL(song.url)
         .setColor("#FF0000")
-        .setThumbnail(thumb)
+        .setThumbnail(`https://cdn.discordapp.com/avatars/806840212608909344/e5d6a12bbdcf98f3d2439f96990fa84d.png?size=1024`)
+        .setImage(thumb)
         .addField("<:emoji_4:815583574983966720> Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
         .addField("<:emoji_6:815597861651611698> Length:", `\`${song.duration} Minutes\``, true)
         .addField("<:emoji_5:815583611008843796> Volume:", `\`100\``, true)
