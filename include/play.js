@@ -128,7 +128,7 @@ module.exports = {
     }
     
   let thumb;
-    if (song.thumbnail === undefined) thumb = "https://cdn.discordapp.com/avatars/806840212608909344/bf2d9853ffc2b48775c0cf9f8932a189.png?size=2048";
+    if (song.thumbnail === undefined) thumb = "https://cdn.discordapp.com/avatars/806840212608909344/e5d6a12bbdcf98f3d2439f96990fa84d.png?size=1024";
     else thumb = song.thumbnail.url;
 
     try {
@@ -136,7 +136,8 @@ module.exports = {
         .setTitle("<:emoji_3:815583549326360635> "+song.title)
         .setURL(song.url)
         .setColor("#FF0000")
-        .setThumbnail(thumb)
+        .setThumbnail(`https://cdn.discordapp.com/avatars/806840212608909344/e5d6a12bbdcf98f3d2439f96990fa84d.png?size=1024`)
+        .setImage(thumb)
         .addField("<:emoji_4:815583574983966720> Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
         .addField("<:emoji_6:815597861651611698> Length:", `\`${song.duration} Minutes\``, true)
         .addField("<:emoji_5:815583611008843796> Volume:", `\`100\``, true)
@@ -176,7 +177,7 @@ module.exports = {
         let ms = (Number(minutes)*60+Number(seconds));   
         //get thumbnail
         let thumb;
-        if (song.thumbnail === undefined) thumb = "https://cdn.discordapp.com/attachments/748095614017077318/769672148524335114/unknown.png";
+        if (song.thumbnail === undefined) thumb = "https://cdn.discordapp.com/avatars/806840212608909344/e5d6a12bbdcf98f3d2439f96990fa84d.png?size=1024";
         else thumb = song.thumbnail.url;
         //define current time
         const seek = (queue.connection.dispatcher.streamTime - queue.connection.dispatcher.pausedTime) / 1000;
