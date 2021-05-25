@@ -1,29 +1,23 @@
-const { Client, Collection, MessageEmbed } = require(`discord.js`);
-const { 
-  PREFIX, 
-} = require(`../config.json`);
+const Discord = require('discord.js')
 
-  
 
 
 module.exports = {
-  name: "servericon",
-  aliases: ["icon"],
-  cooldown: 8,
-  description: "icon",
-  execute(message) {
-    let commands = message.client.commands.array();
+    name: 'servericon',
+   aliases: ["avatar-server", "icon"],
+   cooldown: 5,
+    description: "Displays the icon of the server.",
 
-    let wolf = new MessageEmbed()
-    .setTitle("Icon Server")
-    .setAuthor(message.guild.name, message.guild.iconURL())
-    .setColor("#FF0000")
-    .setImage(message.guild.iconURL())
-    .setFooter(message.author.username,message.author.avatarURL())
-    .setTimestamp()
-    message.react("<:emoji_4:815583574983966720>")
+    execute(message, args) {
+        const { guild } = message
+        let icon = guild.iconURL({size: 4096, dynamic: true})
 
-    return message.channel.send(wolf).catch(console.error);
+        const servericonEmbed = new Discord.MessageEmbed()
+        .setAuthor(`${message.guild.name}`, message.guild.iconURL({ dynamic: true }))
+        .setImage(icon)
+        .setColor("#FC00FF")
+        .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
 
-  }
-};
+        message.channel.send(servericonEmbed)
+    }
+}
