@@ -1236,9 +1236,7 @@ client.on("guildMemberRemove", member => {
     .addField("┃**Server Name** :", `${member.guild.name}`, true)
     .setFooter(`**${member.guild.name}**`)
     .setTimestamp()
-    .setImage(
-      ""
-    )
+    .setImage("")
     .setFooter(`${member.guild.name}`)
     .setTimestamp();
   channel.send(joinembed);
