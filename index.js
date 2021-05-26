@@ -1228,9 +1228,7 @@ client.on("guildMemberRemove", member => {
   let client = member.user.avatarURL();
   if (!channel) return;
   const joinembed = new Discord.MessageEmbed()
-    .setTitle(
-      `**Left**`
-    )
+    .setTitle(`**Left**`)
     .setColor("RANDOM")
     .setThumbnail(client)
     .addField("┃**Name** : ", `${member}`)
