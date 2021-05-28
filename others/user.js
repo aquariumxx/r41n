@@ -15,7 +15,7 @@ module.exports = {
     let commands = message.client.commands.array();
 
     let helpEmbed = new MessageEmbed()
-    .setThumbnail(`https://cdn.discordapp.com/attachments/839167158360997915/845604078955921408/782683837385146428.png`)
+    .setThumbnail(`https://cdn.discordapp.com/attachments/796122909533405195/846782460943532042/PicsArt_05-25-07.10.31.jpg`)
     .setTitle(`**Reyna Help**`)
     .setDescription(`
 
