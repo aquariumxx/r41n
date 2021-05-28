@@ -128,7 +128,7 @@ module.exports = {
     }
     
   let thumb;
-    if (song.thumbnail === undefined) thumb = "https://cdn.discordapp.com/avatars/806840212608909344/e5d6a12bbdcf98f3d2439f96990fa84d.png?size=1024";
+    if (song.thumbnail === undefined) thumb = "https://cdn.discordapp.com/attachments/796122909533405195/846782460943532042/PicsArt_05-25-07.10.31.jpg";
     else thumb = song.thumbnail.url;
 
     try {
@@ -136,7 +136,7 @@ module.exports = {
         .setTitle("<:emoji_3:815583549326360635> "+song.title)
         .setURL(song.url)
         .setColor("#FF0000")
-        .setThumbnail(`https://cdn.discordapp.com/avatars/806840212608909344/e5d6a12bbdcf98f3d2439f96990fa84d.png?size=1024`)
+        .setThumbnail(`https://cdn.discordapp.com/attachments/796122909533405195/846782460943532042/PicsArt_05-25-07.10.31.jpg`)
         .setImage(thumb)
         .addField("<:emoji_4:815583574983966720> Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
         .addField("<:emoji_6:815597861651611698> Length:", `\`${song.duration} Minutes\``, true)
