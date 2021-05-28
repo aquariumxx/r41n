@@ -127,8 +127,8 @@ Channels: ${client.channels.cache.size}
     //define embed
     const embed = new Discord.MessageEmbed()
     .setColor("#FF0000")
-    .setAuthor("About Reyna Bot.", "https://cdn.discordapp.com/attachments/839167158360997915/845604078955921408/782683837385146428.png")
-    .setThumbnail(`https://cdn.discordapp.com/attachments/839167158360997915/845604078955921408/782683837385146428.png`)
+    .setAuthor("About Reyna Bot.", "https://cdn.discordapp.com/attachments/796122909533405195/846782460943532042/PicsArt_05-25-07.10.31.jpg")
+    .setThumbnail(`https://cdn.discordapp.com/attachments/796122909533405195/846782460943532042/PicsArt_05-25-07.10.31.jpg`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setTimestamp()
     .setDescription(`
@@ -182,7 +182,7 @@ ${client.channels.cache.size}
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setImage(``)
     .setTitle(`**Support Reyna**`) 
-    .setThumbnail(`https://cdn.discordapp.com/attachments/839167158360997915/845604078955921408/782683837385146428.png`)
+    .setThumbnail(`https://cdn.discordapp.com/attachments/796122909533405195/846782460943532042/PicsArt_05-25-07.10.31.jpg`)
     .setTimestamp()
     
     //send the Message
