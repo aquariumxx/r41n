@@ -1,5 +1,5 @@
 const { MessageEmbed } = require("discord.js");
-const Color = `RANDOM`;
+const Color = `#FF0000`;
 
 module.exports = {
   name: "membercount",
@@ -27,9 +27,9 @@ module.exports = {
     ).size;
 
     const embed = new MessageEmbed()
-      .setColor(`#FC00FF`)
+      .setColor(`#FF0000`)
       .setTitle(`Members Information`)
-      .addField(`:discord: | All Members`, Members)
+      .addField(`**All Members**`, Members)
       .setThumbnail(message.guild.iconURL({ dynamic: true }))
       .setAuthor(`${message.guild.name}`)
       .setTimestamp();
