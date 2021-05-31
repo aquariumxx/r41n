@@ -133,10 +133,12 @@ Channels: ${client.channels.cache.size}
     .setTimestamp()
     .addField("**Name** : ", `${client.user.tag} `, true)
     .addField("**ID Bot** : ", ` ${client.user.id} `, true)
+    .addField("**Prefix Bot** : ", `${prefix}`, true)
+    .addField("**Version** : ", `${process.version}`, true)
     .addField("**Servers** : ", `${client.guilds.cache.size}`, true)
     .addField("**Users** : ", `${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}`, true)
     .addField("**Channels** : ", `${client.channels.cache.size}`, true)
-    .addField("**Owner Bot** : ", `<@749659830809002014>`, true)
+    .addField("**Owner Bot** : ", `<@790233637580832788>`, true)
 
     //send the Message
     message.channel.send(embed)
