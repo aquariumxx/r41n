@@ -23,7 +23,7 @@ module.exports = {
 > \`.invite\` - \`.support\` - \`.about\`
 > \`.ping\` - \`.prefix\` - \`.uptime\`
 > \`.se\` - \`.avatar\` - \`.embed\`
-> \`.invites\`
+> \`.invites\` - \`.emojiinfo\` - \`.count\`
 **Music Commands**
 > \`.play\` - \`.skip\` - \`.skipto\`
 > \`.stop\` - \`.volume\` - \`.nowplaying\`
