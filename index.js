@@ -554,7 +554,6 @@ if(message.content.startsWith(`${prefix}vote`)){
      message.react("<:emoji_4:815583574983966720>").catch(console.error);
     const embed = new Discord.MessageEmbed()
     .setDescription("**[Click here](https://top.gg/bot/806840212608909344/vote) to vote the bot.**")
-    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setColor("#FF0000")
     //send the Message
     message.channel.send(embed)
