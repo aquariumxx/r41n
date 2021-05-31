@@ -24,6 +24,7 @@ module.exports = {
 > \`.ping\` - \`.prefix\` - \`.uptime\`
 > \`.se\` - \`.avatar\` - \`.embed\`
 > \`.invites\` - \`.emojiinfo\` - \`.count\`
+> \`.servericon\`
 **Music Commands**
 > \`.play\` - \`.skip\` - \`.skipto\`
 > \`.stop\` - \`.volume\` - \`.nowplaying\`
@@ -39,6 +40,7 @@ module.exports = {
 > \`.slowmode\` - \`.giveaway\`
 > \`.clear\` - \`.say\`
 > \`.bans\` - \`.cv\`
+> \`.create-channel\` - \`.delete-channel\`
 **Game Commands**
 > \`.slap\` - \`.hug\`
 **Gifs Commands**
