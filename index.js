@@ -133,8 +133,6 @@ Channels: ${client.channels.cache.size}
     .setTimestamp()
     .setDescription(`
 
-[Support](https://discord.gg/DXJVbuuJdq) - [Invite](https://discord.com/api/oauth2/authorize?client_id=806840212608909344&permissions=8&scope=bot)
-
 **Owner Bot** :
 <@790233637580832788>
 
@@ -542,6 +540,20 @@ if(message.content.startsWith(`${prefix}codeallbot`)){
      message.react("<:emoji_4:815583574983966720>").catch(console.error);
     const embed = new Discord.MessageEmbed()
     .setDescription("**Click Here Code AllBot:** **[Code AllBot](https://pastebin.com/ccMNQTGK)**")
+    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
+    .setColor("#FF0000")
+    //send the Message
+    message.channel.send(embed)
+  }
+
+//An code announcement for everyone but no one knows so fine ^w^
+if(message.content.startsWith(`${prefix}vote`)){
+    //define saymsg
+    const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+     message.react("<:emoji_4:815583574983966720>").catch(console.error);
+    const embed = new Discord.MessageEmbed()
+    .setDescription("**[Click here](https://top.gg/bot/806840212608909344/vote) to vote the bot.**")
     .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setColor("#FF0000")
     //send the Message
