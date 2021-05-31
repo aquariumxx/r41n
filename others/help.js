@@ -24,7 +24,7 @@ module.exports = {
 > \`.ping\` - \`.prefix\` - \`.uptime\`
 > \`.se\` - \`.avatar\` - \`.embed\`
 > \`.invites\` - \`.emojiinfo\` - \`.count\`
-> \`.servericon\`
+> \`.servericon\` - \`.vote\`
 **Music Commands**
 > \`.play\` - \`.skip\` - \`.skipto\`
 > \`.stop\` - \`.volume\` - \`.nowplaying\`
