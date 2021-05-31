@@ -131,33 +131,12 @@ Channels: ${client.channels.cache.size}
     .setThumbnail(`https://cdn.discordapp.com/attachments/796122909533405195/846782460943532042/PicsArt_05-25-07.10.31.jpg`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setTimestamp()
-    .setDescription(`
-
-**Owner Bot** :
-<@790233637580832788>
-
-**ID Bot** :
-${client.user.id}
-
-**Name** :
-${client.user.tag}
-
-**Prefix Bot** :
-${prefix}
-
-**Version** :
-${process.version}
-
-**Servers** :
-${client.guilds.cache.size} Servers
-
-**Users** :
-${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}
-
-**Channels** : 
-${client.channels.cache.size}
-
-`)
+    .addField("**Name** : ", `${client.user.tag} `, true)
+    .addField("**ID Bot** : ", ` ${client.user.id} `, true)
+    .addField("**Servers** : ", `${client.guilds.cache.size}`, true)
+    .addField("**Users** : ", `${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}`, true)
+    .addField("**Channels** : ", `${client.channels.cache.size}`, true)
+    .addField("**Owner Bot** : ", `<@749659830809002014>`, true)
 
     //send the Message
     message.channel.send(embed)
