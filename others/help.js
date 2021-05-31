@@ -53,7 +53,7 @@ module.exports = {
 > \`.pcouple\` - \`.panimal\` - \`.panime\`
 > \`.pemoji\`
 **Links**
-**[Support](https://discord.gg/DXJVbuuJdq) - [invite](https://discord.com/api/oauth2/authorize?client_id=806840212608909344&permissions=8&scope=bot)**
+**[Support](https://discord.gg/DXJVbuuJdq) - [invite](https://discord.com/api/oauth2/authorize?client_id=806840212608909344&permissions=8&scope=bot) - [Vote](https://top.gg/bot/806840212608909344/vote)**
 `)
 
    .setFooter(`Requested by ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
