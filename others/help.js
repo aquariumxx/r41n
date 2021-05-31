@@ -40,7 +40,8 @@ module.exports = {
 > \`.slowmode\` - \`.giveaway\`
 > \`.clear\` - \`.say\`
 > \`.bans\` - \`.cv\`
-> \`.create-channel\` - \`.delete-channel\`
+> \`.create-channel\`
+> \`.delete-channel\`
 **Game Commands**
 > \`.slap\` - \`.hug\`
 **Gifs Commands**
