@@ -135,7 +135,7 @@ Channels: ${client.channels.cache.size}
     //define embed
     const embed = new Discord.MessageEmbed()
     .setColor("#FF0000")
-    .setAuthor("About Reyna Bot.", "https://cdn.discordapp.com/attachments/796122909533405195/846782460943532042/PicsArt_05-25-07.10.31.jpg")
+    .setAuthor("About Reyna ✨.", "https://cdn.discordapp.com/attachments/796122909533405195/846782460943532042/PicsArt_05-25-07.10.31.jpg")
     .setThumbnail(`https://cdn.discordapp.com/attachments/796122909533405195/846782460943532042/PicsArt_05-25-07.10.31.jpg`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setTimestamp()
@@ -143,6 +143,7 @@ Channels: ${client.channels.cache.size}
     .addField("**ID Bot** : ", ` ${client.user.id} `, true)
     .addField("**Version** : ", `${process.version}`, true)
     .addField("**Prefix Bot** : ", `${prefix}`, true)
+    .addField('**My Ping**' , `\`${client.ws.ping}\`` , true)
     .addField("**Servers** : ", `${client.guilds.cache.size}`, true)
     .addField("**Users** : ", `${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}`, true)
     .addField("**Channels** : ", `${client.channels.cache.size}`, true)
