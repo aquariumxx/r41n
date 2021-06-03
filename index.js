@@ -138,7 +138,10 @@ Channels: ${client.channels.cache.size}
     .setAuthor("About Reyna ✨.", "https://cdn.discordapp.com/attachments/796122909533405195/846782460943532042/PicsArt_05-25-07.10.31.jpg")
     .setThumbnail(`https://cdn.discordapp.com/attachments/796122909533405195/846782460943532042/PicsArt_05-25-07.10.31.jpg`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
-    .setTimestamp()
+    .setDescription (`
+**[Reyna ✨ Stats](https://discord.com/api/oauth2/authorize?client_id=806840212608909344&permissions=8&scope=bot)**
+**Hey My name is Reyna ✨ and My Work is to
+play Music**`)    
     .addField("**Name** : ", `${client.user.tag} `, true)
     .addField("**ID Bot** : ", ` ${client.user.id} `, true)
     .addField("**Version** : ", `${process.version}`, true)
