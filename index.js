@@ -636,35 +636,45 @@ client.on("guildDelete", guild => {
   channel.send(embed);
 });
 
-client.on('message', message => {
-if (message.content.startsWith(prefix + 'list emoji')) {
-  let Emojis = "";
-    let EmojisAnimated = "";
-    let EmojiCount = 0;
-    let Animated = 0;
-    let OverallEmojis = 0;
-    function Emoji(id) {
-      return client.emojis.cache.get(id).toString();
-    }
-    message.guild.emojis.cache.forEach((emoji) => {
-      OverallEmojis++;
-      if (emoji.animated) {
-        Animated++;
-        EmojisAnimated += Emoji(emoji.id);
-      } else {
-        EmojiCount++;
-        Emojis += Emoji(emoji.id);
-      }
-    });
-    let Embed = new Discord.MessageEmbed()
-      .setTitle(`Emojis in ${message.guild.name}.`)
-      .setDescription(`
-        **Animated [${Animated}]**:\n${EmojisAnimated}\n\n**Standard [${EmojiCount}]**:\n${Emojis}\n\n**All Emoji [${OverallEmojis}]**
-      `)
-      .setColor(`#FF0000`);
-    message.channel.send(Embed);
+ client.on('message', message => {
+    if (message.content.startsWith(prefix + "profile")) {
+      var args = message.content.split(" ").slice(1);
+      let user = message.mentions.users.first();
+      var men = message.mentions.users.first();
+      let uus = message.mentions.users.first() || message.author;
   
-}})
+      message.guild.fetchInvites().then(invites => {
+  
+        let personalInvites = invites.filter(
+          i => i.inviter.id === message.mentions.users.first() || message.author.id
+        );
+        
+        let inviteCount = personalInvites.reduce((p, v) => v.uses + p, 0);
+      
+        var heg;
+        if (men) {
+          heg = men
+        } else {
+          heg = message.author
+        }
+        var mentionned = message.mentions.members.first();
+        var h;
+        if (mentionned) {
+          h = mentionned
+        } else {
+          h = message.member
+        }
+  
+  
+        var id = new Discord.MessageEmbed()
+          .setColor('#FF0000')
+          .setImage(`https://api.probot.io/profile/${uus.id}`)
+        .setFooter(`${prefix}help`,client.user.avatarURL())
+        message.channel.send(id)
+      }
+      );
+    }
+    });
 
 client.on("message", message => {
   if (message.content.startsWith(PREFIX + "girl")) {
