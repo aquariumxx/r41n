@@ -143,7 +143,7 @@ Channels: ${client.channels.cache.size}
     .addField("**ID Bot** : ", ` ${client.user.id} `, true)
     .addField("**Version** : ", `${process.version}`, true)
     .addField("**Prefix Bot** : ", `${prefix}`, true)
-    .addField('**My Ping**' , `\`${client.ws.ping}\`` , true)
+    .addField('**My Ping**' , `${client.ws.ping}` , true)
     .addField("**Servers** : ", `${client.guilds.cache.size}`, true)
     .addField("**Users** : ", `${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}`, true)
     .addField("**Channels** : ", `${client.channels.cache.size}`, true)
