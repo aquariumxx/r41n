@@ -182,6 +182,23 @@ play Music**`)
   } 
 
 //An cv announcement for everyone but no one knows so fine ^w^
+client.on("message", message => {
+  if (message.content.startsWith(prefix + "slots")) {
+    let slot1 = ["🍏", "🍇", "🍒", "🍍", "🍅", "🍆", "🍑", "🍓"];
+    let slots1 = `${slot1[Math.floor(Math.random() * slot1.length)]}`;
+    let slots2 = `${slot1[Math.floor(Math.random() * slot1.length)]}`;
+    let slots3 = `${slot1[Math.floor(Math.random() * slot1.length)]}`;
+    let we;
+    if (slots1 === slots2 && slots2 === slots3) {
+      we = "Win!";
+    } else {
+      we = "Lose!";
+    }
+    message.channel.send(`${slots1} | ${slots2} | ${slots3} - ${we}`);
+  }
+});
+
+//An cv announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}cv`)){
     //define saymsg
      if (!message.member.hasPermission("MANAGE_CHANNELS")) return;
@@ -1186,22 +1203,6 @@ client.on("message", message => {
 .catch(e => {
         client.log.error(e);
       });
-  }
-});
-
-client.on("message", message => {
-  if (message.content.startsWith(prefix + "slots")) {
-    let slot1 = ["🍏", "🍇", "🍒", "🍍", "🍅", "🍆", "🍑", "🍓"];
-    let slots1 = `${slot1[Math.floor(Math.random() * slot1.length)]}`;
-    let slots2 = `${slot1[Math.floor(Math.random() * slot1.length)]}`;
-    let slots3 = `${slot1[Math.floor(Math.random() * slot1.length)]}`;
-    let we;
-    if (slots1 === slots2 && slots2 === slots3) {
-      we = "Win!";
-    } else {
-      we = "Lose!";
-    }
-    message.channel.send(`${slots1} | ${slots2} | ${slots3} - ${we}`);
   }
 });
 
