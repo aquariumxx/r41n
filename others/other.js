@@ -7,8 +7,8 @@ const {
 
 
 module.exports = {
-  name: "fun",
-  aliases: ["f"],
+  name: "other",
+  aliases: ["o"],
   cooldown: 8,
   description: "**Reyna Help**",
   execute(message) {
