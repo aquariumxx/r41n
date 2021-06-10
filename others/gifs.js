@@ -7,8 +7,8 @@ const {
 
 
 module.exports = {
-  name: "gif",
-  aliases: ["gifhelp"],
+  name: "gifs",
+  aliases: ["g"],
   cooldown: 8,
   description: "**Reyna Gifs**",
   execute(message) {
