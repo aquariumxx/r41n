@@ -8,7 +8,7 @@ const {
 
 module.exports = {
   name: "photo",
-  aliases: ["photohelp"],
+  aliases: ["p"],
   cooldown: 8,
   description: "**Reyna Photo**",
   execute(message) {
