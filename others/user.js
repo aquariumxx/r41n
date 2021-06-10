@@ -23,7 +23,8 @@ module.exports = {
 > \`.invite\` - \`.support\` - \`.about\`
 > \`.ping\` - \`.prefix\` - \`.uptime\`
 > \`.se\` - \`.avatar\` - \`.embed\`
-> \`.invites\`
+> \`.invites\` - \`.emojiinfo\` - \`.count\`
+> \`.servericon\` - \`.vote\`
 **Links**
 **[Support](https://discord.gg/DXJVbuuJdq) - [invite](https://discord.com/api/oauth2/authorize?client_id=806840212608909344&permissions=8&scope=bot)**
 `)
