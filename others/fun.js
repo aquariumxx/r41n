@@ -19,14 +19,18 @@ module.exports = {
     .setTitle(`**Reyna Help**`)
     .setDescription(`
 
-**Fun Commands**
+**Other Commands**
 > \`.serverinfo\` - \`.userinfo\`
 > \`.lock\` - \`unlock\`
 > \`.ban\` - \`.unban\`
 > \`.mute\` - \`.unmute\`
+> \`.open\` - \`.close\`
 > \`.slowmode\` - \`.giveaway\`
 > \`.clear\` - \`.say\`
 > \`.bans\` - \`.cv\`
+> \`.create-channel \`
+> \`.delete-channel \`
+> \`.slap\` - \`.hug\`
 **Links**
 **[Support](https://discord.gg/DXJVbuuJdq) - [invite](https://discord.com/api/oauth2/authorize?client_id=806840212608909344&permissions=8&scope=bot)**
 `)
