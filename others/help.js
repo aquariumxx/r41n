@@ -24,8 +24,8 @@ module.exports = {
 
 **To see each part of the commands**
 
-> n!info . n!gifs . n!photo . n!utility . n!game . n!text
-> 
+> \`.user\` - \`.music\` - \`.other\`
+> \`.gifs\` - \`.photo\`
 
 
 **Need more help? Come join our [Server Server]()**
