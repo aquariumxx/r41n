@@ -19,16 +19,12 @@ module.exports = {
     .setAuthor(`Reyna ✨`, `https://cdn.discordapp.com/attachments/843342058352541706/849755772346302484/PicsArt_05-25-07.10.31.jpg`)
     .setDescription(`
 
-**Invite Reyna ✨ to your server by [click here](https://discord.com/api/oauth2/authorize?client_id=806840212608909344&permissions=8&scope=bot)**
-
-
 **To see each part of the commands**
 
 > \`.user\` - \`.music\` - \`.other\`
 > \`.gifs\` - \`.photo\`
-
-
-**Need more help? Come join our [Support Server](https://discord.gg/brave)**
+**Links
+[Invite](https://discord.com/api/oauth2/authorize?client_id=806840212608909344&permissions=8&scope=bot) - [Support](https://discord.gg/brave)**
 `)
 
    .setFooter(`Requested by ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
