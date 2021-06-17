@@ -99,6 +99,7 @@ Type \`${prefix}help\` for the list of commands.`));
     //define embed
     const embed = new Discord.MessageEmbed()
     .setColor("#FF0000")
+    .setAuthor(`Reyna ✨`, `https://cdn.discordapp.com/attachments/843342058352541706/849755772346302484/PicsArt_05-25-07.10.31.jpg`)
     .setDescription(saymsg)
     //delete the Command
     message.delete({timeout: 300})
