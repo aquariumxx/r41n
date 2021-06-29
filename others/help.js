@@ -17,12 +17,11 @@ module.exports = {
     let helpEmbed = new MessageEmbed()
     .setThumbnail(`https://cdn.discordapp.com/attachments/796122909533405195/846782460943532042/PicsArt_05-25-07.10.31.jpg`)
     .setAuthor(`Reyna ✨`, `https://cdn.discordapp.com/attachments/843342058352541706/849755772346302484/PicsArt_05-25-07.10.31.jpg`)
+    .setTitle(`**To see each part of the commands**`)
     .setDescription(`
 
-**To see each part of the commands**
-
 > \`.user\` - \`.music\` - \`.other\`
-> \`.gifs\` - \`.photo\`
+> \`.gifs\` - \`.photo\` - \`.codes\`
 **Links
 [Invite](https://discord.com/api/oauth2/authorize?client_id=806840212608909344&permissions=8&scope=bot) - [Support](https://discord.gg/brave)**
 `)
