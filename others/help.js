@@ -20,8 +20,9 @@ module.exports = {
     .setTitle(`**To see each part of the commands**`)
     .setDescription(`
 
-> \`.user\` - \`.music\` - \`.other\`
-> \`.gifs\` - \`.photo\` - \`.codes\`
+> \`.user\` - \`.music\`
+> \`.other\` - \`.gifs\`
+> \`.photo\`
 **Links
 [Invite](https://discord.com/api/oauth2/authorize?client_id=806840212608909344&permissions=8&scope=bot) - [Support](https://discord.gg/brave)**
 `)
