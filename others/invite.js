@@ -8,7 +8,7 @@ const {
 
 module.exports = {
   name: "invite",
-  aliases: ["i"],
+  aliases: ["add"],
   cooldown: 8,
   description: "**all commands**",
   execute(message) {
