@@ -19,6 +19,7 @@ module.exports = {
     .setAuthor(`Reyna`, `https://cdn.discordapp.com/attachments/843342058352541706/849755772346302484/PicsArt_05-25-07.10.31.jpg`)
     .setTitle("\`Reyna Invite your server\`")
     .setDescription("\`Reyna Link\` https://discord.com/api/oauth2/authorize?client_id=806840212608909344&permissions=8&scope=bot")
+    .setImage(`https://media.discordapp.net/attachments/796490940905816104/860156119830102026/PicsArt_07-01-04.53.15.jpg`)
     .setFooter("Thank you for invited")
 
   
