@@ -1210,6 +1210,38 @@ client.on("message", message => {
   }
 });
 
+client.on("message", message => {
+  if (message.content.startsWith(PREFIX + "meme")) {
+    let man = [
+      "https://redd.it/obedcu",
+      "https://redd.it/oazele",
+      "https://redd.it/oabats",
+      "https://redd.it/oanic3",
+      "https://redd.it/oaw4es",
+      "https://redd.it/oazvu1",
+      "https://redd.it/oa8eb6",
+      "https://redd.it/obbwmz",
+      "https://redd.it/obedpl"
+    ];
+
+    message.channel
+      .send({
+        embed: {
+          description: `**${message.author.username}**`,
+          footer: `Requested by ${message.author.username}`,
+          color: `#FF0000`,
+          image: {
+            url: man[Math.floor(Math.random() * man.length)]
+          }
+        }
+      })
+
+.catch(e => {
+        client.log.error(e);
+      });
+  }
+});
+
 function delay(delayInms) {
  return new Promise(resolve => {
    setTimeout(() => {
