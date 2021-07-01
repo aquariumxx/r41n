@@ -15,7 +15,12 @@ module.exports = {
     //react with approve emoji
     message.react("<:emoji_4:815583574983966720>");
     //send the invite embed
-    message.reply(new MessageEmbed().setColor("#FF0000").setTitle("❤ Please Invite me: ").setDescription("https://discord.com/api/oauth2/authorize?client_id=806840212608909344&permissions=8&scope=bot")
-    .setFooter("And enjoy listening to music!", "https://cdn.discordapp.com/attachments/796122909533405195/846782460943532042/PicsArt_05-25-07.10.31.jpg"));
+    message.reply(new MessageEmbed()
+    .setThumbnail(`https://cdn.discordapp.com/attachments/796122909533405195/846782460943532042/PicsArt_05-25-07.10.31.jpg`)
+    .setAuthor(`Reyna`, `https://cdn.discordapp.com/attachments/843342058352541706/849755772346302484/PicsArt_05-25-07.10.31.jpg`)
+    .setTitle("\`Reyna Invite your server\`")
+    .setColor("#FF0000")
+    .setDescription("\`Reyna Link\` https://discord.com/api/oauth2/authorize?client_id=806840212608909344&permissions=8&scope=bot")
+    .setFooter("Thank you for invited");
   }
 }
