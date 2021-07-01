@@ -21,6 +21,6 @@ module.exports = {
     .setTitle("\`Reyna Invite your server\`")
     .setColor("#FF0000")
     .setDescription("\`Reyna Link\` https://discord.com/api/oauth2/authorize?client_id=806840212608909344&permissions=8&scope=bot")
-    .setFooter("Thank you for invited");
+    .setFooter("Thank you for invited"));
   }
 }
