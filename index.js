@@ -564,9 +564,9 @@ if(message.content.startsWith(`${prefix}vote`)){
     //define embed
      message.react("<:emoji_4:815583574983966720>").catch(console.error);
     const embed = new Discord.MessageEmbed()
-    .setAuthor(`**Reyna**`, `https://cdn.discordapp.com/attachments/843342058352541706/849755772346302484/PicsArt_05-25-07.10.31.jpg`)
+    .setAuthor(`Reyna`, `https://cdn.discordapp.com/attachments/843342058352541706/849755772346302484/PicsArt_05-25-07.10.31.jpg`)
     .setTitle(`\`Reyna in top.gg\``)
-    .setDescription("**Vote Link https://top.gg/bot/806840212608909344/vote**")
+    .setDescription("\`Vote Link\` https://top.gg/bot/806840212608909344/vote")
     .setFooter(`Thank you for vote`)
     .setColor("#FF0000")
     //send the Message
