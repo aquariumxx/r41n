@@ -1210,12 +1210,6 @@ client.on("message", message => {
   }
 });
 
-.catch(e => {
-        client.log.error(e);
-      });
-  }
-});
-
 function delay(delayInms) {
  return new Promise(resolve => {
    setTimeout(() => {
