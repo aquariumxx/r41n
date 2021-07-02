@@ -2,8 +2,8 @@ const { MessageEmbed } = require("discord.js");
 const fetch = require("node-fetch");
 
 module.exports = {
-  name: "random",
-  description: "Shows a picture of people hugging",
+  name: "gif",
+  description: "gif",
   category: "image",
   async execute(message, args) {
     const data = await fetch("https://g.tenor.com/v1/random?key=${tenorAPI}&q=${text}&limit=1").then((res) =>
@@ -16,6 +16,7 @@ module.exports = {
       .setTitle(`${message.author.username}`)
       .setFooter(message.author.username)
       .setColor("#FF0000")
+      .setDescription(`[Click here if the image failed to load.](${data.url})`)
       .setImage(`${data.url}`)
       .setTimestamp();
 
