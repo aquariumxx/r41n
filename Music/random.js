@@ -6,9 +6,11 @@ module.exports = {
   description: "gif",
   category: "image",
   async execute(message, args) {
-    const data = await fetch("https://g.tenor.com/v1/random?key=${tenorAPI}&q=${text}&limit=1").then((res) =>
-      res.json()
-    );
+    const data = await fetch("https://g.tenor.com/v1/random?key=${tenorAPI}&q=anime&limit=50")
+    .then(res => res.json())
+    .then(json =>
+        message.channel.send(json.results[Math.floor(Math.random() * 49)].url)
+      )
     const user = message.mentions.users.first() || message.author;
     const hugged = message.author.id === user.id ? "themselfs" : user.username;
 
