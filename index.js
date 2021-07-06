@@ -145,8 +145,8 @@ Channels: ${client.channels.cache.size}
     .addField("**Libary** : ", `Discord.js`, true)
     .addField("**Discord.js Version** : ", `12.5.3`, true)
     .addField('**My Ping**' , `${client.ws.ping}` , true)
-    .addField("**Servers** : ", `${client.guilds.cache.size}`, true)
-    .addField("**Owner Bot** : ", `<@790233637580832788>`, true)
+    .addField("**Gulids** : ", `${client.guilds.cache.size}`, true)
+    .addField("**Creator** : ", `<@790233637580832788>`, true)
 
     //send the Message
     message.channel.send(embed)
