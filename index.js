@@ -99,7 +99,7 @@ Type \`${prefix}help\` for the list of commands.`));
     //define embed
     const embed = new Discord.MessageEmbed()
     .setColor("#FF0000")
-    .setAuthor(`Reyna ✨`, `https://cdn.discordapp.com/attachments/843342058352541706/849755772346302484/PicsArt_05-25-07.10.31.jpg`)
+    .setAuthor(`Reyna`, `https://cdn.discordapp.com/attachments/843342058352541706/849755772346302484/PicsArt_05-25-07.10.31.jpg`)
     .setDescription(saymsg)
     //delete the Command
     message.delete({timeout: 300})
@@ -161,38 +161,16 @@ Channels: ${client.channels.cache.size}
     const embed = new Discord.MessageEmbed()
     .setColor("#FF0000")
     .setDescription (`
-    Links
-
-[Support](https://discord.gg/DXJVbuuJdq)
--
-[Invite](https://discord.com/api/oauth2/authorize?client_id=806840212608909344&permissions=8&scope=bot)`)
+> This Is Server Support Reyna
+[Support](https://discord.gg/brave)`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
-    .setImage(``)
     .setTitle(`**Support Reyna**`) 
     .setThumbnail(`https://cdn.discordapp.com/attachments/796122909533405195/846782460943532042/PicsArt_05-25-07.10.31.jpg`)
-    .setTimestamp()
     
     //send the Message
     message.channel.send(embed)
    message.react("<:emoji_4:815583574983966720>")
   } 
-
-//An cv announcement for everyone but no one knows so fine ^w^
-client.on("message", message => {
-  if (message.content.startsWith(prefix + "slots")) {
-    let slot1 = ["🍏", "🍇", "🍒", "🍍", "🍅", "🍆", "🍑", "🍓"];
-    let slots1 = `${slot1[Math.floor(Math.random() * slot1.length)]}`;
-    let slots2 = `${slot1[Math.floor(Math.random() * slot1.length)]}`;
-    let slots3 = `${slot1[Math.floor(Math.random() * slot1.length)]}`;
-    let we;
-    if (slots1 === slots2 && slots2 === slots3) {
-      we = "Win!";
-    } else {
-      we = "Lose!";
-    }
-    message.channel.send(`${slots1} | ${slots2} | ${slots3} - ${we}`);
-  }
-});
 
 //An cv announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}cv`)){
