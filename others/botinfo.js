@@ -15,7 +15,6 @@ module.exports = {
     let commands = message.client.commands.array();
 
     let helpEmbed = new MessageEmbed()
-    .setColor("#FF0000")
     .setAuthor("Info Reyna Bot")
     .setThumbnail(`https://cdn.discordapp.com/attachments/796122909533405195/846782460943532042/PicsArt_05-25-07.10.31.jpg`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
