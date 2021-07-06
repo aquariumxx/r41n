@@ -129,6 +129,30 @@ Channels: ${client.channels.cache.size}
     message.react("<:emoji_4:815583574983966720>")
   } 
 
+/////////////
+if(message.content.startsWith(`${prefix}botinfo`)){
+    //define saymsg
+    const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+    const embed = new Discord.MessageEmbed()
+    .setThumbnail(`https://cdn.discordapp.com/attachments/796122909533405195/846782460943532042/PicsArt_05-25-07.10.31.jpg`)
+    .setTitle("Info Reyna Bot")
+    .setFooter(`Requested by ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
+    .setColor("#FF0000");
+    .addField("**My Name** : ", `${client.user.tag} `, true)
+    .addField("**My ID** : ", ` ${client.user.id} `, true)
+    .addField("**My Prefix** : ", `${prefix}`, true)
+    .addField('**Libary**' , `discord.js` , true)
+    .addField('**Discord.js Version**' , `12.5.3` , true)
+    .addField('**My Ping**' , `${client.ws.ping}` , true)
+    .addField("**Servers** : ", `${client.guilds.cache.size}`, true)
+    .addField("**Owner Bot** : ", `<@790233637580832788>`, true)
+
+    //send the Message
+    message.channel.send(embed)
+    message.react("<:emoji_4:815583574983966720>")
+  } 
+
 //An suuport announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}support`)){
     //define saymsg
