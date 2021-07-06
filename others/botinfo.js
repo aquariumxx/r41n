@@ -15,8 +15,8 @@ module.exports = {
     let commands = message.client.commands.array();
 
     let helpEmbed = new MessageEmbed()
-    .setAuthor("Info Reyna Bot")
-    .setThumbnail(`https://cdn.discordapp.com/attachments/796122909533405195/846782460943532042/PicsArt_05-25-07.10.31.jpg`)
+    .setThumbnail(`https://cdn.discordapp.com/attachments/796122909533405195/846782460943532042/PicsArt_05-25-07.10.31.jpg`)
+    .setTitle("Info Reyna Bot")
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .addField("**My Name** : ", `${client.user.tag} `, true)
     .addField("**My ID** : ", ` ${client.user.id} `, true)
