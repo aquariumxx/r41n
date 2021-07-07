@@ -155,7 +155,6 @@ Channels: ${client.channels.cache.size}
     //define saymsg
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
-    const embed = new Discord.MessageEmbed()
     .setColor("#FF0000")
     .setDescription (`
 > This Is Server Support Reyna
@@ -165,7 +164,7 @@ Channels: ${client.channels.cache.size}
     .setThumbnail(`https://cdn.discordapp.com/attachments/796122909533405195/846782460943532042/PicsArt_05-25-07.10.31.jpg`)
     
     //send the Message
-    message.channel.send(embed)
+    message.channel.send(support)
    message.react("<:emoji_4:815583574983966720>")
   } 
 
