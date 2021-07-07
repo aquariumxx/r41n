@@ -155,14 +155,10 @@ Channels: ${client.channels.cache.size}
     //define saymsg
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
-    .setColor("#FF0000")
     .setDescription (`
 > This Is Server Support Reyna
 **[Support](https://discord.gg/brave)**`)
-    .setFooter(message.author.username, message.author.displayAvatarURL)
-    .setTitle(`**Support Reyna**`) 
-    .setThumbnail(`https://cdn.discordapp.com/attachments/796122909533405195/846782460943532042/PicsArt_05-25-07.10.31.jpg`)
-    
+
     //send the Message
     message.channel.send(support)
    message.react("<:emoji_4:815583574983966720>")
