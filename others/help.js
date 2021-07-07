@@ -17,12 +17,12 @@ module.exports = {
     let helpEmbed = new MessageEmbed()
     .setAuthor(`Reyna`)
     .setTitle(`**To see each part of the commands**`)
-    .setDescription(`
+    .addFiled("
 
 > \`.user\` - \`.music\`
 > \`.other\` - \`.gifs\`
 > \`.photo\`
-`)
+")
 
    .setFooter(`Requested by ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
    .setColor("#FF0000");
