@@ -16,7 +16,7 @@ module.exports = {
 
     let helpEmbed = new MessageEmbed()
     .setTitle(`**Reyna Other**`)
-    .addFiled("
+    .addField("
 
 **Other Commands**
 > \`.serverinfo\` - \`.userinfo\`
