@@ -22,8 +22,6 @@ module.exports = {
 > \`.boy\` - \`.girl\` - \`.baby\`
 > \`.couple\` - \`.animal\` - \`.anime\`
 > \`.emoji\`
-**Links**
-**[Support](https://discord.gg/gwdAbxAnhg) - [Invite](https://discord.com/api/oauth2/authorize?client_id=806840212608909344&permissions=8&scope=bot)**
 `)
 
    .setFooter(`Requested by ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
