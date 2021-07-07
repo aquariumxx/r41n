@@ -19,7 +19,7 @@ module.exports = {
     .setDescription(`
 
 **User Commands**
-> \`.invite\` - \`.support\` - \`.about\`
+> \`.invite\` - \`.support\` - \`.botinfo\`
 > \`.ping\` - \`.prefix\` - \`.uptime\`
 > \`.se\` - \`.avatar\` - \`.embed\`
 > \`.invites\` - \`.emojiinfo\` - \`.count\`
