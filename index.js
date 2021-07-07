@@ -155,15 +155,17 @@ Channels: ${client.channels.cache.size}
     //define saymsg
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
-     const embed = new Discord.MessageEmbed()
+    const embed = new Discord.MessageEmbed()
+    .setColor("#FF0000")
     .setDescription (`
 > This Is Server Support Reyna
-**[Support](https://discord.gg/brave)**`)
-
+[Support](https://discord.gg/brave)`)
+    .setTitle(`**Support Reyna**`) 
+    
     //send the Message
-    message.channel.send(embed)
-   message.react("<:emoji_4:815583574983966720>")
-  } 
+    message.channel.send(embed)
+   message.react("<:emoji_4:815583574983966720>")
+  } 
 
 //An cv announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}cv`)){
