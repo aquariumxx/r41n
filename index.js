@@ -154,7 +154,7 @@ Channels: ${client.channels.cache.size}
   if(message.content.startsWith(`${prefix}support`)){
     //define saymsg
     const saymsg = message.content.slice(Number(prefix.length) + 5)
-    //define embed
+    //define support
     .setDescription (`
 > This Is Server Support Reyna
 **[Support](https://discord.gg/brave)**`)
