@@ -15,7 +15,8 @@ module.exports = {
     let commands = message.client.commands.array();
 
     let helpEmbed = new MessageEmbed()
-    .setDescription("**[Reyna Invite](https://discord.com/api/oauth2/authorize?client_id=806840212608909344&permissions=8&scope=bot)**")
+    .setTitle("Reyna Invite")
+    .setDescription("**[Reyna](https://discord.com/api/oauth2/authorize?client_id=806840212608909344&permissions=8&scope=bot)**")
 
   
    .setColor("#FF0000");
