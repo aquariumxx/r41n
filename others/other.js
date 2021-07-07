@@ -16,7 +16,7 @@ module.exports = {
 
     let helpEmbed = new MessageEmbed()
     .setTitle(`**Reyna Other**`)
-    .addField("
+    .setDescription(`
 
 **Other Commands**
 > \`.serverinfo\` - \`.userinfo\`
@@ -30,7 +30,7 @@ module.exports = {
 > \`.create-channel \`
 > \`.delete-channel \`
 > \`.slap\` - \`.hug\`
-")
+`)
 
    .setFooter(`Requested by ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
    .setColor("#FF0000");
