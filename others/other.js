@@ -24,9 +24,9 @@ module.exports = {
 > \`.ban\` - \`.unban\`
 > \`.mute\` - \`.unmute\`
 > \`.open\` - \`.close\`
-> \`.slowmode\` - \`.giveaway\`
 > \`.clear\` - \`.say\`
 > \`.bans\` - \`.cv\`
+> \`.slowmode\`
 > \`.create-channel \`
 > \`.delete-channel \`
 > \`.slap\` - \`.hug\`
