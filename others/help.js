@@ -17,7 +17,7 @@ module.exports = {
     let helpEmbed = new MessageEmbed()
     .setAuthor(`Reyna`)
     .setTitle(`**To see each part of the commands**`)
-    .addFiled("
+    .addField("
 
 > \`.user\` - \`.music\`
 > \`.other\` - \`.gifs\`
