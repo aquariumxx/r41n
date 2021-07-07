@@ -154,13 +154,14 @@ Channels: ${client.channels.cache.size}
   if(message.content.startsWith(`${prefix}support`)){
     //define saymsg
     const saymsg = message.content.slice(Number(prefix.length) + 5)
-    //define support
+    //define embed
+     const embed = new Discord.MessageEmbed()
     .setDescription (`
 > This Is Server Support Reyna
 **[Support](https://discord.gg/brave)**`)
 
     //send the Message
-    message.channel.send(support)
+    message.channel.send(embed)
    message.react("<:emoji_4:815583574983966720>")
   } 
 
