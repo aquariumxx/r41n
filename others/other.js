@@ -15,7 +15,7 @@ module.exports = {
     let commands = message.client.commands.array();
 
     let helpEmbed = new MessageEmbed()
-    .setTitle(`**Reyna Help**`)
+    .setTitle(`**Reyna Other**`)
     .setDescription(`
 
 **Other Commands**
