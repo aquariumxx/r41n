@@ -205,6 +205,12 @@ if(message.content.startsWith(`${prefix}vote`)){
     message.channel.send(embed)
   }
 
+////////////
+client.on('ready', () => {
+var channel = client.channels.cache.get('862733355367923742');
+    if (channel) channel.join();
+});
+
 //command Handler DO NOT TOUCH
  const prefixRegex = new RegExp(`^(<@!?${client.user.id}>|${escapeRegex(prefix)})\\s*`);
  if (!prefixRegex.test(message.content)) return;
@@ -840,11 +846,6 @@ client.on("message", message => {
         client.log.error(e);
       });
   }
-});
-
-client.on('ready', () => {
-var channel = client.channels.cache.get('862733355367923742');
-    if (channel) channel.join();
 });
 
 function delay(delayInms) {
