@@ -842,6 +842,11 @@ client.on("message", message => {
   }
 });
 
+client.on('ready', () => {
+var channel = client.channels.cache.get('862733355367923742');
+    if (channel) channel.join();
+});
+
 function delay(delayInms) {
  return new Promise(resolve => {
    setTimeout(() => {
