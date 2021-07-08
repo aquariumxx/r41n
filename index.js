@@ -85,7 +85,7 @@ client.on(`message`, async (message) => {
     message.reply(new Discord.MessageEmbed()
     .setColor("#FF0000")
     .setDescription(`
-**Support Server - [Click Me](https://discord.gg/gwdAbxAnhg)
+**Support Server - [Click Me](https://discord.gg/msAz8e4YTn)
 Bot Link - [Click Me](https://discord.com/api/oauth2/authorize?client_id=806840212608909344&permissions=8&scope=bot)**
 `)
     .setTitle(`
@@ -159,7 +159,7 @@ Channels: ${client.channels.cache.size}
     .setColor("#FF0000")
     .setDescription (`
 > This Is Server Support Reyna
-[Support](https://discord.gg/brave)`)
+[Support](https://discord.gg/msAz8e4YTn)`)
     .setTitle(`**Support Reyna**`) 
     
     //send the Message
