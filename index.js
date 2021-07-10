@@ -144,6 +144,7 @@ Channels: ${client.channels.cache.size}
     .addField('**My Ping**' , `${client.ws.ping}` , true)
     .addField("**Gulids** : ", `${client.guilds.cache.size}`, true)
     .addField("**Creator** : ", `<@790233637580832788>`, true)
+    .addField("**Admins** : ", `<@749659830809002014>`, true)
 
     //send the Message
     message.channel.send(embed)
@@ -159,7 +160,7 @@ Channels: ${client.channels.cache.size}
     .setColor("#FF0000")
     .setDescription (`
 > This Is Server Support Reyna
-[Support](https://discord.gg/msAz8e4YTn)`)
+[Support](https://discord.gg/f3jjNz2WyK)`)
     .setTitle(`**Support Reyna**`) 
     
     //send the Message
