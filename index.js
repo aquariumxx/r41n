@@ -37,9 +37,9 @@ client.on(`ready`, () => {
       });
       
 
-    client.user.setActivity(`${PREFIX}help`, { type: "COMPETING"});
+    client.user.setActivity(`${PREFIX}help`, { type: "Discord Android"});
 
-    client.user.setActivity(`${client.guilds.cache.size} Server,Users ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)},`, { type: "COMPETING"});
+    client.user.setActivity(`${client.guilds.cache.size} Server,Users ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)},`, { type: "Discord Android"});
 
     
    
