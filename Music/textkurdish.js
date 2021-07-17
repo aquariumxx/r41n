@@ -3,7 +3,7 @@ const { MessageEmbed } = require("discord.js");
 
 module.exports = {
   name: "textkurdish",
-  aliases: ["textKurdish"],
+  aliases: ["textKurdish", "Textkudish", "TextKudish", "TEXTKURDISH"],
   description: "Show text",
   usage: "text",
   async execute(message, args, client) {
