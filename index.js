@@ -417,5 +417,3 @@ function delay(delayInms) {
    }, delayInms);
  });
 }
-
-//Bot coded by Wolf#6966 
