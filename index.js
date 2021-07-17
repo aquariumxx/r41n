@@ -37,7 +37,7 @@ client.on(`ready`, () => {
       });
       
 
-    client.user.setActivity(`${PREFIX}help`, { type: "COMPETING"});
+    client.user.setActivity(`${PREFIX}help ${client.guilds.cache.size} Server`, { type: "COMPETING"});
 
     
    
