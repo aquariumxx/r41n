@@ -3,9 +3,9 @@ const { MessageEmbed } = require("discord.js");
 //By Legendary Keker
 
 module.exports = {
-    name: "emoji",
+    name: "emojiinfo",
    cooldown: 7,
-    aliases: ["emojiinfo", "info"],
+    aliases: ["einfo"],
     description: "Show Emoji Information!",
     usage: "emoji <emoji>",
 async  execute(message, args) {
