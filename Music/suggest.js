@@ -17,7 +17,7 @@ module.exports = {
     }
 
     let embed = new MessageEmbed()
-      .setAuthor("SUGGESTION: " + message.author.tag, message.author.avatarURL({ dynamic: true, size: 2048 }))
+      .setAuthor(message.author.tag)
       .setThumbnail(message.author.avatarURL({ dynamic: true, size: 2048 }))
       .setColor("RANDOM")
       .setDescription(args.join(" "))
