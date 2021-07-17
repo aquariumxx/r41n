@@ -16,7 +16,7 @@ module.exports = {
 
     .setTitle("Emoji Gif")
     .setColor("#FF0000")
-    .setFooter(`Requested by ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
+    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setImage(replies[result]);
 
     message.channel.send(gifembed);
