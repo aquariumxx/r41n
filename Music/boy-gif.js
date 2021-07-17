@@ -15,7 +15,7 @@ module.exports = {
     let gifembed = new Discord.MessageEmbed()
 
     .setTitle("Boy Gif")
-    .setColor("black")
+    .setColor("#FF0000")
     .setFooter(`Requested by ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setImage(replies[result]);
 
