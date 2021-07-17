@@ -1,11 +1,14 @@
+const fs = require("fs");
 const Discord = require("discord.js");
-const { MessageEmbed } = require("discord.js");
 
 module.exports = {
-  name: "textimage",
-  aliases: ["textImage"],
-  description: "Show text",
-  usage: "text",
+  name: "textImage",
+  aliases: ["ti","tsad","textsad"],
+  enabled: true,
+  memberPermissions: [ "SEND_MESSAGES" ],
+  botPermissions: [ "SEND_MESSAGES", "EMBED_LINKS" ],
+  ownerOnly: false,
+  cooldown: 2000,
   async execute(message, args, client) {
     
     
