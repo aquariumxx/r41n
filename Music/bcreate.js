@@ -7,8 +7,8 @@ module.exports = {
     usage: "qbackup-create",
     description: "Get the bot's ping!",
     async execute(message, args, client) {
-      if(!message.member.hasPermission('MANAGE_SERVER')){
-        return message.channel.send(':x: You need to have the manage messages permissions to create a backup in this server.');
+      if(!message.member.hasPermission('ADMINISTRATOR')){
+        return message.channel.send(':x: You need to have the `ADMINISTRATOR` to create a backup in this server.');
     }
 
     backup.create(message.guild).then((backupData) => {
