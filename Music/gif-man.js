@@ -2,8 +2,8 @@ const Discord = require("discord.js");
 const { MessageEmbed } = require("discord.js");
 
 module.exports = {
-  name: "boy",
-  aliases: ["Boy"],
+  name: "mangif",
+  aliases: ["boygif", "boy", "ManGif", "MANGIF", "Mangif"],
   description: "Show Gif",
   usage: "Gif",
   async execute(message, args, client) {
@@ -68,7 +68,7 @@ module.exports = {
     
     let gifembed = new Discord.MessageEmbed()
 
-    .setTitle("Boy Gif")
+    .setTitle("Man Gif")
     .setColor("#FF0000")
     .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setImage(replies[result]);
