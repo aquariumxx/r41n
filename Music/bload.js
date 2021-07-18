@@ -16,12 +16,12 @@ module.exports = {
 
         message.channel.send(':warning: All the server channels, roles, and settings will be cleared. Do you want to continue? Send `+confirm` or `cancel`!');
 
-        const collector = message.channel.createMessageCollector((m) => m.author.id === message.author.id && ['+confirm', 'cancel'].includes(m.content), {
+        const collector = message.channel.createMessageCollector((m) => m.author.id === message.author.id && ['.confirm', 'cancel'].includes(m.content), {
             time: 60000,
             max: 1
         });
         collector.on('collect', (m) => {
-            const confirm = m.content === '+confirm';
+            const confirm = m.content === '.confirm';
             collector.stop();
             if (confirm) {
 
@@ -32,7 +32,7 @@ module.exports = {
                 }).catch((err) => {
             
                     if (err === 'No backup found')
-                        return message.channel.send(':x: No backup found for ID '+backupID+'!');
+                        return message.channel.send(':x: No backup found for ID '.backupID+'!');
                     else
                         return message.author.send(':x: An error occurred: '+(typeof err === 'string') ? err : JSON.stringify(err));
             
@@ -49,7 +49,7 @@ module.exports = {
         })
 
     }).catch(() => {
-        return message.channel.send(':x: No backup found for ID '+backupID+'!');
+        return message.channel.send(':x: No backup found for ID '.backupID+'!');
     });
 
 }
