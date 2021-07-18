@@ -1,33 +1,24 @@
-const { Client, Collection, MessageEmbed } = require(`discord.js`);
-const { 
-  PREFIX, 
-} = require(`../config.json`);
-
-  
-
+const { MessageEmbed } = require("discord.js"); 
 
 module.exports = {
   name: "help",
   aliases: ["h"],
-  cooldown: 8,
-  description: "**Reyna Help**",
+  description: "Display all commands and descriptions",
   execute(message) {
     let commands = message.client.commands.array();
-
+     
     let helpEmbed = new MessageEmbed()
-    .setAuthor(`Reyna`)
-    .setTitle(`**To see each part of the commands**`)
-    .setDescription(`
+    .setFooter(message.author.username, message.author.displayAvatarURL)
+    .setColor('RANDOM')
+    .addField("Other Commands", `\`help\`, \`ping\`, \`prefix\`, \`uptime\`, \`avatar\`, \`status\`, \`invites\`, \`suggest\`, \`userinfo\`, \`serverinfo\`, \`botinfo\``)
+    .addField("Music Commands", `\`filter\`, \`loop\`, \`lyrics\`, \`np\`, \`pause\`, \`play\`, \`queue\`, \`radio\`, \`remove\`, \`resume\`, \`search\`, \`shuffle\`, \`skip\`, \`skipto\`, \`stop\`, \`volume\``)
+    .addField("Moderation Commands", `\`kick\`, \`ban\``)
+    .addField("Gif Commands", `\`boygif\`, \`girlgif\`, ‌\`couplegif\`, \`animegif\`, \`emojigif\`, \`animalgif\``)
+    .addField("Text Commands", `\`textkurdish\`, \`textarabic\`, \`textenglish\`, \`textturkish\`, \`textpersian\``)
+    .addField("Fun Commands", `\`slap\`, \`hug\`, \`howgay\`,‌ \`rate\`, \`meme\`, \`cry\`, \`kiss\``)
+    .addField("Backup Commands", `\`backup-create\`, \`backup-load\`, \`backup-info\``)
+    helpEmbed.setTimestamp();
 
-> \`.user\` - \`.music\`
-> \`.other\` - \`.gifs\`
-> \`.photo\`
-`)
-
-   .setFooter(`Requested by ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-   .setColor("#FF0000");
-   message.react("<:emoji_4:815583574983966720>")
     return message.channel.send(helpEmbed).catch(console.error);
-
   }
 };
