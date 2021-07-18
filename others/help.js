@@ -9,7 +9,7 @@ module.exports = {
      
     let helpEmbed = new MessageEmbed()
     .setFooter(message.author.username, message.author.displayAvatarURL)
-    .setColor('RANDOM')
+    .setColor('#FF0000')
     .addField("Other Commands", `\`help\`, \`ping\`, \`prefix\`, \`uptime\`, \`avatar\`, \`status\`, \`invites\`, \`suggest\`, \`userinfo\`, \`serverinfo\`, \`botinfo\``)
     .addField("Music Commands", `\`filter\`, \`loop\`, \`lyrics\`, \`np\`, \`pause\`, \`play\`, \`queue\`, \`radio\`, \`remove\`, \`resume\`, \`search\`, \`shuffle\`, \`skip\`, \`skipto\`, \`stop\`, \`volume\``)
     .addField("Moderation Commands", `\`kick\`, \`ban\``)
