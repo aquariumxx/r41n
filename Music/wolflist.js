@@ -6,7 +6,7 @@ module.exports = {
     aliases: ["slt"],
     category: "owner",
     description: "Displays the list of Servers!",
-    usage: "",
+    usage: "serverlist",
   async execute(message, args, client) {
     if (message.author.id == ownerid) {
       if (!message.guild.me.hasPermission("ADMINISTRATOR"))
