@@ -8,7 +8,28 @@ module.exports = {
   usage: "Gif",
   async execute(message, args, client) {
    
-    let replies = ["https://cdn.discordapp.com/attachments/694694675679936585/737306643355664384/image02.gif","https://cdn.discordapp.com/attachments/694694675679936585/737306628528930816/a_1b0b9e83a11f0e8280c5409e85dc6ecf.gif","https://cdn.discordapp.com/attachments/694694675679936585/737306606068564108/image0_7.gif","https://cdn.discordapp.com/attachments/694694675679936585/737306593485651979/image01.gif","https://cdn.discordapp.com/attachments/694694675679936585/737306585470074890/20.gif","https://cdn.discordapp.com/attachments/694694675679936585/737305042096488478/image03.gif","https://cdn.discordapp.com/attachments/694694675679936585/737305094038749224/a_788eee9ad77c81e7406d1c06c75de1a1.gif","https://cdn.discordapp.com/attachments/694694675679936585/737305150607327255/larissa56.gif","https://cdn.discordapp.com/attachments/694694675679936585/737305158668517486/image0.gif","https://cdn.discordapp.com/attachments/694694675679936585/737305302352789554/image0-4.gif","https://cdn.discordapp.com/attachments/694694675679936585/737306359330111548/gif_dc_dc_dc.gif","https://cdn.discordapp.com/attachments/694694675679936585/736981583474589777/a_48d8e6c6b3ab9bdc3d27e9dc7bfbee53.gif","https://cdn.discordapp.com/attachments/694694675679936585/737305354270015628/a_b77c51a4aa5bc3460d375f415dec1507.gif","https://cdn.discordapp.com/attachments/694694675679936585/737304729444679730/a_73dea0b44c5e1f57bdbbfc036b7cf3dc.gif","https://cdn.discordapp.com/attachments/694694675679936585/737304802501066862/image0-2.gif","https://cdn.discordapp.com/attachments/694694675679936585/737109543263404132/image0.gif","https://cdn.discordapp.com/attachments/694694675679936585/737066393694109718/a_d8f145cc1f4ad05bf97a118f64d673ff.gif","https://cdn.discordapp.com/attachments/694694675679936585/737066415877652490/image0_8.gif","https://cdn.discordapp.com/attachments/694694675679936585/737013297336942603/a_37397898637eca6eae7458899b12826c.gif","https://cdn.discordapp.com/attachments/694694675679936585/736898861913604156/image0-10.gif","https://cdn.discordapp.com/attachments/694694675679936585/736898644808040538/a_e4931ce8b4c41a2f4bb15c51dfd0b898.gif","https://cdn.discordapp.com/attachments/694694675679936585/736898505427386378/f6bd4fa420a9d8ce58c6519a90bc8bc0.gif","https://cdn.discordapp.com/attachments/694694675679936585/736898257925570600/a_1e816625dd242018b144b924043a7933.gif","https://cdn.discordapp.com/attachments/694694675679936585/736897942342074428/a_8634244b88f7dc8eebbf416640489ef2.gif"];
+    let replies = [
+      "https://media.discordapp.net/attachments/737807251825360977/809515423929597982/image0.gif",
+      "https://media.discordapp.net/attachments/787757651752779826/800869935055634442/image3.gif",
+      "https://media.discordapp.net/attachments/787757651752779826/800873608087207966/image1.gif",
+      "https://images-ext-2.discordapp.net/external/XNfBHzKy7buK63kTXnhneedCZesXjDt4YzXc4aHRyP0/https/media.discordapp.net/attachments/711465242798063706/800617858567634973/image0.gif",
+      "https://media.discordapp.net/attachments/694694675679936585/800464338020204564/lietra50.gif",
+      "https://media.discordapp.net/attachments/787757651752779826/800869934360035348/image0.gif",
+      "https://media.discordapp.net/attachments/672961356412092416/812128754612305930/6cabf80040d1577d55c16195bfacbeeb.gif",
+      "https://images-ext-2.discordapp.net/external/Y9efztvjl_W-Qqnmd7R2NguhdL3TYXUJE95qppLUs90/https/media.discordapp.net/attachments/711465242798063706/801076445564502046/a_75e90ca13d798a0f6a85a334a457c0d1.gif",
+      "https://media.discordapp.net/attachments/694694675679936585/801401776405872640/a_21574ba6d4717eeb5c9fa7cf9fb2af32.gif",
+      "https://media.discordapp.net/attachments/694694675679936585/801547744543899708/agabefloransa1.gif",
+      "https://media.discordapp.net/attachments/737807251825360977/809515500949995520/image1.gif",
+      "https://media.discordapp.net/attachments/737807251825360977/799657955749265459/image0.gif",
+      "https://media.discordapp.net/attachments/672961356412092416/812129279877840936/a_3e35eb5b37ec439dc44602a0afef93ba.gif",
+      "https://media.discordapp.net/attachments/672961356412092416/812129237489287208/a_476537898e797d68d2fbce75c28c7f2b.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/814578335295209542/42a622d5dece84cefa3a06ef984315a5.gif",
+      "https://media.discordapp.net/attachments/787757651752779826/800870568387412008/image5.gif",
+      "https://media.discordapp.net/attachments/672961356412092416/809899258290372708/ezgif-4-26f9f6d90b7c.gif",
+      "https://media.discordapp.net/attachments/694694675679936585/800489743183904810/a_8d1f2e7282347d977a3bd1e0b58b7c20-1.gif",
+      "https://media.discordapp.net/attachments/694694675679936585/814441253524865064/couple-1.gif",
+      "https://media.discordapp.net/attachments/737807251825360977/809515517278027796/image0.gif"
+];
 
     let result = Math.floor((Math.random() * replies.length));
     
