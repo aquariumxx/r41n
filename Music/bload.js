@@ -21,7 +21,7 @@ module.exports = {
             max: 1
         });
         collector.on('collect', (m) => {
-            const confirm = m.content === '.confirm';
+            const confirm = m.content === 'confirm';
             collector.stop();
             if (confirm) {
 
