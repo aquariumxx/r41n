@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const { MessageEmbed } = require("discord.js");
+const { lineReply } = require("discord-reply");
 
 module.exports = {
   name: "bboy",
@@ -20,7 +21,7 @@ module.exports = {
     .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setImage(replies[result]);
 
-    message.channel.send(gifembed);
+    message.lineReplyNoMention(gifembed).catch(console.error);
 
    
   }
