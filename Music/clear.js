@@ -7,12 +7,12 @@ module.exports = {
 		try {
 			deleteCount = parseInt(args[1], 10);
 		}catch(err) {
-			return message.reply('Please provide the number of messages to delete. (max 100)')
+			return message.reply('Please provide the number of messages to delete. (max 1000)')
 		}
         
 
-		if (!deleteCount || deleteCount < 1 || deleteCount > 100)
-			return message.reply('Please provide a number between 2 and 100 for the number of messages to delete');
+		if (!deleteCount || deleteCount < 1 || deleteCount > 1000)
+			return message.reply('Please provide a number between 2 and 1000 for the number of messages to delete');
 
 		const fetched = await message.channel.messages.fetch({
 			limit: deleteCount,
