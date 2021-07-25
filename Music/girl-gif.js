@@ -9,7 +9,7 @@ module.exports = {
   async execute(message, args, client) {
    
     let replies = [
-"https://cdn.discordapp.com/attachments/608711473652563968/830788035221782558/1-28.gif",
+      "https://cdn.discordapp.com/attachments/608711473652563968/830788035221782558/1-28.gif",
       "https://cdn.discordapp.com/attachments/608711473652563968/830789683994820608/a_f173b0560e24959c0ac615948fff0428.gif",
       "https://cdn.discordapp.com/attachments/608711473652563968/830788112267345920/1-29.gif",
       "https://cdn.discordapp.com/attachments/608711473652563968/830788165534220308/1-30.gif",
