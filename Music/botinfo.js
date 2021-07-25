@@ -7,17 +7,15 @@ module.exports = {
   description: "INVITE BOT",
   async execute(message, args, client) {
     let embed = new discord.MessageEmbed()
-    .setColor("#FF0000")
-    .setTitle("Info Reyna Bot")
-    .setThumbnail(`https://cdn.discordapp.com/avatars/806840212608909344/ef9620d76b1c839097196f6fb3822c88.webp?size=1024`)
-    .addField("**My Name** : ", `${client.user.tag} `, true)
-    .addField("**My ID** : ", ` ${client.user.id} `, true)
-    .addField("**My Prefix** : ", `${prefix}`, true)
-    .addField('**Libary**' , `discord.js` , true)
-    .addField('**Discord.js Version**' , `12.5.3` , true)
-    .addField('**Ping**' , `${client.ws.ping}` , true)
-    .addField("**Servers** : ", `${client.guilds.cache.size}`, true)
-    .addField("**Creator** : ", `<@790233637580832788>`, true)
+      .setTitle(`__**INFORMATION ABOUT BOT**__`)
+      .addField("Bot Name", `<@${client.user.id}>`, true)
+      .addField("Bot Developer", `<@790233637580832788>`)
+      .addField("Total Guilds", `${client.guilds.cache.size}`, true)
+      .addField("Total Channels", `${client.channels.cache.size}`)
+      .addField("Total Users", `${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}`, true)
+      .addField("Bot Libary", `discord.js`)
+      .setColor("#0d2943")
+      .setFooter(`information about bot`);
       message.lineReplyNoMention(embed).catch(console.error);
   }
 };
