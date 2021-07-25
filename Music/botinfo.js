@@ -8,7 +8,7 @@ module.exports = {
   async execute(message, args, client) {
     let embed = new discord.MessageEmbed()
       .setTitle(`__**INFORMATION ABOUT BOT**__`)
-      .addField("Bot Name", `<@${client.user.id}>`, true)
+      .addField("Bot Name", `<@${client.user.id}>`)
       .addField("Bot Developer", `<@790233637580832788>`)
       .addField("Total Guilds", `${client.guilds.cache.size}`, true)
       .addField("Total Channels", `${client.channels.cache.size}`)
