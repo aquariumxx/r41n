@@ -1,31 +1,33 @@
-const Discord = module.require("discord.js");
+const { MessageEmbed } = require("discord.js");
+const db = require('quick.db');
+const { MessageButton , MessageActionRow } = require(`discord-buttons`)
+const { lineReply } = require("discord-reply");
+
 
 module.exports = {
-   name: "unlock",
-   aliases: ["ul"],
-   description: "Unlocks a Channel",
-   async execute(message, args) {
-   if (!message.member.hasPermission('MANAGE_SERVER', 'MANAGE_CHANNELS')) {
-   return message.channel.send("You don't have enough Permissions")
-   }
-   message.channel.overwritePermissions([
-     {
-        id: message.guild.id,
-        null : ['SEND_MESSAGES'],
-     },
-    ],);
-   const embed = new Discord.MessageEmbed()
-   .setTitle("")
-   .setTimestamp()
-   .setThumbnail(message.author.avatarURL({dynamic: "true"}))
-   .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-   .setDescription(`
-🔓 Unlocked Channel
-Channel Name : <#${message.channel.id}>
-Locked By : <@${message.author.id}>
-Channel Status : Send Message
-`)
-   .setColor("#FF0000");
-   await message.channel.send(embed);
-}
-}
+    name: "unlock",
+    cooldown: 5,
+    aliases: ["unlock"],
+    usage: "unlock [#channel]",
+    category: "admin",
+    description : "everyone can send messages",
+    async execute(message, args, client) {
+
+	if(!message.member.hasPermission("MANAGE_CHANNELS")) return message.lineReplyNoMention(new MessageEmbed()
+	.setColor("#FF0000")
+	.setDescription("**You Need `MANAGE_CHANNELS` Permission To Use This Command!**")
+	.setFooter(`${message.author.tag}`, message.author.avatarURL()))
+
+        let channel = message.mentions.channels.first();
+        let channel_find = message.guild.channels.cache.find(ch => ch.id == channel);
+        if (!channel) channel_find = message.channel;
+        if (!channel_find) return;
+        channel_find.updateOverwrite(message.guild.id, {
+            SEND_MESSAGES: true
+        });
+      message.lineReplyNoMention(new MessageEmbed()
+      .setColor("#FF0000")
+      .setDescription(`**🔓 - ${message.channel} Channel has Unlocked**`)
+      .setFooter(`${message.author.tag}`, message.author.avatarURL()))
+    }
+};
