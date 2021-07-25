@@ -13,6 +13,7 @@ module.exports = {
       .addField("Discord.js Version", `12.5.3`)
       .addField("Guilds", `${client.guilds.cache.size}`, true)
       .addField("Creator", `<@790233637580832788>`)
+      .addField("Helper", `<@690934381597949955>`)
       .setColor("#0d2943")
       .setFooter(`information about bot`);
       message.lineReplyNoMention(embed).catch(console.error);
