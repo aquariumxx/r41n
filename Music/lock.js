@@ -1,33 +1,36 @@
-const Discord = module.require("discord.js");
-
+const { MessageEmbed } = require("discord.js");
+const Discord = require("discord.js")
+const { lineReply } = require("discord-reply")
+const db = require('quick.db');
+const { MessageButton , MessageActionRow } = require
+ ("discord-buttons")
+ 
 module.exports = {
-   name: "lock",
-   aliases: ["l"],
-   cooldown: 5,
-   description: "Locks a Channel",
-   async execute(message, args) {
-   if (!message.member.hasPermission('MANAGE_SERVER', 'MANAGE_CHANNELS')) {
-   return message.channel.send("You don't have enough Permissions")
-   }
-   message.channel.overwritePermissions([
-     {
-        id: message.guild.id,
-        deny : ['SEND_MESSAGES'],
-     },
-    ],);
-   const embed = new Discord.MessageEmbed()
-   .setTitle("")
-   .setTimestamp()
-   .setThumbnail(message.author.avatarURL({dynamic: "true"}))
-   .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-   .setDescription(`
-🔒 Locked Channel
-Channel Name : <#${message.channel.id}>
-Locked By : <@${message.author.id}>
-Channel Status : Send Message
+    name: "lock",
+    cooldown: 5,
+    aliases: ["lock"],
+    usage: "lock [#channel]",
+    category: "admin",
+    description : "make everyone can't send messages is chat",
+    async execute(message, args, client) {
 
-`)
-   .setColor("#FF0000");
-   await message.channel.send(embed);
-}
-}
+if(!message.member.hasPermission("MANAGE_CHANNELS")) return message.lineReplyNoMention(
+new MessageEmbed()
+.setColor("#FF0000")
+.setDescription("**You Need `MANAGE_CHANNELS` Permission To Use This Command!**")
+.setFooter(`${message.author.tag}`, message.author.avatarURL()))
+        let channel = message.mentions.channels.first();
+        let channel_find = message.guild.channels.cache.find(ch => ch.id == channel);
+        if (!channel) channel_find = message.channel
+        if (!channel_find) return;
+        channel_find.updateOverwrite(message.guild.id, {
+            SEND_MESSAGES: false
+        });
+        message.lineReplyNoMention(new MessageEmbed()
+	    .setColor("#FF0000")
+	    .setDescription(`**:lock: - ${message.channel} Channel Has Locked**`)
+	    .setFooter(`${message.author.tag}`, message.author.avatarURL()))
+ 
+	
+    }
+};
