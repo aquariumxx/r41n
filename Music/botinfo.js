@@ -16,7 +16,7 @@ module.exports = {
       .addField("Guilds", `${client.guilds.cache.size}`, true)
       .addField("Creator", `<@790233637580832788>`)
       .addField("Helper", `<@690934381597949955>`)
-      .setColor("#0d2943")
+      .setColor("#FF0000")
       .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }));
       message.lineReplyNoMention(embed).catch(console.error);
   }
