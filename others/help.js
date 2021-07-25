@@ -1,4 +1,5 @@
-const { MessageEmbed } = require("discord.js"); 
+const { MessageEmbed } = require("discord.js");
+const { lineReply } = require("discord-reply");
 
 module.exports = {
   name: "help",
@@ -21,6 +22,6 @@ module.exports = {
     .addField("Backup Commands", `\`backup-create\`, \`backup-load\`, \`backup-info\``)
     helpEmbed.setTimestamp();
 
-    return message.channel.send(helpEmbed).catch(console.error);
+    message.lineReplyNoMention(helpEmbed).catch(console.error);
   }
 };
