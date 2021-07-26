@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const { MessageEmbed } = require("discord.js");
+const { lineReply } = require("discord-reply");
 
 module.exports = {
   name: "textpersian",
@@ -18,7 +19,7 @@ module.exports = {
 
     let result = Math.floor((Math.random() * replies.length));
 
-    message.channel.send(replies[result]).then(message => {
+    message.lineReplyNoMention(replies[result]).then(message => {
 			message.react('<a:emoji_3:865956590484848640>').then(r => {
 				message.react('<a:emoji_2:865956568738693172>');
            });
