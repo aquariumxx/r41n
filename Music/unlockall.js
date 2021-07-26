@@ -1,5 +1,7 @@
 const db = require("quick.db")
 const Discord = require("discord.js")
+const { lineReply } = require("discord-reply");
+
 module.exports = {
   name: "unlockall",
   aliases: [],
@@ -11,7 +13,7 @@ module.exports = {
     if (!message.member.hasPermission("MANAGE_GUILD"))
     {
        message.channel.send(
-        "You need `MANAGE GUILD` to configure the server settings!"
+        "**You need `MANAGE GUILD` to configure the server settings!**"
         
       );
 return;
@@ -25,7 +27,7 @@ return;
     }
       if(!content)
     {
-      message.channel.send(`**You didnt gave me an text or vc option e.g - ${prefix}serverunlock text/vc/all**`);
+      message.channel.send(`**You didnt gave me an text or vc option e.g - ${prefix}unlockall text/vc/all**`);
       return;
     }
     if (content.toLowerCase() === "text") 
@@ -38,9 +40,9 @@ if(ch.type == "text")
      id: message.guild.roles.everyone.id,
      allow: ['SEND_MESSAGES'],
   },
-], `${message.member.id} Told to unlock the server`);
+], `**${message.member.id} Told to unlock the server**`);
 }) 
-message.channel.send(`**Done i have unLocked the all text Channels which are in server**`)
+message.lineReplyNoMention(`**Done i have unLocked the all text Channels which are in server**`)
 }
 if (content.toLowerCase() === "vc") 
     {
@@ -54,7 +56,7 @@ if(ch.type == "voice")
   },
 ], `${message.member.id} Told to lock the server`);
 }) 
-message.channel.send(`**Done i have unLocked the all voice Channels which were in server**`)
+message.lineReplyNoMention(`**Done i have unLocked the all voice Channels which were in server**`)
     }
     if (content.toLowerCase() === "all") 
     {
@@ -67,7 +69,7 @@ message.channel.send(`**Done i have unLocked the all voice Channels which were i
   },
 ], `${message.member.id} Told to lock the server`);
 }) 
-message.channel.send(`**Done i have unLocked the all voice  AND TEXT Channels which were in server**`)
+message.lineReplyNoMention(`**Done i have unLocked the all voice  AND TEXT Channels which were in server**`)
     }
       if (content.toLowerCase() === "unhide") 
     {
@@ -80,7 +82,7 @@ message.channel.send(`**Done i have unLocked the all voice  AND TEXT Channels wh
   },
 ], `${message.member.id} Told to lock the server`);
 }) 
-message.channel.send(`**Done i have unhidden the all voice  AND TEXT Channels which were in server**`)
+message.lineReplyNoMention(`**Done i have unhidden the all voice  AND TEXT Channels which were in server**`)
     }
 }
 }
