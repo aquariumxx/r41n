@@ -1,5 +1,6 @@
 const db = require("quick.db");
 const Discord = require("discord.js")
+const { lineReply } = require("discord-reply");
 
 module.exports = {
   name: "lockall",
@@ -12,7 +13,7 @@ module.exports = {
     if (!message.member.hasPermission("MANAGE_GUILD"))
     {
       message.channel.send(
-        "You need `MANAGE GUILD` to configure the server settings!"
+        "**You need `MANAGE GUILD` to configure the server settings!**"
       )
       return;
       }
@@ -25,7 +26,7 @@ module.exports = {
     }
       if(!content)
     {
-      message.channel.send(`**You didnt gave me an text or vc option e.g - ${prefix}serverlock text/vc/all/hide**`);
+      message.channel.send(`**You didnt gave me an text or vc option e.g - ${prefix}lockall text/vc/all/hide**`);
       return;
     }
     if (content.toLowerCase() === "text") 
@@ -40,7 +41,7 @@ if(ch.type == "text")
   },
 ], `${message.member.id} Told to lock the server`);
 }) 
-message.channel.send(`**Done i have Locked the all text Channels which are in server**`)
+message.lineReplyNoMention(`**Done i have Locked the all text Channels which are in server**`)
 }
 if (content.toLowerCase() === "vc") 
     {
@@ -54,7 +55,7 @@ if(ch.type == "voice")
   },
 ], `${message.member.id} Told to lock the server`);
 }) 
-message.channel.send(`**Done i have Locked the all voice Channels which were in server**`)
+message.lineReplyNoMention(`**Done i have Locked the all voice Channels which were in server**`)
     }
      if (content.toLowerCase() === "all") 
     {
@@ -67,7 +68,7 @@ message.channel.send(`**Done i have Locked the all voice Channels which were in 
   },
 ], `${message.member.id} Told to lock the server`);
 }) 
-message.channel.send(`**Done i have Locked the all voice  AND TEXT Channels which were in server**`)
+message.lineReplyNoMention(`**Done i have Locked the all voice  AND TEXT Channels which were in server**`)
     }
        if (content.toLowerCase() === "hide") 
     {
@@ -78,9 +79,9 @@ message.channel.send(`**Done i have Locked the all voice  AND TEXT Channels whic
      id: message.guild.roles.everyone.id,
      deny: ['VIEW_CHANNEL'],
   },
-], `${message.member.id} Told to lock the server`);
+], `**${message.member.id} Told to lock the server**`);
 }) 
-message.channel.send(`Done i have hidden the all voice  AND TEXT Channels which were in server`)
+message.lineReplyNoMention(`**Done i have hidden the all voice  AND TEXT Channels which were in server**`)
     }
 
 }
