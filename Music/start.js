@@ -63,10 +63,10 @@ module.exports = {
             winners: "winner(s)",
             endedAt: "Ended at",
             units: {
-                seconds: "seconds",
-                minutes: "minutes",
-                hours: "hours",
-                days: "days",
+                seconds: "s",
+                minutes: "m",
+                hours: "h",
+                days: "d",
                 pluralS: false // Not needed, because units end with a S so it will automatically removed if the unit value is lower than 2
             }
         }
