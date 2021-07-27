@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const { lineReply } = require("discord-reply");
-const sakran = require('nekos.life');
-const neko = new sakran();
+const wolf = require('nekos.life');
+const neko = new wolf();
 
 module.exports = {
   name: `kiss`,
