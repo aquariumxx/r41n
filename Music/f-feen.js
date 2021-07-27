@@ -1,6 +1,7 @@
 const Discord = require("discord.js");
-const sakran = require('nekos.life');
-const neko = new sakran();
+const { lineReply } = require("discord-reply");
+const wolf = require('nekos.life');
+const neko = new wolf();
 
 module.exports = {
   name: `feed`,
@@ -21,9 +22,9 @@ module.exports = {
         .setTitle(user.username + " You have been feed! ")
         .setDescription((user.toString() + " got feed by " + message.author.toString()))
         .setImage(owo.url)
-        .setColor(`BLACK`)
+        .setColor(`#FF0000`)
         .setURL(owo.url);
-        message.channel.send(feedembed);
+        message.lineReplyNoMention(feedembed).catch(console.error);
 
 }
 
