@@ -1,7 +1,10 @@
 {
   "TOKEN": "",
   "PREFIX": ".",
+  "mongodb": "",
+  "database": "",
   "approveemoji": "",
   "denyemoji": "",
-  "erroremoji": ""
+  "erroremoji": "",
+  "mongourl": ""
 }
