@@ -1,6 +1,7 @@
 const Discord = require("discord.js");
-const sakran = require('nekos.life');
-const neko = new sakran();
+const { lineReply } = require("discord-reply");
+const wolf = require('nekos.life');
+const neko = new wolf();
 
 module.exports = {
   name: `pat`,
@@ -12,7 +13,7 @@ module.exports = {
 
     const user = message.mentions.users.first();
         if(!user)
-        return message.reply('Mention someone to pat');
+        return message.reply('**Mention someone to pat**');
 
         async function work() {
         let owo = (await neko.sfw.pat());
@@ -21,9 +22,9 @@ module.exports = {
         .setTitle(user.username + " You have been patted! ")
         .setDescription((user.toString() + " got patted by " + message.author.toString()))
         .setImage(owo.url)
-        .setColor(`BLACK`)
+        .setColor(`#FF0000`)
         .setURL(owo.url);
-        message.channel.send(kissembed);
+        message.lineReplyNoMention(patembed).catch(console.error);
 }
 
       work();
