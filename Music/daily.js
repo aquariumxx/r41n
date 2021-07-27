@@ -4,7 +4,7 @@ const ms = require("parse-ms");
 
 module.exports = {
         name: "daily",
-        aliases: ["coins-system", "DAILY", "Daily", "d", "D"],
+        aliases: ["coins-system"],
         category: "economy",
         description: "Gives You 200 per day",
         usage: " ",
