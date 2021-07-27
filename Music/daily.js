@@ -21,12 +21,12 @@ module.exports = {
             let time = ms(timeout - (Date.now() - daily));
 
             let timeEmbed = new MessageEmbed()
-                .setColor("#FF0000")
+                .setColor("GREEN")
                 .setDescription(`❌ You've already collected your daily reward\n\nCollect it again in ${time.hours}h ${time.minutes}m ${time.seconds}s `);
             message.channel.send(timeEmbed)
         } else {
             let moneyEmbed = new MessageEmbed()
-                .setColor("#FF0000")
+                .setColor("GREEN")
                 .setDescription(`✅ You've collected your daily reward of ${amount} coins`);
             message.channel.send(moneyEmbed)
             db.add(`money_${user.id}`, amount)
