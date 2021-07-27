@@ -1,4 +1,5 @@
 const Discord = require("discord.js");
+const { lineReply } = require("discord-reply");
 
 module.exports = {
   name: `8ball`,
@@ -12,7 +13,7 @@ module.exports = {
     let slaw = rand[Math.floor(Math.random()*rand.length)];
 	  message.channel.send(slaw) 
 
-    message.channel.send(embed);
+    message.lineReplyNoMention(embed).catch(console.error);
 
   }
 };
