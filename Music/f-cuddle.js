@@ -1,4 +1,5 @@
 const Discord = require("discord.js");
+const { lineReply } = require("discord-reply");
 const sakran = require('nekos.life');
 const neko = new sakran();
 
@@ -23,7 +24,7 @@ module.exports = {
         .setImage(owo.url)
         .setColor(`BLACK`)
         .setURL(owo.url);
-        message.channel.send(cuddleembed);
+        message.lineReplyNoMention(cuddleembed).catch(console.error);
 
 }
 
