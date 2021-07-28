@@ -1,4 +1,5 @@
 const Discord = require("discord.js");
+const { lineReply } = require("discord-reply");
 
 module.exports = {
   name: `iq`,
@@ -16,12 +17,12 @@ module.exports = {
     let Result = Math.floor(Math.random() * 101);
 
     let embed = new Discord.MessageEmbed()
-      .setColor("")
+      .setColor("#FF0000")
       .setTitle(`IQ Machine`)
       .setDescription(`${Member.user.username}:  Is ${Result}% IQ 🧠`)
     
 
-    message.channel.send(embed);
+    message.lineReplyNoMention(embed).catch(console.error);
 
   }
 };
