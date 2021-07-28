@@ -22,7 +22,7 @@ module.exports = {
 
 
         const embed = new Discord.MessageEmbed()
-            .setColor("")
+            .setColor("#FF0000")
             .setFooter(message.author.username, message.author.displayAvatarURL())
             .setTitle("**React to play Rock Paper Scissor**")
             
@@ -35,6 +35,7 @@ module.exports = {
         const result = await getResult(reacted, botChoice);
 
         embed
+            .setColor("#FF0000")
             .setTitle(`${result}`)
             .setDescription(`**${reacted} vs ${botChoice}**`);
 
