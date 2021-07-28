@@ -24,7 +24,7 @@ module.exports = {
         .setImage(owo.url)
         .setColor(`#FF0000`)
         .setURL(owo.url);
-        message.lineReplyNoMention(patembed).catch(console.error);
+        message.lineReplyNoMention(kissembed).catch(console.error);
 }
 
       work();
