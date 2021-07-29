@@ -16,7 +16,7 @@ module.exports = {
 
     let helpEmbed = new MessageEmbed()
     .setTitle("Reyna Invite")
-    .setDescription("**[Reyna](https://discord.com/api/oauth2/authorize?client_id=806840212608909344&permissions=8&scope=bot)**")
+    .setDescription("**[Reyna](https://i8.ae/iSM1r)**")
     .setFooter("Thank you for invited")
 
   
