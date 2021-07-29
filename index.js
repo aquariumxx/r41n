@@ -105,25 +105,6 @@ Type \`${prefix}help\` for the list of commands.`));
     message.channel.send(embed)
   }
 
-/////////////
-if(message.content.startsWith(`${prefix}status`)){
-    //define saymsg
-    const saymsg = message.content.slice(Number(prefix.length) + 5)
-    //define embed
-    const embed = new Discord.MessageEmbed()
-    .setColor("#FF0000")
-    .setFooter(message.author.username, message.author.displayAvatarURL)
-    .setDescription(`
-Servers: ${client.guilds.cache.size}
-Users: ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}
-Channels: ${client.channels.cache.size}
-`)
-
-    //send the Message
-    message.channel.send(embed)
-    message.react("<:emoji_4:815583574983966720>")
-  } 
-
 //An suuport announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}support`)){
     //define saymsg
