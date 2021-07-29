@@ -1,6 +1,8 @@
 const fs = require("fs");
 const Discord = require("discord.js");
 const chooseArr = ["✌", "✊", "✋"];
+const { lineReply } = require("discord-reply");
+
 function promptMessage(message, author, time, vaildReactions) {
     time *= 1000;
     for (const reaction of vaildReactions) message.react(reaction);
@@ -27,7 +29,7 @@ module.exports = {
             .setTitle("**React to play Rock Paper Scissor**")
             
             
-        const m = await message.channel.send(embed);
+        const m = await message.lineReplyNoMentionembed);
         const reacted = await promptMessage(m, message.author, 30, chooseArr);
 
         const botChoice = chooseArr[Math.floor(Math.random() * chooseArr.length)];
