@@ -141,28 +141,6 @@ Channels: ${client.channels.cache.size}
    message.react("<:emoji_4:815583574983966720>")
   } 
 
-//An cv announcement for everyone but no one knows so fine ^w^
-  if(message.content.startsWith(`${prefix}cv`)){
-    //define saymsg
-     if (!message.member.hasPermission("MANAGE_CHANNELS")) return;
-    if (!message.guild.member(client.user).hasPermission("MANAGE_CHANNELS"))
-      return;
-    const saymsg = message.content.slice(Number(prefix.length) + 5)
-    if (!message.member.hasPermission("MANAGE_CHANNELS")) return;
-    if (!message.guild.member(client.user).hasPermission("MANAGE_CHANNELS"))
-      return;
-    //define embed
-    const embed = new Discord.MessageEmbed()
-    .setColor("RANDOM")
-    .setAuthor(`${message.guild.name}`,message.guild.iconURL({ dynamic: true }))
-    .setDescription(saymsg)
-    .setTimestamp()
-    //delete the Command
-    message.delete({timeout: 300})
-    //send the Message
-    message.channel.send(embed)
-  } 
-
 //An code announcement for everyone but no one knows so fine ^w^
 if(message.content.startsWith(`${prefix}vote`)){
     //define saymsg
@@ -178,12 +156,6 @@ if(message.content.startsWith(`${prefix}vote`)){
     //send the Message
     message.channel.send(embed)
   }
-
-////////////
-client.on('ready', () => {
-var channel = client.channels.cache.get('862733355367923742');
-    if (channel) channel.join();
-});
 
 //command Handler DO NOT TOUCH
  const prefixRegex = new RegExp(`^(<@!?${client.user.id}>|${escapeRegex(prefix)})\\s*`);
