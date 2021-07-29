@@ -84,7 +84,7 @@ client.on(`message`, async (message) => {
     .setColor("#FF0000")
     .setDescription(`
 **Support Server - [Click Me](https://discord.gg/msAz8e4YTn)
-Bot Link - [Click Me](https://discord.com/api/oauth2/authorize?client_id=806840212608909344&permissions=8&scope=bot)**
+Bot Link - [Click Me](https://i8.ae/iSM1r)**
 `)
     .setTitle(`
 Join a voice channel and \`${prefix}play\` a song.
