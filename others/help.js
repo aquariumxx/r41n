@@ -21,7 +21,6 @@ module.exports = {
     .addField("Gif Commands", `\`boygif\`, \`girlgif\`, ‌\`couplegif\`, \`animegif\`, \`emojigif\`, \`animalgif\``)
     .addField("Banner Commands", `\`bboy\`, \`bgirl\`, ‌\`banime\``)
     .addField("Games Commands", `\`rps\`, \`iq\`, ‌\`howgay\`, \`8ball\`, \`rate\`, \`dicksize\``)
-    .addField("Backup Commands", `\`backup-create\`, \`backup-load\`, \`backup-info\``)
     helpEmbed.setTimestamp();
 
     message.lineReplyNoMention(helpEmbed).catch(console.error);
