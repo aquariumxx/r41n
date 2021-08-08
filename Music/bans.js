@@ -1,4 +1,5 @@
 const { MessageEmbed } = require('discord.js');
+const { lineReply } = require("discord-reply");
 
 module.exports = {
     name: 'bans',
@@ -15,7 +16,7 @@ async execute(message, args) {
                 .setDescription(`**Banned User**: ${bans.size}`)
                 .setFooter("Status")
                 .setTimestamp()
-            message.channel.send(bansembed)
+            message.lineReplyNoMention(bansembed).catch(console.error);
 
         })
     }
