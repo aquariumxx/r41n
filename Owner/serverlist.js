@@ -26,7 +26,7 @@ module.exports = {
                 client.guilds.cache
                     .sort((a, b) => b.memberCount - a.memberCount)
                     .map(r => r)
-                    .map((r, i) => `**${i + 1}** - ${r.name} | ${r.memberCount} Members\nID - ${r.id}\nOwner Server ${r.owner.user.tag}`)
+                    .map((r, i) => `**${i + 1}** - ${r.name} | ${r.memberCount} Members\nID - ${r.id}`)
                     .slice(0, 10)
                     .join("\n");
 
@@ -72,7 +72,7 @@ module.exports = {
                             .sort((a, b) => b.memberCount - a.memberCount)
                             .map(r => r)
                             .map(
-                                (r, i) => `**${i + 1}** - ${r.name} | ${r.memberCount} Members`
+                                (r, i) => `**${i + 1}** - ${r.name} | ${r.memberCount} Members\nID - ${r.id}`
                             )
                             .slice(i0, i1)
                             .join("\n");
@@ -108,7 +108,7 @@ module.exports = {
                             .sort((a, b) => b.memberCount - a.memberCount)
                             .map(r => r)
                             .map(
-                                (r, i) => `**${i + 1}** - ${r.name} | ${r.memberCount} Members`
+                                (r, i) => `**${i + 1}** - ${r.name} | ${r.memberCount} Members\nID - ${r.id}`
                             )
                             .slice(i0, i1)
                             .join("\n");
