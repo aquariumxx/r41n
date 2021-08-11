@@ -1,6 +1,6 @@
 const { Client, Message, MessageEmbed } = require('discord.js');
 let ownerid = "790233637580832788";
-let ownerid2 = "790233637580832788"
+let ownerid2 = "690934381597949955"
 
 
 module.exports = {
