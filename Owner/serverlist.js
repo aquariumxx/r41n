@@ -35,7 +35,7 @@ module.exports = {
                     message.author.tag,
                     message.author.displayAvatarURL({ dynamic: true })
                 )
-                .setColor("BLUE")
+                .setColor("#FF0000")
                 .setFooter(client.user.username)
                 .setTitle(`Page - ${page}/${Math.ceil(client.guilds.cache.size / 10)}`)
                 .setDescription(description);
