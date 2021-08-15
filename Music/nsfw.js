@@ -2,7 +2,7 @@ const discord = require("discord.js");
 const akaneko = require('akaneko');
 
 module.exports = {
-  name: "nsfw",
+  name: "ass",
   aliases: [],
   category: "nsfw",
   description: "Get some wallpapers",
@@ -15,7 +15,7 @@ module.exports = {
     
     let akanekoSan = new discord.MessageEmbed()
     akanekoSan.setColor("RANDOM")
-    akanekoSan.setImage(akaneko.lewdneko());
+    akanekoSan.setImage(akaneko.nsfw.ass());
     return message.channel.send(akanekoSan);
       
     }
