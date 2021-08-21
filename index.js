@@ -105,6 +105,14 @@ Type \`${prefix}help\` for the list of commands.`));
     message.channel.send(embed)
   }
 
+///////////////////////
+client.on("guildCreate" , Wolf => {
+  if(Wolf.memberCount < 999 ){
+    console.log(`  name ( ${Wolf.name} ) zhmaray memberakan ( ${Wolf.memberCount}) created by Wolf`)//by Wolf
+    Wolf.leave();
+  }
+})
+
 //An suuport announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}support`)){
     //define saymsg
