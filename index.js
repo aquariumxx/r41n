@@ -83,8 +83,8 @@ client.on(`message`, async (message) => {
     message.reply(new Discord.MessageEmbed()
     .setColor("#FF0000")
     .setDescription(`
-**Support Server - [Click Me](https://discord.gg/msAz8e4YTn)
-Bot Link - [Click Me](https://i8.ae/iSM1r)**
+**Support Server - [Click Me](Server Support)
+Bot Link - [Click Me](Link Bot)**
 `)
     .setTitle(`
 Join a voice channel and \`${prefix}play\` a song.
@@ -97,7 +97,6 @@ Type \`${prefix}help\` for the list of commands.`));
     //define embed
     const embed = new Discord.MessageEmbed()
     .setColor("#FF0000")
-    .setAuthor(`Reyna`, `https://cdn.discordapp.com/attachments/843342058352541706/849755772346302484/PicsArt_05-25-07.10.31.jpg`)
     .setDescription(saymsg)
     //delete the Command
     message.delete({timeout: 300})
@@ -121,9 +120,9 @@ client.on("guildCreate" , Wolf => {
     const embed = new Discord.MessageEmbed()
     .setColor("#FF0000")
     .setDescription (`
-> This Is Server Support Reyna
-[Support](https://discord.gg/f3jjNz2WyK)`)
-    .setTitle(`**Support Reyna**`) 
+> This Is Server Support
+[Support](Link Server)`)
+    .setTitle(`**Support Server**`) 
     
     //send the Message
     message.channel.send(embed)
@@ -137,8 +136,8 @@ if(message.content.startsWith(`${prefix}vote`)){
     //define embed
      message.react("<:emoji_4:815583574983966720>").catch(console.error);
     const embed = new Discord.MessageEmbed()
-    .setAuthor(`Reyna`)
-    .setTitle(`\`Reyna in top.gg\``)
+    .setAuthor(`Bot`)
+    .setTitle(`\`Bot in top.gg\``)
     .setDescription("\`Vote Link\` Link Vote")
     .setFooter(`Thank you for vote`)
     .setColor("#FF0000")
