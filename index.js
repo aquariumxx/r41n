@@ -137,9 +137,9 @@ if(message.content.startsWith(`${prefix}vote`)){
     //define embed
      message.react("<:emoji_4:815583574983966720>").catch(console.error);
     const embed = new Discord.MessageEmbed()
-    .setAuthor(`Reyna`, `https://cdn.discordapp.com/attachments/843342058352541706/849755772346302484/PicsArt_05-25-07.10.31.jpg`)
+    .setAuthor(`Reyna`)
     .setTitle(`\`Reyna in top.gg\``)
-    .setDescription("\`Vote Link\` https://top.gg/bot/806840212608909344/vote")
+    .setDescription("\`Vote Link\` Link Vote")
     .setFooter(`Thank you for vote`)
     .setColor("#FF0000")
     //send the Message
@@ -186,7 +186,7 @@ if(message.content.startsWith(`${prefix}vote`)){
 });
 
 client.on("guildCreate", guild => {
-  let channel = client.channels.cache.get("862698849147813948");
+  let channel = client.channels.cache.get("Id Channel");
   let embed = new MessageEmbed().setColor("#FF0000")
   .setAuthor(client.user.username, client.user.avatarURL())
   .setTitle( `✅ Join Server`)
@@ -199,7 +199,7 @@ client.on("guildCreate", guild => {
 });
 
 client.on("guildDelete", guild => {
-  let channel = client.channels.cache.get("862698849147813948");
+  let channel = client.channels.cache.get("Id Channel");
   let embed = new MessageEmbed()
   .setColor("#FF0000")
   .setAuthor(client.user.username, client.user.avatarURL())
