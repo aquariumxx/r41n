@@ -1,4 +1,3 @@
-
 const Discord = require("discord.js");
 const ownerid = ["790233637580832788"];
 
