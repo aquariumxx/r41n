@@ -1,1 +1,1 @@
-worker: node wolf.js
+worker: node index.js
