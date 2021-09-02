@@ -10,13 +10,13 @@ module.exports = {
   name: "invite",
   aliases: ["add"],
   cooldown: 8,
-  description: "**Invite Reyna**",
+  description: "**Invite**",
   execute(message) {
     let commands = message.client.commands.array();
 
     let helpEmbed = new MessageEmbed()
-    .setTitle("Reyna Invite")
-    .setDescription("**[Reyna](https://i8.ae/iSM1r)**")
+    .setTitle("Invite")
+    .setDescription("**[Invite Bot](Link Bot)**")
     .setFooter("Thank you for invited")
 
   
