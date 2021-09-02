@@ -1,1 +1,1 @@
-node wolf.js
+node index.js
