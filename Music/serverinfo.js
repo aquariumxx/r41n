@@ -15,7 +15,7 @@ module.exports = {
     let commands = message.client.commands.array();
 
     let helpEmbed = new MessageEmbed()
-    .setColor("#FF0000")
+    .setColor("#00DAFF")
     .setThumbnail(message.guild.iconURL({ dynamic: true }))
     .setAuthor(`${message.guild.name}`,message.guild.iconURL({ dynamic: true }))
     .addField('Owner Server :',`<@${message.guild.ownerID}>`,true)
@@ -25,7 +25,7 @@ module.exports = {
     .addField('Channels :',`${message.guild.channels.cache.size}`,true)
     .addField('Region :',`${message.guild.region}`,true)
     .addField('Roles :', `${message.guild.roles.cache.size}`, true)
-    .addField('Total Boost :',`${message.guild.premiumSubscriptionCount} Boost`,true)
+    .addField('Boosts :',`${message.guild.premiumSubscriptionCount} Boost`,true)
     .addField('Emojis :',`${message.guild.emojis.cache.size}`,true)
    helpEmbed
    message.react("<:emoji_4:815583574983966720>")
