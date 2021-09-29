@@ -8,19 +8,22 @@ const {
 
 module.exports = {
   name: "invite",
-  aliases: ["add"],
-  cooldown: 8,
+  aliases: ["add","inv"],
+  cooldown: 3,
   description: "**Invite**",
   execute(message) {
     let commands = message.client.commands.array();
 
-    let helpEmbed = new MessageEmbed()
-    .setTitle("Invite")
-    .setDescription("**[Invite Bot](Link Bot)**")
-    .setFooter("Thank you for invited")
+    let helpEmbed = new MessageEmbed()
+    .setThumbnail("https://media.discordapp.net/attachments/857669210285146112/892779923742285834/20210929_170621.jpg")
+    .setTimstamp()
+    .setAuthor("BlueLine","https://media.discordapp.net/attachments/857669210285146112/892779923742285834/20210929_170621.jpg","https://discord.gg/zFGGTuEmUD")
+    .addField("Invite Me", "[Click](https://discord.com/oauth2/authorize?client_id=678621744122167296&scope=bot%20applications.commands&permissions=8)")
+    .addField("Support", "[Click](https://discord.gg/zFGGTuEmUD)")
+
 
   
-   .setColor("#FF0000");
+   .setColor("#00DAFF");
    message.react("<:emoji_4:815583574983966720>")
     return message.channel.send(helpEmbed).catch(console.error);
 
