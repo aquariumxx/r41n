@@ -91,7 +91,7 @@ async execute(message, args, client) {
         //fires if not valid input
         varforfilter = 404;
         message.channel.send(new MessageEmbed()
-        .setColor("#FF0000")
+        .setColor("#00DAFF")
         .setTitle("Not a valid Filter, use one of those:")
         .setDescription(`
         \`bassboost\`
@@ -116,8 +116,8 @@ async execute(message, args, client) {
       const song = queue.songs[0];
       //play the collected song song, message, client, filters
       message.channel.send(new MessageEmbed()
-      .setColor("#FF0000")
-      .setAuthor("Applying: " + args[0], "https://cdn.discordapp.com/emojis/769935094285860894.gif")).then(msg =>{
+      .setColor("#00DAFF")
+      .setAuthor("Applying: " + args[0], "")).then(msg =>{
         msg.delete({timeout: 2000});
       })
       play(song, message, client, choice);
