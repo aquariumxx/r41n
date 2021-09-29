@@ -6,7 +6,7 @@ const db = require('quick.db');
 const { TOKEN, PREFIX, AVATARURL, BOTNAME, } = require(`./config.json`);
 const figlet = require("figlet");
 const client = new Client({ disableMentions: `` , partials: ['MESSAGE', 'CHANNEL', 'REACTION'] });
-client.login('');
+client.login('Njc4NjIxNzQ0MTIyMTY3Mjk2.Xkldvw.rmtiKN_pYZFLlkyCwu6sSsFO4uo');
 client.commands = new Collection();
 client.setMaxListeners(0);
 client.prefix = PREFIX;
@@ -37,7 +37,7 @@ client.on(`ready`, () => {
       });
       
 
-    client.user.setActivity(`${PREFIX}help ${client.guilds.cache.size} Server`, { type: "COMPETING"});
+    client.user.setActivity(`Comming soon | ${client.guilds.cache.size} Guilds`, { type: "COMPETING"});
 
     
    
@@ -166,8 +166,8 @@ if(message.content.startsWith(`${prefix}vote`)){
    if (now < expirationTime) {
      const timeLeft = (expirationTime - now) / 1000;
      return message.reply(
-      new MessageEmbed().setColor("#FF0000")
-      .setTitle(`<:emoji_4:815583574983966720> \`Please wait ${timeLeft.toFixed(1)} seconds before reusing the ${prefix}${command.name}\`!`)    
+      new MessageEmbed().setColor("#00FF09")
+      .setTitle(`Please wait For ${timeLeft.toFixed(1)} Seconds!`)    
      );
    }
  }
@@ -177,16 +177,16 @@ if(message.content.startsWith(`${prefix}vote`)){
    command.execute(message, args, client);
  } catch (error) {
    console.error(error);
-   message.reply( new MessageEmbed().setColor("#FF0000")
-   .setTitle(`<:emoji_4:815583574983966720> There was an error executing that command.`)).catch(console.error);
+   message.reply( new MessageEmbed().setColor("#00FF09")
+   .setTitle(`There was an error executing that command.`)).catch(console.error);
  }
 
 
 });
 
 client.on("guildCreate", guild => {
-  let channel = client.channels.cache.get("Id Channel");
-  let embed = new MessageEmbed().setColor("#FF0000")
+  let channel = client.channels.cache.get("892789124602425354");
+  let embed = new MessageEmbed().setColor("#00FF09")
   .setAuthor(client.user.username, client.user.avatarURL())
   .setTitle( `✅ Join Server`)
   .addField(" **Server Name**", `${guild.name}`)
@@ -198,7 +198,7 @@ client.on("guildCreate", guild => {
 });
 
 client.on("guildDelete", guild => {
-  let channel = client.channels.cache.get("Id Channel");
+  let channel = client.channels.cache.get("892789124602425354");
   let embed = new MessageEmbed()
   .setColor("#FF0000")
   .setAuthor(client.user.username, client.user.avatarURL())
