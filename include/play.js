@@ -136,7 +136,7 @@ module.exports = {
         .setTitle(""+song.title)
         .setURL(song.url)
         .setColor("#00DAFF")
-        .setThumbnail(`https://cdn.discordapp.com/attachments/796122909533405195/846782460943532042/PicsArt_05-25-07.10.31.jpg`)
+        .setThumbnail(``)
         .setImage(thumb)
         .addField("Requested by", `\`${message.author.username}#${message.author.discriminator}\``, true)
         .addField("Duration", `\`${song.duration} Minutes\``, true)
