@@ -112,8 +112,8 @@ catch {
         return attentionembed(message, error);
       }
     }
-    let thumb = "https://cdn.discordapp.com/attachments/796122909533405195/846782460943532042/PicsArt_05-25-07.10.31.jpg"
-    if (song.thumbnail === undefined) thumb = "https://cdn.discordapp.com/attachments/796122909533405195/846782460943532042/PicsArt_05-25-07.10.31.jpg";
+    let thumb = ""
+    if (song.thumbnail === undefined) thumb = "";
     else thumb = song.thumbnail.url;
     if (serverQueue) {
       let estimatedtime = Number(0);
@@ -138,7 +138,7 @@ serverQueue.songs.push(song);
         .setTitle(""+song.title)
         .setURL(song.url)
         .setColor("#00DAFF")
-        .setThumbnail(`https://media.discordapp.net/attachments/857669210285146112/892779923742285834/20210929_170621.jpg`)
+        .setThumbnail(``)
         .setImage(thumb)
         .addField("Requested by", `\`${message.author.username}#${message.author.discriminator}\``, true)
         .addField("Duration", `\`${song.duration} Minutes\``, true)
