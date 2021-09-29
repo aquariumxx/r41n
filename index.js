@@ -81,14 +81,11 @@ client.on(`message`, async (message) => {
   //information message when the bot has been tagged
   if(message.content.includes(client.user.id)) {
     message.reply(new Discord.MessageEmbed()
-    .setColor("#FF0000")
-    .setDescription(`
-**Support Server - [Click Me](Server Support)
-Bot Link - [Click Me](Link Bot)**
-`)
-    .setTitle(`
-Join a voice channel and \`${prefix}play\` a song.
-Type \`${prefix}help\` for the list of commands.`));
+    .setColor("#00DAFF")
+    .setDescription(`Hey, My Current Prefix is u?`)
+
+
+
   } 
   //An embed announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}embed`)){
@@ -96,7 +93,7 @@ Type \`${prefix}help\` for the list of commands.`));
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("#FF0000")
+    .setColor("#00DAFF")
     .setDescription(saymsg)
     //delete the Command
     message.delete({timeout: 300})
@@ -118,11 +115,13 @@ client.on("guildCreate" , Wolf => {
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("#FF0000")
+    .setColor("#00DAFF")
+    .setAuthor("BlueLine","https://media.discordapp.net/attachments/857669210285146112/892779923742285834/20210929_170621.jpg","https://discord.gg/zFGGTuEmUD")
     .setDescription (`
-> This Is Server Support
-[Support](Link Server)`)
-    .setTitle(`**Support Server**`) 
+Support Links
+[Support](https://discord.gg/zFGGTuEmUD)
+[Invite](https://discord.com/oauth2/authorize?client_id=678621744122167296&scope=bot%20applications.commands&permissions=8)`)
+
     
     //send the Message
     message.channel.send(embed)
@@ -130,7 +129,7 @@ client.on("guildCreate" , Wolf => {
   } 
 
 //An code announcement for everyone but no one knows so fine ^w^
-if(message.content.startsWith(`${prefix}vote`)){
+if(message.content.startsWith(`${prefix}mamadana`)){
     //define saymsg
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
@@ -166,8 +165,8 @@ if(message.content.startsWith(`${prefix}vote`)){
    if (now < expirationTime) {
      const timeLeft = (expirationTime - now) / 1000;
      return message.reply(
-      new MessageEmbed().setColor("#FF0000")
-      .setTitle(`<:emoji_4:815583574983966720> \`Please wait ${timeLeft.toFixed(1)} seconds before reusing the ${prefix}${command.name}\`!`)    
+      new MessageEmbed().setColor("#00DAFF")
+      .setTitle(`**Please wait For ${timeLeft.toFixed(1)} seconds!**`)    
      );
    }
  }
@@ -178,7 +177,7 @@ if(message.content.startsWith(`${prefix}vote`)){
  } catch (error) {
    console.error(error);
    message.reply( new MessageEmbed().setColor("#FF0000")
-   .setTitle(`<:emoji_4:815583574983966720> There was an error executing that command.`)).catch(console.error);
+   .setTitle(`There was an error executing that command.`)).catch(console.error);
  }
 
 
