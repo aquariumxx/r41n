@@ -9,7 +9,7 @@ module.exports = {
   name: `uptime`,
   description: "(ue)Gives you the uptime of the Bot",
   aliases: ["ue"],
-  cooldown: 5,
+  cooldown: 3,
   edesc: "With that you can see how long the Bot has been running nonstop",
   execute(message, args, client) {
     let days = Math.floor(client.uptime / 86400000);
@@ -18,7 +18,7 @@ module.exports = {
     let seconds = Math.floor(client.uptime / 1000) % 60;
     //react with approve emoji
     message.react("<:emoji_4:815583574983966720>");
-    return message.channel.send(new MessageEmbed().setColor("#FF0000").setTitle(`<:emoji_4:815583574983966720>\`Uptime \`\n\n\`${days}d\` \`${hours}h\` \`${minutes}m\` \`${seconds}s\n\``));
+    return message.channel.send(new MessageEmbed().setColor("#00DAFF").setTitle(`\`Uptime \`\n\n\`${days}d\` \`${hours}h\` \`${minutes}m\` \`${seconds}s\n\``));
 
 
   }
