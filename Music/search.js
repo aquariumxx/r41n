@@ -40,13 +40,13 @@ async execute(message,args,client) {
     const search = args.join(" ");
     //define a temporary Loading Embed
     let temEmbed = new MessageEmbed()
-    .setAuthor("Searching...", "https://cdn.discordapp.com/emojis/757632044632375386.gif?v=1")
-    .setColor("#FF0000")
+    .setAuthor("🔍 Searching")
+    .setColor("#00DAFF")
     //define the Result Embed
     let resultsEmbed = new MessageEmbed()
-      .setTitle("<:emoji_3:815583549326360635> Results for: ")
+      .setTitle("Results for: ")
       .setDescription(`\`${search}\``)
-      .setColor("#FF0000")
+      .setColor("#00DAFF")
       .setFooter("Response with your favorite number", client.user.displayAvatarURL() )
     //try to find top 5 results
     try {
