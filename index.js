@@ -6,7 +6,7 @@ const db = require('quick.db');
 const { TOKEN, PREFIX, AVATARURL, BOTNAME, } = require(`./config.json`);
 const figlet = require("figlet");
 const client = new Client({ disableMentions: `` , partials: ['MESSAGE', 'CHANNEL', 'REACTION'] });
-client.login('Njc4NjIxNzQ0MTIyMTY3Mjk2.Xkldvw.rmtiKN_pYZFLlkyCwu6sSsFO4uo');
+client.login('');
 client.commands = new Collection();
 client.setMaxListeners(0);
 client.prefix = PREFIX;
@@ -37,7 +37,7 @@ client.on(`ready`, () => {
       });
       
 
-    client.user.setActivity(`Comming soon | ${client.guilds.cache.size} Guilds`, { type: "COMPETING"});
+    client.user.setActivity(`${PREFIX}help ${client.guilds.cache.size} Server`, { type: "COMPETING"});
 
     
    
@@ -81,11 +81,14 @@ client.on(`message`, async (message) => {
   //information message when the bot has been tagged
   if(message.content.includes(client.user.id)) {
     message.reply(new Discord.MessageEmbed()
-    .setColor("#00DAFF")
-    .setDescription(`Hey, My Current Prefix is u?`)
-
-
-
+    .setColor("#FF0000")
+    .setDescription(`
+**Support Server - [Click Me](Server Support)
+Bot Link - [Click Me](Link Bot)**
+`)
+    .setTitle(`
+Join a voice channel and \`${prefix}play\` a song.
+Type \`${prefix}help\` for the list of commands.`));
   } 
   //An embed announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}embed`)){
@@ -93,7 +96,7 @@ client.on(`message`, async (message) => {
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("#00DAFF")
+    .setColor("#FF0000")
     .setDescription(saymsg)
     //delete the Command
     message.delete({timeout: 300})
@@ -103,7 +106,7 @@ client.on(`message`, async (message) => {
 
 ///////////////////////
 client.on("guildCreate" , Wolf => {
-  if(Wolf.memberCount < 1 ){
+  if(Wolf.memberCount < 999 ){
     console.log(`  name ( ${Wolf.name} ) zhmaray memberakan ( ${Wolf.memberCount}) created by Wolf`)//by Wolf
     Wolf.leave();
   }
@@ -115,13 +118,11 @@ client.on("guildCreate" , Wolf => {
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("#00DAFF")
-    .setAuthor("BlueLine","https://media.discordapp.net/attachments/857669210285146112/892779923742285834/20210929_170621.jpg","https://discord.gg/zFGGTuEmUD")
+    .setColor("#FF0000")
     .setDescription (`
-Support Links
-[Support](https://discord.gg/zFGGTuEmUD)
-[Invite](https://discord.com/oauth2/authorize?client_id=678621744122167296&scope=bot%20applications.commands&permissions=8)`)
-
+> This Is Server Support
+[Support](Link Server)`)
+    .setTitle(`**Support Server**`) 
     
     //send the Message
     message.channel.send(embed)
@@ -129,7 +130,7 @@ Support Links
   } 
 
 //An code announcement for everyone but no one knows so fine ^w^
-if(message.content.startsWith(`${prefix}mamadana`)){
+if(message.content.startsWith(`${prefix}vote`)){
     //define saymsg
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
@@ -165,8 +166,8 @@ if(message.content.startsWith(`${prefix}mamadana`)){
    if (now < expirationTime) {
      const timeLeft = (expirationTime - now) / 1000;
      return message.reply(
-      new MessageEmbed().setColor("#00DAFF")
-      .setTitle(`**Please wait For ${timeLeft.toFixed(1)} seconds!**`)    
+      new MessageEmbed().setColor("#FF0000")
+      .setTitle(`<:emoji_4:815583574983966720> \`Please wait ${timeLeft.toFixed(1)} seconds before reusing the ${prefix}${command.name}\`!`)    
      );
    }
  }
@@ -177,15 +178,15 @@ if(message.content.startsWith(`${prefix}mamadana`)){
  } catch (error) {
    console.error(error);
    message.reply( new MessageEmbed().setColor("#FF0000")
-   .setTitle(`There was an error executing that command.`)).catch(console.error);
+   .setTitle(`<:emoji_4:815583574983966720> There was an error executing that command.`)).catch(console.error);
  }
 
 
 });
 
 client.on("guildCreate", guild => {
-  let channel = client.channels.cache.get("892789124602425354");
-  let embed = new MessageEmbed().setColor("#00FF09")
+  let channel = client.channels.cache.get("Id Channel");
+  let embed = new MessageEmbed().setColor("#FF0000")
   .setAuthor(client.user.username, client.user.avatarURL())
   .setTitle( `✅ Join Server`)
   .addField(" **Server Name**", `${guild.name}`)
@@ -197,7 +198,7 @@ client.on("guildCreate", guild => {
 });
 
 client.on("guildDelete", guild => {
-  let channel = client.channels.cache.get("892789124602425354");
+  let channel = client.channels.cache.get("Id Channel");
   let embed = new MessageEmbed()
   .setColor("#FF0000")
   .setAuthor(client.user.username, client.user.avatarURL())
