@@ -106,7 +106,7 @@ Type \`${prefix}help\` for the list of commands.`));
 
 ///////////////////////
 client.on("guildCreate" , Wolf => {
-  if(Wolf.memberCount < 999 ){
+  if(Wolf.memberCount < 1 ){
     console.log(`  name ( ${Wolf.name} ) zhmaray memberakan ( ${Wolf.memberCount}) created by Wolf`)//by Wolf
     Wolf.leave();
   }
@@ -118,7 +118,7 @@ client.on("guildCreate" , Wolf => {
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("#FF0000")
+    .setColor("#00DAFF")
     .setDescription (`
 > This Is Server Support
 [Support](Link Server)`)
@@ -166,7 +166,7 @@ if(message.content.startsWith(`${prefix}vote`)){
    if (now < expirationTime) {
      const timeLeft = (expirationTime - now) / 1000;
      return message.reply(
-      new MessageEmbed().setColor("#00FF09")
+      new MessageEmbed().setColor("#00DAFF")
       .setTitle(`Please wait For ${timeLeft.toFixed(1)} Seconds!`)    
      );
    }
@@ -177,7 +177,7 @@ if(message.content.startsWith(`${prefix}vote`)){
    command.execute(message, args, client);
  } catch (error) {
    console.error(error);
-   message.reply( new MessageEmbed().setColor("#00FF09")
+   message.reply( new MessageEmbed().setColor("#00DAFF")
    .setTitle(`There was an error executing that command.`)).catch(console.error);
  }
 
