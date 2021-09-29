@@ -26,7 +26,7 @@ module.exports = {
             SEND_MESSAGES: true
         });
       message.lineReplyNoMention(new MessageEmbed()
-      .setColor("#FF0000")
+      .setColor("#00DAFF")
       .setDescription(`**🔓 - ${message.channel} Channel has Unlocked**`)
       .setFooter(`${message.author.tag}`, message.author.avatarURL()))
     }
