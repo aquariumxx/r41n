@@ -8,7 +8,7 @@ module.exports = {
   async execute(message, args, client) {
     let embed = new discord.MessageEmbed()
       .setAuthor("BlueLine","https://media.discordapp.net/attachments/857669210285146112/892779923742285834/20210929_170621.jpg","https://discord.gg/zFGGTuEmUD")
-      .addField("Name", `<@${client.user.id}>`)
+      .addField("Name", `BlueLine Music#5456`)
       .addField("ID", ` ${client.user.id} `, true)
 
       .addField("Version", `12.5.3`)
