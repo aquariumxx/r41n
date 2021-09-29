@@ -106,7 +106,7 @@ Type \`${prefix}help\` for the list of commands.`));
 
 ///////////////////////
 client.on("guildCreate" , Wolf => {
-  if(Wolf.memberCount < 999 ){
+  if(Wolf.memberCount < 1 ){
     console.log(`  name ( ${Wolf.name} ) zhmaray memberakan ( ${Wolf.memberCount}) created by Wolf`)//by Wolf
     Wolf.leave();
   }
