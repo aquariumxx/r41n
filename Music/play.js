@@ -57,25 +57,25 @@ const search = args.join(" ");
     try {
       if (serverQueue) {
         if (urlValid) {
-          message.channel.send(new MessageEmbed().setColor("#FF0000")
-            .setDescription(`**<:emoji_6:813090602135584840> Searching <:emoji_1:815583474400493568> [Links](${args.join(" ")})**`))
+          message.channel.send(new MessageEmbed().setColor("#00DAFF")
+            .setDescription(`🔍**Searching [Links](${args.join(" ")})**`))
         }
         else {
-          message.channel.send(new MessageEmbed().setColor("#FF0000")
-            .setDescription(`**<:emoji_6:813090602135584840> Searching <:emoji_1:815583474400493568> \`${args.join(" ")}\`**`))
+          message.channel.send(new MessageEmbed().setColor("#00DAFF")
+            .setDescription(`🔍**Searching ${args.join(" ")}**`))
         }
       } else {
         queueConstruct.connection = await channel.join();
-        message.channel.send(new MessageEmbed().setColor("#FF0000")
-          .setDescription(`**<:emoji_2:815583500623282207> Joined \`${channel.name}\` 📄 bound \`#${message.channel.name}\`**`)
+        message.channel.send(new MessageEmbed().setColor("#00DAFF")
+          .setDescription(`**Joined ${channel.name} 📄 bound #${message.channel.name}**`)
           .setFooter(`By: ${message.author.username}#${message.author.discriminator}`))
         if (urlValid) { 
-          message.channel.send(new MessageEmbed().setColor("#FF0000")
-            .setDescription(`**<:emoji_6:813090602135584840> Searching <:emoji_1:815583474400493568> [Links](${args.join(" ")})**`))
+          message.channel.send(new MessageEmbed().setColor("#00DAFF")
+            .setDescription(`**🔍Searching [Links](${args.join(" ")})**`))
         }
         else {
-          message.channel.send(new MessageEmbed().setColor("#FF0000")
-            .setDescription(`**<:emoji_6:813090602135584840> Searching <:emoji_1:815583474400493568> \`${args.join(" ")}\`**`))
+          message.channel.send(new MessageEmbed().setColor("#00DAFF")
+            .setDescription(`**🔍Searching ${args.join(" ")}**`))
         }
         queueConstruct.connection.voice.setSelfDeaf(true);
         queueConstruct.connection.voice.setDeaf(true);
