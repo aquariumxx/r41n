@@ -2,7 +2,7 @@ const { MessageEmbed } = require('discord.js');
 const { BOT_OWNER_ID,BOT_ID,SERVER_INVITE,EMOJI_DONE,EMOJI_ERROR} = require("../config.json");
 module.exports = {
     name: "userinfo",
-    aliases: ["u", "U"],
+    aliases: ["u", "U","user"],
     cooldown: 5,
     category: "extra",
     async execute(message, args) {
