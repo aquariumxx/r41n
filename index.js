@@ -81,14 +81,11 @@ client.on(`message`, async (message) => {
   //information message when the bot has been tagged
   if(message.content.includes(client.user.id)) {
     message.reply(new Discord.MessageEmbed()
-    .setColor("#FF0000")
-    .setDescription(`
-**Support Server - [Click Me](Server Support)
-Bot Link - [Click Me](Link Bot)**
-`)
-    .setTitle(`
-Join a voice channel and \`${prefix}play\` a song.
-Type \`${prefix}help\` for the list of commands.`));
+    .setColor("#00DAFF")
+    .setDescription("")
+    .setTitle(`Hey, My Current Prefix is u?
+
+\``));
   } 
   //An embed announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}embed`)){
@@ -96,7 +93,7 @@ Type \`${prefix}help\` for the list of commands.`));
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("#FF0000")
+    .setColor("#00DAFF")
     .setDescription(saymsg)
     //delete the Command
     message.delete({timeout: 300})
