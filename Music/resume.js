@@ -33,8 +33,8 @@ execute(message) {
       //resume the Bot
       queue.connection.dispatcher.resume();
       //Create approve embed
-      const playembed = new MessageEmbed().setColor("#00DAFF")
-      .setAuthor(`⏯️ ${message.author.username} resumed the music!`, "")
+      const playembed = new MessageEmbed().setColor("#FF0000")
+      .setAuthor(`${message.author.username} resumed the music!`, "https://cdn.discordapp.com/emojis/769912238236106793.png")
       //send the approve
       return queue.textChannel.send(playembed).catch(console.error);
     }
