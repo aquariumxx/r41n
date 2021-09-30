@@ -52,8 +52,8 @@ execute(message, args) {
     //Send approve
     queue.textChannel.send(
       new MessageEmbed()
-        .setColor("#FF0000")
-        .setAuthor(`${message.author.username}#${message.author.discriminator} skipped ${args[0]} songs`, "https://cdn.discordapp.com/emojis/769915194444480542.png")
+        .setColor("#00DAFF")
+        .setAuthor(`⏯️ ${message.author.username}#${message.author.discriminator} skipped ${args[0]} songs`, "")
     ).catch(console.error);
   }
 };
