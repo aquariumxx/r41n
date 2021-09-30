@@ -16,7 +16,7 @@ module.exports = {
 
 if(!message.member.hasPermission("MANAGE_CHANNELS")) return message.lineReplyNoMention(
 new MessageEmbed()
-.setColor("#FF0000")
+.setColor("#00DAFF")
 .setDescription("**You Need `MANAGE_CHANNELS` Permission To Use This Command!**")
 .setFooter(`${message.author.tag}`, message.author.avatarURL()))
         let channel = message.mentions.channels.first();
@@ -27,7 +27,7 @@ new MessageEmbed()
             SEND_MESSAGES: false
         });
         message.lineReplyNoMention(new MessageEmbed()
-	    .setColor("#FF0000")
+	    .setColor("#00DAFF")
 	    .setDescription(`**:lock: - ${message.channel} Channel Has Locked**`)
 	    .setFooter(`${message.author.tag}`, message.author.avatarURL()))
  
