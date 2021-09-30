@@ -34,8 +34,8 @@ execute(message, args) {
     message.react("<:emoji_4:815583574983966720>")
     //send approve
     queue.textChannel.send(new MessageEmbed()
-    .setDescription(`<:emoji_4:815583574983966720> ${message.author} removed **${song[0].title}** from the Queue`)
-    .setColor("#FF0000")
+    .setDescription(`${message.author} removed **${song[0].title}** from the Queue`)
+    .setColor("#00DAFF")
     );
   }
 };
