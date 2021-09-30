@@ -117,9 +117,10 @@ client.on("guildCreate" , Wolf => {
     const embed = new Discord.MessageEmbed()
     .setColor("#00DAFF")
     .setDescription (`
-> This Is Server Support
-[Support](Link Server)`)
-    .setTitle(`**Support Server**`) 
+[Invite](https://discord.com/oauth2/authorize?client_id=678621744122167296&scope=bot%20applications.commands&permissions=8)
+[Support](https://discord.gg/zFGGTuEmUD)`)
+    .setTitle(``) 
+    .setAuthor("BlueLine","https://discord.com/oauth2/authorize?client_id=678621744122167296&scope=bot%20applications.commands&permissions=8","https://discord.gg/zFGGTuEmUD")
     
     //send the Message
     message.channel.send(embed)
@@ -134,7 +135,7 @@ if(message.content.startsWith(`${prefix}vote`)){
      message.react("<:emoji_4:815583574983966720>").catch(console.error);
     const embed = new Discord.MessageEmbed()
     .setAuthor(`Bot`)
-    .setTitle(`\`Bot in top.gg\``)
+    .setTitle(``)
     .setDescription("\`Vote Link\` Link Vote")
     .setFooter(`Thank you for vote`)
     .setColor("#FF0000")
