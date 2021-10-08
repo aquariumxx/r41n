@@ -14,7 +14,7 @@ module.exports = {
       .addField("Version", `12.5.3`)
       .addField('Ping' , `${client.ws.ping}` , true)
       .addField("Guilds", `${client.guilds.cache.size}`, true)
-      .addField("Developer", `UnKnown#0069`)
+      .addField("Developer", `UnKnown#4354`)
       .setColor("#00DAFF")
       .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }));
       message.lineReplyNoMention(embed).catch(console.error);
