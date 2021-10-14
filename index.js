@@ -6,7 +6,7 @@ const db = require('quick.db');
 const { TOKEN, PREFIX, AVATARURL, BOTNAME, } = require(`./config.json`);
 const figlet = require("figlet");
 const client = new Client({ disableMentions: `` , partials: ['MESSAGE', 'CHANNEL', 'REACTION'] });
-client.login('Njc4NjIxNzQ0MTIyMTY3Mjk2.Xkldvw.A3hp2IhtMO5PPfKxed14jsTLLgg');
+client.login('NzEyNDE0MzM1NzI4NjE1NDU0.XsRNjQ.iNNRQN5Ln_rfgK4IcLekmMti1ZM');
 client.commands = new Collection();
 client.setMaxListeners(0);
 client.prefix = PREFIX;
@@ -37,7 +37,7 @@ client.on(`ready`, () => {
       });
       
 
-    client.user.setActivity(`u?help | ${client.guilds.cache.size} Guilds`, { type: "WATCHING"});
+    client.user.setActivity(`u!help | ${client.guilds.cache.size} Guilds`, { type: "WATCHING"});
 
     
    
