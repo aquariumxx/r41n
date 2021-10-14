@@ -8,7 +8,7 @@ module.exports = {
   usage: "status",
   async execute(message, args, client) {
     const embed = new Discord.MessageEmbed()
-        .setColor("#00DAFF")
+        .setColor("#002EFF")
         .setAuthor("BlueLine","https://media.discordapp.net/attachments/857669210285146112/898197823026262016/BlueLineMusic.jpg")
         .setThumbnail("https://media.discordapp.net/attachments/857669210285146112/898197823026262016/BlueLineMusic.jpg")
         .addField("• Guilds", `${client.guilds.cache.size}`, true)
