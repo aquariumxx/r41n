@@ -35,7 +35,7 @@ execute(message, args) {
     //if args is not a number return error
     if (isNaN(args[0])) return attentionembed(message,"That's not a Number between **0 & 200**");
     //if args is not a Number between 150 and 0 return error
-    if (parseInt(args[0]) < 0 || parseInt(args[0]) > 150)
+    if (parseInt(args[0]) < 0 || parseInt(args[0]) > 1000)
       return attentionembed(message,"That's not a Number between **0/150**");
     //set queue volume to args
     queue.volume = args[0];
