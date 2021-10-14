@@ -57,24 +57,24 @@ const search = args.join(" ");
     try {
       if (serverQueue) {
         if (urlValid) {
-          message.channel.send(new MessageEmbed().setColor("#00DAFF")
+          message.channel.send(new MessageEmbed().setColor("#002EFF")
             .setDescription(`🔍**Searching [Links](${args.join(" ")})**`))
         }
         else {
-          message.channel.send(new MessageEmbed().setColor("#00DAFF")
+          message.channel.send(new MessageEmbed().setColor("#002EFF")
             .setDescription(`🔍**Searching ${args.join(" ")}**`))
         }
       } else {
         queueConstruct.connection = await channel.join();
-        message.channel.send(new MessageEmbed().setColor("#00DAFF")
+        message.channel.send(new MessageEmbed().setColor("#002EFF")
           .setDescription(`**Joined ${channel.name} 📄 bound #${message.channel.name}**`)
           .setFooter(`By: ${message.author.username}#${message.author.discriminator}`))
         if (urlValid) { 
-          message.channel.send(new MessageEmbed().setColor("#00DAFF")
+          message.channel.send(new MessageEmbed().setColor("#002EFF")
             .setDescription(`**🔍Searching [Links](${args.join(" ")})**`))
         }
         else {
-          message.channel.send(new MessageEmbed().setColor("#00DAFF")
+          message.channel.send(new MessageEmbed().setColor("#002EFF")
             .setDescription(`**🔍Searching ${args.join(" ")}**`))
         }
         queueConstruct.connection.voice.setSelfDeaf(true);
@@ -137,13 +137,13 @@ serverQueue.songs.push(song);
       const newsong = new MessageEmbed()
         .setTitle(""+song.title)
         .setURL(song.url)
-        .setColor("#00DAFF")
+        .setColor("#002EFF")
         .setThumbnail(``)
         .setImage(thumb)
-        .addField("Requested by", `\`${message.author.username}#${message.author.discriminator}\``, true)
-        .addField("Duration", `\`${song.duration} Minutes\``, true)
-        .addField("Volume", `\`100\``, true)
-        .addField("Position in queue:", `**\`${serverQueue.songs.length - 1}\`**`, true)
+        .addField("Requested by", `${message.author.username}#${message.author.discriminator}`, true)
+        .addField("Duration", `${song.duration} Minutes`, true)
+        .addField("Volume", `100`, true)
+        .addField("Position in queue:", `**${serverQueue.songs.length - 1}**`, true)
         return serverQueue.textChannel
         .send(newsong)
         .catch(console.error);
