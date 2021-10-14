@@ -20,7 +20,7 @@ module.exports = {
     if (!song) {
       queue.channel.leave();
       message.client.queue.delete(message.guild.id);
-      const endembed = new MessageEmbed().setColor("#00DAFF")
+      const endembed = new MessageEmbed().setColor("#002EFF")
         .setAuthor(`▶️ Music Queue ended.`)
       return queue.textChannel.send(endembed).catch(console.error);
     }
@@ -135,12 +135,12 @@ module.exports = {
       const newsong = new MessageEmbed()
         .setTitle(""+song.title)
         .setURL(song.url)
-        .setColor("#00DAFF")
+        .setColor("#002EFF")
         .setThumbnail(``)
         .setImage(thumb)
-        .addField("Requested by", `\`${message.author.username}#${message.author.discriminator}\``, true)
-        .addField("Duration", `\`${song.duration} Minutes\``, true)
-        .addField("Volume", `\`100\``, true)
+        .addField("Requested by", `${message.author.username}#${message.author.discriminator}`, true)
+        .addField("Duration", `${song.duration} Minutes`, true)
+        .addField("Volume", `100`, true)
 
       var playingMessage = await queue.textChannel.send(newsong);
       
@@ -187,9 +187,9 @@ module.exports = {
         let nowPlaying = new MessageEmbed()
           .setTitle("Now playing")
           .setDescription(`[**${song.title}**](${song.url})`)
-          .addField("Requested by", `\`${message.author.username}#${message.author.discriminator}\``, true)
-          .addField("Duration", `\`${song.duration} Minutes\``, true)
-          .setColor("#00DAFF")
+          .addField("Requested by", `${message.author.username}#${message.author.discriminator}`, true)
+          .addField("Duration", `${song.duration} Minutes`, true)
+          .setColor("#002EFF")
           //if its a stream
           if(ms >= 10000) {
             nowPlaying.addField("\u200b", "🔴 LIVE", false);
