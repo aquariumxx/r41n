@@ -41,9 +41,9 @@ execute(message) {
     //define embed
     let nowPlaying = new MessageEmbed()
           .setTitle("**Now playing**")
-          .addField("Requested by", `\`${message.author.username}#${message.author.discriminator}\``, true)
-          .addField("Duration", `\`${song.duration} Minutes\``, true)
-          .setColor("#00DAFF")
+          .addField("Requested by", `${message.author.username}#${message.author.discriminator}`, true)
+          .addField("Duration", `${song.duration} Minutes`, true)
+          .setColor("#002EFF")
           
       //if its a stream
       if(ms >= 10000) {
