@@ -15,18 +15,18 @@ module.exports = {
     let commands = message.client.commands.array();
 
     let helpEmbed = new MessageEmbed()
-    .setColor("#00DAFF")
+    .setColor("#002EFF")
     .setThumbnail(message.guild.iconURL({ dynamic: true }))
     .setAuthor(`${message.guild.name}`,message.guild.iconURL({ dynamic: true }))
-    .addField('Owner Server :',`<@${message.guild.ownerID}>`,true)
-    .addField('Created On :',message.guild.createdAt.toLocaleString())
-    .addField('Server ID :',`${message.guild.id}`,true)
-    .addField('Members :',`${message.guild.memberCount}`,true)
-    .addField('Channels :',`${message.guild.channels.cache.size}`,true)
-    .addField('Region :',`${message.guild.region}`,true)
-    .addField('Roles :', `${message.guild.roles.cache.size}`, true)
-    .addField('Boosts :',`${message.guild.premiumSubscriptionCount} Boost`,true)
-    .addField('Emojis :',`${message.guild.emojis.cache.size}`,true)
+    .addField('Owner Server',`<@${message.guild.ownerID}>`,true)
+    .addField('Created On',message.guild.createdAt.toLocaleString())
+    .addField('Server ID',`${message.guild.id}`,true)
+    .addField('Members',`${message.guild.memberCount}`,true)
+    .addField('Channels',`${message.guild.channels.cache.size}`,true)
+    .addField('Region',`${message.guild.region}`,true)
+    .addField('Roles', `${message.guild.roles.cache.size}`, true)
+    .addField('Boosts',`${message.guild.premiumSubscriptionCount} Boost`,true)
+    .addField('Emojis',`${message.guild.emojis.cache.size}`,true)
    helpEmbed
    message.react("<:emoji_4:815583574983966720>")
     return message.channel.send(helpEmbed).catch(console.error);
