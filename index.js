@@ -81,9 +81,9 @@ client.on(`message`, async (message) => {
   //information message when the bot has been tagged
   if(message.content.includes(client.user.id)) {
     message.reply(new Discord.MessageEmbed()
-    .setColor("#00DAFF")
+    .setColor("#002EFF")
     .setDescription("")
-    .setTitle(`Hey, My Current Prefix is u?
+    .setTitle(`Hey, My Current Prefix is u!
 
 `));
   } 
@@ -93,7 +93,7 @@ client.on(`message`, async (message) => {
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("#00DAFF")
+    .setColor("#002EFF")
     .setDescription(saymsg)
     //delete the Command
     message.delete({timeout: 300})
@@ -115,12 +115,12 @@ client.on("guildCreate" , Wolf => {
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("#00DAFF")
+    .setColor("#002EFF")
     .setDescription (`
-[Invite](https://discord.com/oauth2/authorize?client_id=678621744122167296&scope=bot%20applications.commands&permissions=8)
+[Invite](https://discord.com/oauth2/authorize?client_id=712414335728615454&scope=bot%20applications.commands&permissions=8)
 [Support](https://discord.gg/zFGGTuEmUD)`)
     .setTitle(``) 
-    .setAuthor("BlueLine","https://media.discordapp.net/attachments/857669210285146112/892779923742285834/20210929_170621.jpg","https://discord.gg/zFGGTuEmUD")
+    .setAuthor("BlueLine","https://media.discordapp.net/attachments/857669210285146112/898197823026262016/BlueLineMusic.jpg","https://discord.gg/zFGGTuEmUD")
     
     //send the Message
     message.channel.send(embed)
@@ -138,7 +138,7 @@ if(message.content.startsWith(`${prefix}vote`)){
     .setTitle(``)
     .setDescription("\`Vote Link\` Link Vote")
     .setFooter(`Thank you for vote`)
-    .setColor("#FF0000")
+    .setColor("#002EFF")
     //send the Message
     message.channel.send(embed)
   }
@@ -164,7 +164,7 @@ if(message.content.startsWith(`${prefix}vote`)){
    if (now < expirationTime) {
      const timeLeft = (expirationTime - now) / 1000;
      return message.reply(
-      new MessageEmbed().setColor("#00DAFF")
+      new MessageEmbed().setColor("#002EFF")
       .setTitle(`Please wait For ${timeLeft.toFixed(1)} Seconds!`)    
      );
    }
@@ -175,8 +175,8 @@ if(message.content.startsWith(`${prefix}vote`)){
    command.execute(message, args, client);
  } catch (error) {
    console.error(error);
-   message.reply( new MessageEmbed().setColor("#00DAFF")
-   .setTitle(`There was an error executing that command.`)).catch(console.error);
+   message.reply( new MessageEmbed().setColor("#002EFF")
+   .setTitle(`Unavaible Command please type u!help to see all commands`)).catch(console.error);
  }
 
 
