@@ -17,7 +17,7 @@ module.exports = {
 
     let resultsEmbed = new MessageEmbed()
       .setTitle("" + titel)
-      .setColor("#00DAFF")
+      .setColor("#002EFF")
       
       message.channel.send(resultsEmbed);
     return;
