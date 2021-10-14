@@ -26,7 +26,7 @@ module.exports = {
 
         const embed = new MessageEmbed()
             .setTitle(`${user.user.username}`)
-            .setColor(`#00DAFF`)
+            .setColor(`#002EFF`)
             .setTimestamp()
             .setThumbnail(user.user.displayAvatarURL({dynamic : true}))
             .addFields(
