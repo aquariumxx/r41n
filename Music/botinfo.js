@@ -12,6 +12,7 @@ module.exports = {
 
 
       .addField("Version", `12.5.3`)
+      .addField(`Megabat`, (process.memoryUsage().rss / 1024 / 1024).toFixed(2) + "MB", false )
       .addField('Ping' , `${client.ws.ping}` , true)
       .addField("Guilds", `${client.guilds.cache.size}`, true)
       .addField("Creator", `UnKnown#4354`)
