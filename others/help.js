@@ -10,8 +10,8 @@ module.exports = {
      
     let helpEmbed = new MessageEmbed()
     .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-    .setColor(`#00DAFF`)
-    .setThumbnail("https://media.discordapp.net/attachments/857669210285146112/892779923742285834/20210929_170621.jpg")
+    .setColor(`#002EFF`)
+    .setThumbnail("https://media.discordapp.net/attachments/857669210285146112/898197823026262016/BlueLineMusic.jpg")
     .setAuthor("BlueLine","https://media.discordapp.net/attachments/857669210285146112/898197823026262016/BlueLineMusic.jpg","https://discord.gg/zFGGTuEmUD")
     .addField("🌎 General", `\`help\`, \`ping\`, \`prefix\`, \`avatar\``)
     .addField("🎶 Music", `\`filter\`, \`loop\`, \`lyrics\`, \`np\`, \`play\`, \`queue\`, \`remove\`, \`shuffle\`, \`skip\`, \`skipto\`, \`stop\`, \`volume\``)
