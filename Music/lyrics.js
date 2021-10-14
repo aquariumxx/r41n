@@ -32,7 +32,7 @@ async execute(message) {
     //define the temporary Embed
     let temEmbed = new MessageEmbed()
     .setAuthor("🔍Searching...", "").setFooter("Lyrics")
-    .setColor("#00DAFF")
+    .setColor("#002EFF")
     //send it and safe it in a variable
     let result = await message.channel.send(temEmbed)
     //try to find lyrics
