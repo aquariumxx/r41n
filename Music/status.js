@@ -13,7 +13,7 @@ module.exports = {
         .addField("• Users", `${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}`, true)
         .addField("• Channels", `${client.channels.cache.size}`, true)
         .addField(`• Voice Connections`, `${client.voice.connections.size}`, false)
-        .addField(`• Uptime`, uptime.join(", "), false)
+        .addField("• Creator", "UnKnown#4354")
         .addField("• Prefix", "u! or custom")
         .setFooter(message.author.username, message.author.avatarURL);
     message.lineReplyNoMention(embed);
