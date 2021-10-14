@@ -17,7 +17,7 @@ module.exports = {
         .addField(`• Voice Connections`, `${client.voice.connections.size}`, false)
         .addField("• Creator", "UnKnown#4354")
         .addField("• Prefix", "u! or custom")
-        .setFooter(message.author.username, message.author.avatarURL);
+        .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }));
     message.lineReplyNoMention(embed);
 }
 }
