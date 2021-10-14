@@ -116,7 +116,7 @@ async execute(message, args, client) {
       const song = queue.songs[0];
       //play the collected song song, message, client, filters
       message.channel.send(new MessageEmbed()
-      .setColor("#00DAFF")
+      .setColor("#002EFF")
       .setAuthor("Applying: " + args[0], "")).then(msg =>{
         msg.delete({timeout: 2000});
       })
