@@ -37,7 +37,7 @@ client.on(`ready`, () => {
       });
       
 
-    client.user.setActivity(`u!help`, { type: "PLAYING"});
+    client.user.setActivity(`u!help | ${client.guilds.cache.size} Guilds`, { type: "WATCHING"});
 
     
    
