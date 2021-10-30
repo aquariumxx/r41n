@@ -37,7 +37,7 @@ client.on(`ready`, () => {
       });
       
 
-    client.user.setActivity(`u!help | ${client.guilds.cache.size} Guilds`, { type: "WATCHING"});
+    client.user.setActivity(`_help | ${client.guilds.cache.size} Guilds`, { type: "WATCHING"});
 
     
    
@@ -117,10 +117,10 @@ client.on("guildCreate" , Wolf => {
     const embed = new Discord.MessageEmbed()
     .setColor("#002EFF")
     .setDescription (`
-[Invite](https://discord.com/oauth2/authorize?client_id=712414335728615454&scope=bot%20applications.commands&permissions=8)
-[Support](https://discord.gg/zFGGTuEmUD)`)
+[Invite](https://discord.com/api/oauth2/authorize?client_id=863558877168926800&permissions=8&scope=bot)
+[Support](https://discord.gg/jNuC4n82QF)`)
     .setTitle(``) 
-    .setAuthor("BlueLine","https://media.discordapp.net/attachments/857669210285146112/898197823026262016/BlueLineMusic.jpg","https://discord.gg/zFGGTuEmUD")
+    .setAuthor("Rain Bot","https://cdn.discordapp.com/avatars/863558877168926800/db0c03ffa6aed37db32354038ea7da9d.png?size=1024","https://discord.gg/jNuC4n82QF")
     
     //send the Message
     message.channel.send(embed)
@@ -183,7 +183,7 @@ if(message.content.startsWith(`${prefix}vote`)){
 });
 
 client.on("guildCreate", guild => {
-  let channel = client.channels.cache.get("892789124602425354");
+  let channel = client.channels.cache.get("874042763572826112");
   let embed = new MessageEmbed().setColor("#00FF09")
   .setAuthor(client.user.username, client.user.avatarURL())
   .setTitle( `✅ Join Server`)
@@ -196,7 +196,7 @@ client.on("guildCreate", guild => {
 });
 
 client.on("guildDelete", guild => {
-  let channel = client.channels.cache.get("892789124602425354");
+  let channel = client.channels.cache.get("874042763572826112");
   let embed = new MessageEmbed()
   .setColor("#FF0000")
   .setAuthor(client.user.username, client.user.avatarURL())
