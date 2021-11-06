@@ -15,7 +15,7 @@ module.exports = {
       .addField(`Megabat`, (process.memoryUsage().rss / 1024 / 1024).toFixed(2) + "MB", false )
       .addField('Ping' , `${client.ws.ping}` , true)
       .addField("Guilds", `${client.guilds.cache.size}`, true)
-      .addField("Creator", `UnKnown#4354`)
+      .addField("Creator", `<@727282746614874113>`)
       .setColor("#002EFF")
       .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }));
       message.lineReplyNoMention(embed).catch(console.error);
