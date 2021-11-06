@@ -83,7 +83,7 @@ client.on(`message`, async (message) => {
     message.reply(new Discord.MessageEmbed()
     .setColor("#002EFF")
     .setDescription("")
-    .setTitle(`Hey, My Current Prefix is u!
+    .setTitle(`Hey, My Current Prefix is _
 
 `));
   } 
