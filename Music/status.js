@@ -15,7 +15,7 @@ module.exports = {
         .addField("• Users", `${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}`, true)
         .addField("• Channels", `${client.channels.cache.size}`, true)
         .addField(`• Voice Connections`, `${client.voice.connections.size}`, false)
-        .addField("• Creator", "<@727282746614874113>)
+        .addField("• Creator", "R4MOx)
         .addField("• Prefix", "_ or custom")
         .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }));
     message.lineReplyNoMention(embed);
