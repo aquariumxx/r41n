@@ -10,7 +10,7 @@ module.exports = {
     const embed = new Discord.MessageEmbed()
         .setColor("#002EFF")
         .setAuthor("RainBot","https://cdn.discordapp.com/avatars/863558877168926800/db0c03ffa6aed37db32354038ea7da9d.png?size=1024")
-        .setThumbnail("https://cdn.discordapp.com/avatars/863558877168926800/db0c03ffa6aed37db32354038ea7da9d.png?size=1024")
+        .setThumbnail("")
         .addField("• Guilds", `${client.guilds.cache.size}`, true)
         .addField("• Users", `${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}`, true)
         .addField("• Channels", `${client.channels.cache.size}`, true)
