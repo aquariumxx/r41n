@@ -13,9 +13,9 @@ module.exports = {
     .setColor(`#002EFF`)
     .setThumbnail("https://cdn.discordapp.com/avatars/863558877168926800/db0c03ffa6aed37db32354038ea7da9d.png?size=1024")
     .setAuthor("Rain Bot","https://cdn.discordapp.com/avatars/863558877168926800/db0c03ffa6aed37db32354038ea7da9d.png?size=1024","https://discord.gg/jNuC4n82QF")
-    .addField("🌎 General", `\`help\`, \`ping\`, \`prefix\`, \`avatar\``)
-    .addField("🎶 Music", `\`filter\`, \`loop\`, \`lyrics\`, \`np\`, \`play\`, \`queue\`, \`remove\`, \`shuffle\`, \`skip\`, \`skipto\`, \`stop\`, \`volume\``)
-    .addField("❗ Info", `\`botinfo\`, \`serverinfo\`, \`userinfo\`, \`status\`, \`uptime\``)
+    .addField("🌎 General", >`\`help\`, \`ping\`, \`prefix\`, \`avatar\``)
+    .addField("🎶 Music", `>\`filter\`, \`loop\`, \`lyrics\`, \`np\`, \`play\`, \`queue\`, \`remove\`, \`shuffle\`, \`skip\`, \`skipto\`, \`stop\`, \`volume\``)
+    .addField("❗ Info", `>\`botinfo\`, \`serverinfo\`, \`userinfo\`, \`status\`, \`uptime\``)
 
     helpEmbed.setTimestamp();
 
