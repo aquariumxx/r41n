@@ -15,10 +15,10 @@ module.exports = {
     let commands = message.client.commands.array();
 
     let helpEmbed = new MessageEmbed()
-    .setThumbnail("https://cdn.discordapp.com/avatars/863558877168926800/db0c03ffa6aed37db32354038ea7da9d.png?size=1024")
+    .setThumbnail("https://cdn.discordapp.com/avatars/712414335728615454/e0e64a900ad2587fb899f1c189d10da6.png?size=1024")
     .setDescription("**My Invite Links**")
-    .setAuthor("Rain Bot","https://cdn.discordapp.com/avatars/863558877168926800/db0c03ffa6aed37db32354038ea7da9d.png?size=1024","https://discord.gg/jNuC4n82QF")
-    .addField("Invite Me", "[Click](https://discord.com/api/oauth2/authorize?client_id=863558877168926800&permissions=8&scope=bot)")
+    .setAuthor("Flower Bot","https://cdn.discordapp.com/avatars/712414335728615454/e0e64a900ad2587fb899f1c189d10da6.png?size=1024","https://discord.gg/jNuC4n82QF")
+    .addField("Invite Me", "[Click](https://discord.com/api/oauth2/authorize?client_id=712414335728615454&permissions=8&scope=bot)")
     .addField("Support", "[Click](https://discord.gg/jNuC4n82QF)")
     .setTimestamp()
 
