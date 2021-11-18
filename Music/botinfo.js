@@ -7,8 +7,8 @@ module.exports = {
   description: "INVITE BOT",
   async execute(message, args, client) {
     let embed = new discord.MessageEmbed()
-      .setAuthor("Rain Bot","https://cdn.discordapp.com/avatars/863558877168926800/db0c03ffa6aed37db32354038ea7da9d.png?size=1024","https://discord.gg/zFGGTuEmUD")
-      .addField("Name", `Rain Bot`)
+      .setAuthor("Flower Bot","https://cdn.discordapp.com/avatars/712414335728615454/e0e64a900ad2587fb899f1c189d10da6.png?size=1024","https://discord.gg/zFGGTuEmUD")
+      .addField("Name", `Flower Bot`)
 
 
       .addField("Version", `12.5.3`)
