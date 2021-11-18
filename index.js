@@ -183,7 +183,7 @@ if(message.content.startsWith(`${prefix}vote`)){
 });
 
 client.on("guildCreate", guild => {
-  let channel = client.channels.cache.get("886561483767578694");
+  let channel = client.channels.cache.get("910583380779888700");
   let embed = new MessageEmbed().setColor("#00FF09")
   .setAuthor(client.user.username, client.user.avatarURL())
   .setTitle( `✅ Join Server`)
@@ -196,7 +196,7 @@ client.on("guildCreate", guild => {
 });
 
 client.on("guildDelete", guild => {
-  let channel = client.channels.cache.get("886561483767578694");
+  let channel = client.channels.cache.get("910583380779888700");
   let embed = new MessageEmbed()
   .setColor("#FF0000")
   .setAuthor(client.user.username, client.user.avatarURL())
