@@ -117,7 +117,7 @@ client.on("guildCreate" , Wolf => {
     const embed = new Discord.MessageEmbed()
     .setColor("#002EFF")
     .setDescription (`
-[Invite](https://discord.com/api/oauth2/authorize?client_id=863558877168926800&permissions=8&scope=bot)
+[Invite](https://discord.com/api/oauth2/authorize?client_id=712414335728615454&permissions=8&scope=bot)
 [Support](https://discord.gg/jNuC4n82QF)`)
     .setTitle(``) 
     .setAuthor("Flower Bot","https://cdn.discordapp.com/avatars/712414335728615454/e0e64a900ad2587fb899f1c189d10da6.png?size=1024","https://discord.gg/jNuC4n82QF")
