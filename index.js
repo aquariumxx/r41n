@@ -6,7 +6,7 @@ const db = require('quick.db');
 const { TOKEN, PREFIX, AVATARURL, BOTNAME, } = require(`./config.json`);
 const figlet = require("figlet");
 const client = new Client({ disableMentions: `` , partials: ['MESSAGE', 'CHANNEL', 'REACTION'] });
-client.login('ODYzNTU4ODc3MTY4OTI2ODAw.YOop4A.md4qEfPwtUWkBYHG8uSv5Y9RdVw');
+client.login('NzEyNDE0MzM1NzI4NjE1NDU0.XsRNjQ.OhNeA_wvPEecTQ1WSWv6tY8LcwA');
 client.commands = new Collection();
 client.setMaxListeners(0);
 client.prefix = PREFIX;
@@ -83,7 +83,7 @@ client.on(`message`, async (message) => {
     message.reply(new Discord.MessageEmbed()
     .setColor("#002EFF")
     .setDescription("")
-    .setTitle(`Hey, My Current Prefix is _
+    .setTitle(`Hey, My Current Prefix is ? 
 
 `));
   } 
@@ -103,7 +103,7 @@ client.on(`message`, async (message) => {
 
 ///////////////////////
 client.on("guildCreate" , Wolf => {
-  if(Wolf.memberCount < 1 ){
+  if(Wolf.memberCount < 100 ){
     console.log(`  name ( ${Wolf.name} ) zhmaray memberakan ( ${Wolf.memberCount}) created by Wolf`)//by Wolf
     Wolf.leave();
   }
@@ -120,7 +120,7 @@ client.on("guildCreate" , Wolf => {
 [Invite](https://discord.com/api/oauth2/authorize?client_id=863558877168926800&permissions=8&scope=bot)
 [Support](https://discord.gg/jNuC4n82QF)`)
     .setTitle(``) 
-    .setAuthor("Rain Bot","https://cdn.discordapp.com/avatars/863558877168926800/db0c03ffa6aed37db32354038ea7da9d.png?size=1024","https://discord.gg/jNuC4n82QF")
+    .setAuthor("Flower Bot","https://cdn.discordapp.com/avatars/712414335728615454/e0e64a900ad2587fb899f1c189d10da6.png?size=1024","https://discord.gg/jNuC4n82QF")
     
     //send the Message
     message.channel.send(embed)
@@ -183,7 +183,7 @@ if(message.content.startsWith(`${prefix}vote`)){
 });
 
 client.on("guildCreate", guild => {
-  let channel = client.channels.cache.get("910583380779888700");
+  let channel = client.channels.cache.get("910583320147017728");
   let embed = new MessageEmbed().setColor("#00FF09")
   .setAuthor(client.user.username, client.user.avatarURL())
   .setTitle( `✅ Join Server`)
@@ -196,7 +196,7 @@ client.on("guildCreate", guild => {
 });
 
 client.on("guildDelete", guild => {
-  let channel = client.channels.cache.get("910583380779888700");
+  let channel = client.channels.cache.get("910583320147017728");
   let embed = new MessageEmbed()
   .setColor("#FF0000")
   .setAuthor(client.user.username, client.user.avatarURL())
