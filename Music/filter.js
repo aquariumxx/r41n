@@ -91,7 +91,7 @@ async execute(message, args, client) {
         //fires if not valid input
         varforfilter = 404;
         message.channel.send(new MessageEmbed()
-        .setColor("#002EFF")
+        .setColor("#FF0000")
         .setTitle("Not a valid Filter, use one of those:")
         .setDescription(`
         \`bassboost\`
@@ -116,7 +116,7 @@ async execute(message, args, client) {
       const song = queue.songs[0];
       //play the collected song song, message, client, filters
       message.channel.send(new MessageEmbed()
-      .setColor("#002EFF")
+      .setColor("#FF0000")
       .setAuthor("Applying: " + args[0], "")).then(msg =>{
         msg.delete({timeout: 2000});
       })
