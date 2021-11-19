@@ -32,7 +32,7 @@ async execute(message) {
     //define the temporary Embed
     let temEmbed = new MessageEmbed()
     .setAuthor("🔍Searching...", "").setFooter("Lyrics")
-    .setColor("#002EFF")
+    .setColor("#FF0000")
     //send it and safe it in a variable
     let result = await message.channel.send(temEmbed)
     //try to find lyrics
@@ -50,7 +50,7 @@ async execute(message) {
     let lyricsEmbed = new MessageEmbed()
       .setTitle("Lyrics")
       .setDescription(lyrics)
-      .setColor("#002EFF")
+      .setColor("#FF0000")
     //if to long make slice it
     if (lyricsEmbed.description.length >= 2048)
       //slice the embed description and redefine it
