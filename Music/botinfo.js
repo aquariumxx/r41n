@@ -16,7 +16,7 @@ module.exports = {
       .addField('Ping' , `${client.ws.ping}` , true)
       .addField("Guilds", `${client.guilds.cache.size}`, true)
       .addField("Creator", `<@727282746614874113>`)
-      .setColor("#002EFF")
+      .setColor("#FF0000")
       .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }));
       message.lineReplyNoMention(embed).catch(console.error);
   }
