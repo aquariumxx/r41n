@@ -43,7 +43,7 @@ execute(message) {
           .setTitle("**Now playing**")
           .addField("Requested by", `${message.author.username}#${message.author.discriminator}`, true)
           .addField("Duration", `${song.duration} Minutes`, true)
-          .setColor("#002EFF")
+          .setColor("#FF0000")
           
       //if its a stream
       if(ms >= 10000) {
