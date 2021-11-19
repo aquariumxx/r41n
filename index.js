@@ -81,7 +81,7 @@ client.on(`message`, async (message) => {
   //information message when the bot has been tagged
   if(message.content.includes(client.user.id)) {
     message.reply(new Discord.MessageEmbed()
-    .setColor("#002EFF")
+    .setColor("#FF0000")
     .setDescription("")
     .setTitle(`Hey, My Current Prefix is ? 
 
@@ -93,7 +93,7 @@ client.on(`message`, async (message) => {
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("#002EFF")
+    .setColor("#FF0000")
     .setDescription(saymsg)
     //delete the Command
     message.delete({timeout: 300})
@@ -115,7 +115,7 @@ client.on("guildCreate" , Wolf => {
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("#002EFF")
+    .setColor("#FF0000")
     .setDescription (`
 [Invite](https://discord.com/api/oauth2/authorize?client_id=712414335728615454&permissions=8&scope=bot)
 [Support](https://discord.gg/jNuC4n82QF)`)
@@ -138,7 +138,7 @@ if(message.content.startsWith(`${prefix}vote`)){
     .setTitle(``)
     .setDescription("\`Vote Link\` Link Vote")
     .setFooter(`Thank you for vote`)
-    .setColor("#002EFF")
+    .setColor("#FF0000")
     //send the Message
     message.channel.send(embed)
   }
@@ -164,7 +164,7 @@ if(message.content.startsWith(`${prefix}vote`)){
    if (now < expirationTime) {
      const timeLeft = (expirationTime - now) / 1000;
      return message.reply(
-      new MessageEmbed().setColor("#002EFF")
+      new MessageEmbed().setColor("#FF0000")
       .setTitle(`Please wait For ${timeLeft.toFixed(1)} Seconds!`)    
      );
    }
@@ -175,8 +175,8 @@ if(message.content.startsWith(`${prefix}vote`)){
    command.execute(message, args, client);
  } catch (error) {
    console.error(error);
-   message.reply( new MessageEmbed().setColor("#002EFF")
-   .setTitle(`Unavaible Command please type u!help to see all commands`)).catch(console.error);
+   message.reply( new MessageEmbed().setColor("#FF0000")
+   .setTitle(`Unavaible Command please type ?help to see all commands`)).catch(console.error);
  }
 
 
