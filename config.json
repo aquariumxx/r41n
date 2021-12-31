@@ -1,7 +1,7 @@
 {
   "TOKEN": "OTIyODkwMjgwMDQ5NDU5MjUw.YcICjQ.GOj7NM270nba_mOs2DducI_9uZU",
   "PREFIX": "!!",
-  "approveemoji": "",
-  "denyemoji": "",
-  "erroremoji": ""
+  "approveemoji": "<:approved:780401773532807208>",
+  "denyemoji": "<:declined:780403017160982538>",
+  "erroremoji": "<a:Loading:833101350623117342>"
 }
