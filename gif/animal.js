@@ -21,7 +21,7 @@ module.exports = {
     .setFooter(`${message.author.tag} `, message.author.avatarURL)
     .setImage(replies[result]);
 
-    message.channel.send(gifembed);
+    message.lineReplyNoMention(gifembed).catch(console.error);
 
    
   }
