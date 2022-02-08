@@ -453,22 +453,6 @@ if (message.content === `,panime`) {
         }  
 
 });
-///////
-client.on('message', nibo => {
-  if (nibo.content === prefix + "server") {
-    const embed = new Discord.MessageEmbed()
-.setColor("black")//اختار انت اللون الي يعجبك انا افضل الاسود 
-.setTitle(`**Server Info**`)
-.addField('Server Name :' , `**${nibo.guild.name}**`)
-.addField('Owner Server :' , `<@${nibo.guild.ownerID}>`)
-.addField('Server Id :' , `**${nibo.guild.id}**`)
-.addField('Created On :' , `**${nibo.guild.createdAt.toLocaleDateString()}**`)
-.addField('Channels :' , `**${nibo.guild.channels.cache.size}**`)
-.addField('Members :' , `**${nibo.guild.memberCount}**`)
-.setFooter(`${nibo.guild.name}`, nibo.guild.iconURL())
-.setThumbnail(nibo.guild.iconURL())
-nibo.channel.send(embed);
-}});  
 
 ////////
 function delay(delayInms) {
