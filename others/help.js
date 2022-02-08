@@ -13,7 +13,7 @@ module.exports = {
     .setColor(`#FF0000`)
     .setThumbnail("https://cdn.discordapp.com/avatars/912844825055854623/84ac4c7425a16a0e7b32cd6076dc3e83.png?size=1024")
     .setAuthor("Emily ✨","https://cdn.discordapp.com/avatars/912844825055854623/84ac4c7425a16a0e7b32cd6076dc3e83.png?size=1024","https://discord.gg/UybeVq66hF")
-    .addField("🌎 General", `\`help\`, \`ping\`, \`prefix\`, \`showemoji\`, \`invite\`, \`support\`, \`avatar\``)
+    .addField("🌎 General", `\`help\`, \`ping\`, \`prefix\`, \`showemoji\`, \`invite\`, \`support\`, \`emojilist\`, \`avatar\``)
     .addField("🎶 Music", `\`filter\`, \`loop\`, \`lyrics\`, \`np\`, \`play\`, \`queue\`, \`remove\`, \`shuffle\`, \`skip\`, \`skipto\`, \`stop\`, \`volume\``)
     .addField("❗ Info", `\`botinfo\`, \`serverinfo\`, \`userinfo\`, \`uptime\``)
     .addField("<:image_mor:940526991063539712> Gif", `\`boy\`, \`girl\`, \`couple\`, \`anime\`, \`animal\``)
