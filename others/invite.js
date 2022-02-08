@@ -1,4 +1,5 @@
 const { Client, Collection, MessageEmbed } = require(`discord.js`);
+const { lineReply } = require("discord-reply");
 const { 
   PREFIX, 
 } = require(`../config.json`);
@@ -25,7 +26,7 @@ module.exports = {
   
    .setColor("#FF0000");
    message.react("<:emoji_4:815583574983966720>")
-    return message.channel.send(helpEmbed).catch(console.error);
+    return message.lineReplyNoMention(helpEmbed).catch(console.error);
 
   }
 };
