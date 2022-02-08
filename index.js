@@ -503,7 +503,7 @@ const rply = [
 }); 
 /////
 const replay = [
-'No matter what you're going through, there's a light at the end of the tunnel. - Demi Lovato',
+'No matter what youre going through', 'there's a light at the end of the tunnel. - Demi Lovato',
 'Spread love everywhere you go. - Mother Teresa',
 'best friends are siblings from anoher mother',
 'In order to succeed, your desire for success should be greater than your fear of failure',
