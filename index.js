@@ -503,7 +503,7 @@ const rply = [
 }); 
 /////
 client.on('message', message => {
-if (message.content.startsWith(PREFIX + 'listEmoji')) {
+if (message.content.startsWith(PREFIX + 'emojilist')) {
   let Emojis = "";
     let EmojisAnimated = "";
     let EmojiCount = 0;
