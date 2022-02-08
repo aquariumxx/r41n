@@ -1,6 +1,7 @@
 const Discord = require("discord.js");
 const { MessageEmbed } = require("discord.js");
 const Color = `RANDOM`;
+const { lineReply } = require("discord-reply");
 
 module.exports = {
   name: "se",
@@ -24,7 +25,7 @@ module.exports = {
         .addField('<:Blurple_link:940600579577749525>```Link```', `[Click Me](${Link})`)
         .setImage(Link
         );
-      return message.channel.send(Added);
+      return message.lineReplyNoMention(Added).catch(console.error);
     } else {
       let CheckEmoji = (emoji, { assetType: "png" });
       if (!CheckEmoji[0])
