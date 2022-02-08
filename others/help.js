@@ -16,8 +16,8 @@ module.exports = {
     .addField("🌎 General", `\`help\`, \`ping\`, \`prefix\`, \`avatar\``)
     .addField("🎶 Music", `\`filter\`, \`loop\`, \`lyrics\`, \`np\`, \`play\`, \`queue\`, \`remove\`, \`shuffle\`, \`skip\`, \`skipto\`, \`stop\`, \`volume\``)
     .addField("❗ Info", `\`botinfo\`, \`serverinfo\`, \`userinfo\`, \`uptime\``)
-    .addField("❗ Gif", `\`boy\`, \`girl\`, \`couple\`, \`anime\`, \`animal\``)
-    .addField("❗ Image", `\`pboy\`, \`pgirl\`, \`pcouple\`,  \`panimal\`, \`panime\``)
+    .addField("<:image_mor:940526991063539712> Gif", `\`boy\`, \`girl\`, \`couple\`, \`anime\`, \`animal\``)
+    .addField("<:image_juan:940527086039339048> Image", `\`pboy\`, \`pgirl\`, \`pcouple\`,  \`panimal\`, \`panime\``)
 
     helpEmbed.setTimestamp();
 
