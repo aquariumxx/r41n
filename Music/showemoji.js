@@ -21,7 +21,7 @@ module.exports = {
       const Added = new MessageEmbed()
         .setTitle("Emoji Converter")
         .setColor("#FC00FF")
-        .addField('<a:links:813729922643263558>```Link```', `[Click Me](${Link})`)
+        .addField('<:Blurple_link:940600579577749525>```Link```', `[Click Me](${Link})`)
         .setImage(Link
         );
       return message.channel.send(Added);
