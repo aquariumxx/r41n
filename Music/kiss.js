@@ -1,5 +1,6 @@
 const { MessageEmbed } = require("discord.js");
 const fetch = require("node-fetch");
+const { lineReply } = require("discord-reply");
 
 module.exports = {
   name: "kiss",
