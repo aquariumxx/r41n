@@ -502,7 +502,30 @@ const rply = [
   }
 }); 
 /////
-
+const rply = [
+'No matter what you're going through, there's a light at the end of the tunnel. - Demi Lovato',
+'Spread love everywhere you go. - Mother Teresa',
+'best friends are siblings from anoher mother',
+'In order to succeed, your desire for success should be greater than your fear of failure',
+'be kind, not only to others, to yourself too!',
+'Inspiration is some mysterious blessing which happens when the wheels are turning smoothly. - Quentin Blake',
+'Love is some loving someone whom you will not reach to!',
+'How amazing is it to find someone who wants to hear about all the things that go on in your head',
+'Never bend your head. Always hold it high. Look the world straight in the eye.'
+'A tree far away from the forest!',
+'Be patient.sometimes you have to go through the worst to get to the best!',
+'We have a situation here that we can't believe that we don't believe us anymore!',
+'If size mattered the elephant would be the king of jungle',
+'Be the change that you wish to see in the world',
+'We overlooked They thought we were blind!',
+'Each person must live their life as a model for others.',
+'The losers find problem in every answer but the winners find an answer in every problem'
+];
+ client.on('message', msg => {
+ if (msg.content === ",textenglish") {/////
+   msg.channel.send(`${rply[Math.floor(Math.random() * rply.length)]}`);
+  }
+}); 
 /////
 client.on('message', message => {
 if (message.content.startsWith(PREFIX + 'emojilist')) {
