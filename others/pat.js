@@ -1,6 +1,7 @@
 const Discord = require("discord.js");
 const sakran = require('nekos.life');
 const neko = new sakran();
+const { lineReply } = require("discord-reply");
 
 module.exports = {
   name: `pat`,
@@ -23,7 +24,7 @@ module.exports = {
         .setImage(owo.url)
         .setColor(`#8F00FF`)
         .setURL(owo.url);
-        message.channel.send(kissembed);
+        message.lineReplyNoMention(kissembed).catch(console.error);
 }
 
       work();
