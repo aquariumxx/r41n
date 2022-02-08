@@ -583,7 +583,7 @@ const turkish = [
  client.on('message', msg => {
  if (msg.content === ",textturkish") {/////
  if (msg.channel.type == "dm") return msg.channel.send(new Discord.MessageEmbed().setColor("RANDOM").setDescription(error + ` **You Can't Use This Command In DM's!**`).setFooter(`Request By ${msg.author.tag}`).setTimestamp())
-   msg.channel.send(`${rply[Math.floor(Math.random() * rply.length)]}`);
+   msg.channel.send(`${turkish[Math.floor(Math.random() * turkish.length)]}`);
   }
 }); 
 ///////
