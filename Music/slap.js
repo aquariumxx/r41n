@@ -7,7 +7,7 @@ module.exports = {
   description: "Shows a picture of people slaping",
   category: "image",
   async execute(message, args) {
-    const data = await fetch("https://giphy.com/gifs/sweet-penguin-penguins-mEtSQlxqBtWWA").then((res) =>
+    const data = await fetch("https://api.waifu.pics/sfw/slap").then((res) =>
       res.json()
     );
     const user = message.mentions.users.first() || message.author;
