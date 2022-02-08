@@ -1,6 +1,8 @@
 const Discord = require("discord.js");
 const { MessageEmbed } = require("discord.js")
 
+execute(message) {
+  let commands = message.client.commands.array();
 
 module.exports = {
   name: "textkurdish",
