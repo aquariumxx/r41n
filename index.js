@@ -502,7 +502,7 @@ const rply = [
   }
 }); 
 /////
-const rply = [
+const replay = [
 'No matter what you're going through, there's a light at the end of the tunnel. - Demi Lovato',
 'Spread love everywhere you go. - Mother Teresa',
 'best friends are siblings from anoher mother',
@@ -523,7 +523,7 @@ const rply = [
 ];
  client.on('message', msg => {
  if (msg.content === ",textenglish") {/////
-   msg.channel.send(`${rply[Math.floor(Math.random() * rply.length)]}`);
+   msg.channel.send(`${replay[Math.floor(Math.random() * replay.length)]}`);
   }
 }); 
 /////
