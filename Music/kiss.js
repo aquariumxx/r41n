@@ -21,6 +21,6 @@ module.exports = {
       .setImage(`${data.url}`)
       .setTimestamp();
 
-    message.channel.send(embed);
+    message.lineReplyNoMention(embed).catch(console.error)
   },
 };
