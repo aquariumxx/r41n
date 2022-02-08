@@ -498,6 +498,7 @@ const rply = [
 ];
  client.on('message', msg => {
  if (msg.content === ",textkurdish") {/////
+ if (msg.channel.type == "dm") return msg.channel.send(new Discord.MessageEmbed().setColor("RANDOM").setDescription(error + ` **You Can't Use This Command In DM's!**`).setFooter(`Request By ${msg.author.tag}`).setTimestamp())
    msg.channel.send(`${rply[Math.floor(Math.random() * rply.length)]}`);
   }
 }); 
@@ -523,6 +524,7 @@ const replay = [
 ];
  client.on('message', msg => {
  if (msg.content === ",textenglish") {/////
+ if (msg.channel.type == "dm") return msg.channel.send(new Discord.MessageEmbed().setColor("RANDOM").setDescription(error + ` **You Can't Use This Command In DM's!**`).setFooter(`Request By ${msg.author.tag}`).setTimestamp())
    msg.channel.send(`${replay[Math.floor(Math.random() * replay.length)]}`);
   }
 }); 
@@ -556,6 +558,34 @@ if (message.content.startsWith(PREFIX + 'emojilist')) {
     message.channel.send(Embed);
  
 }})
+///////
+const turkish = [
+'Güzel Şeyler Hiç Bitmesin Mesela Senin Sevgin',
+'Ben o gözlerini dünyalara vermem ki kardeşim',
+'Geceler yıldızlara ben sana muhtacım unutma .',
+'şimdi! Bıçağın üstüne gidip şarkı söylerim Ölüm bile seni sevdiğimi biliyor',
+'Yaşamak Istediğim Dünya Sensin',
+'büyüdüm anne şimdi senden habersiz ağlıyorum',
+'Gözlerindeyim ben hala bir yere düşmedim',
+'Sen gel bide geceleri bana sor özlemek inan yaşamaktan daha zor zap️',
+'Yanakları annemin yemeklerinden daha lezzetli Ancak çok uzakta',
+'Bitmeyen bir sekız yılık hasret',
+'Ben bu kadar çok şey öğrendim ve sen yoksun',
+'Yalancının mumu yatsayıa kadar',
+'İnsanlar incinecek ve mutlu ol diyecekler',
+'Gözlerindeyim ben hala bir yere düşmedim',
+'Ay dünyaya, ben sana tutulmuşum',
+'Önle Kolaysa Gel Başimdan Kaldir At Sevdani',
+
+
+
+];
+ client.on('message', msg => {
+ if (msg.content === ",textturkish") {/////
+ if (msg.channel.type == "dm") return msg.channel.send(new Discord.MessageEmbed().setColor("RANDOM").setDescription(error + ` **You Can't Use This Command In DM's!**`).setFooter(`Request By ${msg.author.tag}`).setTimestamp())
+   msg.channel.send(`${rply[Math.floor(Math.random() * rply.length)]}`);
+  }
+}); 
 ///////
 function delay(delayInms) {
  return new Promise(resolve => {
