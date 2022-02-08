@@ -514,7 +514,7 @@ const replay = [
 'Never bend your head. Always hold it high. Look the world straight in the eye.'
 'A tree far away from the forest!',
 'Be patient.sometimes you have to go through the worst to get to the best!',
-'We have a situation here that we can't believe that we don't believe us anymore!',
+'We have a situation here that we cant believe that we dont believe us anymore!',
 'If size mattered the elephant would be the king of jungle',
 'Be the change that you wish to see in the world',
 'We overlooked They thought we were blind!',
