@@ -230,6 +230,86 @@ if (message.content === `,anime`) {
         }  
 });
 //////
+var aaaa = ["https://cdn.discordapp.com/attachments/733640065200160768/737280791993779206/tenor_3.gif","https://cdn.discordapp.com/attachments/733640065200160768/737280895995740210/tenor_7.gif","https://cdn.discordapp.com/attachments/733640065200160768/737280900022140938/tenor_2.gif","https://cdn.discordapp.com/attachments/733640065200160768/737280920800722984/tenor_9.gif","https://cdn.discordapp.com/attachments/733640065200160768/737280921689915411/tenor_10.gif","https://cdn.discordapp.com/attachments/733640065200160768/737280924563275776/tenor.gif","https://cdn.discordapp.com/attachments/733640065200160768/737280929311096842/tenor_5.gif","https://cdn.discordapp.com/attachments/733640065200160768/737280944016457748/tenor_1.gif","https://cdn.discordapp.com/attachments/733640065200160768/737280945195057193/tenor_6.gif","https://cdn.discordapp.com/attachments/733640065200160768/737281583412805712/tenor_8.gif","https://cdn.discordapp.com/attachments/733640065200160768/737281572826382336/tenor_4.gif","https://cdn.discordapp.com/attachments/733640065200160768/737282276320084118/tenor_2.gif","https://cdn.discordapp.com/attachments/733640065200160768/737282249422143488/tenor_3.gif","https://cdn.discordapp.com/attachments/733640065200160768/737282243113910292/tenor_4.gif","https://cdn.discordapp.com/attachments/733640065200160768/737282207579635722/tenor.gif","https://cdn.discordapp.com/attachments/733640065200160768/737282195185467473/tenor_5.gif","https://cdn.discordapp.com/attachments/733640065200160768/737282604176506910/tenor.gif","https://cdn.discordapp.com/attachments/733640065200160768/737282625747681410/tenor_1.gif","https://cdn.discordapp.com/attachments/733640065200160768/737282660250157122/tenor_4.gif","https://cdn.discordapp.com/attachments/733640065200160768/737282929633525851/tenor_11.gif","https://cdn.discordapp.com/attachments/733640065200160768/737282757188911174/tenor_7.gif","https://cdn.discordapp.com/attachments/733640065200160768/737282947119579216/tenor_9.gif","https://cdn.discordapp.com/attachments/733640065200160768/737282750385487932/tenor_5.gif","https://cdn.discordapp.com/attachments/733640065200160768/737282940760883210/tenor_10.gif","https://cdn.discordapp.com/attachments/733640065200160768/737282991348252683/tenor_13.gif"];
+client.on("message", async message => {
+if (message.content === `,animal`) {
+	    if (message.author.bot) return;
+   if (!message.channel.guild)
+      return message.reply();
+  message.channel.send({
+    embed: {
+      description: `Animal Gif`,
+		  color: `#0000ff`,
+      image: {
+        url: aaaa[Math.floor(Math.random() * aaaa.length)]
+      }
+    }
+  }).catch(e => {
+    client.log.error(e);
+  })
+        }  
+});
+///////
+var boy = ["https://images-ext-1.discordapp.net/external/LbwpelDmQ2wPLaZRjTDKaPTUK1lPPHDWeCmkNRxVJ90/https/media.discordapp.net/attachments/786897044483604490/804968381816111124/image0-5.gif","https://images-ext-2.discordapp.net/external/w_LTPMl7KqwpL0DYt3xMBaIzrpUSeN_7yYnCoMpmfzE/https/media.discordapp.net/attachments/786897044483604490/804220384899498064/Lenora_28.gif","https://media.discordapp.net/attachments/742107775475253259/750710019087007794/image1.gif","https://media.discordapp.net/attachments/608711476219478045/806936322069102622/a_e96dcdaa0567284a4741ea420a4dc663.gif","https://images-ext-1.discordapp.net/external/aJo5-djp7aHGyr-UULHmZX6RpEb163kJ3NVryqAvYsg/https/media.discordapp.net/attachments/756254155831509158/802289132931383296/image0.gif","https://media.discordapp.net/attachments/721044386217197699/797834912433963028/weiqs_3.gif","https://media.discordapp.net/attachments/721044386217197699/801448039427997746/man_21.gif","https://images-ext-2.discordapp.net/external/WXSWW8ThjRg7ZqS6g9nqc0OLMpoQq5aEO6yatGWMJGs/https/media.discordapp.net/attachments/786897044483604490/803870793716858880/a_57a7f6c875e3a329b170edf177392911.gif","https://media.discordapp.net/attachments/694693923486171177/800432438223437874/hit_gif_42.gif","https://images-ext-1.discordapp.net/external/NH3GYgFHCrPHyXQ_rmTUqdxnEgjbZdAjJmAsPzi3PBo/https/media.discordapp.net/attachments/711468906451304449/802472177462673428/image0_2.gif","https://media.discordapp.net/attachments/608711476219478045/806879646956257290/a_6b252acb2f2bcf57dfb4747ecdd768a7.gif","https://images-ext-1.discordapp.net/external/0btjC-DUYe7bKnbjl7gqjJcXM1Vg7JNfeOctJtKxMU0/https/media.discordapp.net/attachments/687763784902770691/802851176302903336/a_5ace3acf503e5a7a493344eed271e21f.gif","https://media.discordapp.net/attachments/694693923486171177/800128975707701288/a_c88293fb975e08dcf940d75655a709ed.gif","https://media.discordapp.net/attachments/737803513052266622/799650053358747658/image0.gif","https://media.discordapp.net/attachments/737803513052266622/798100461801963534/image0.gif","https://media.discordapp.net/attachments/737803513052266622/799651519728451604/image0.gif","https://media.discordapp.net/attachments/737803513052266622/799651519728451604/image0.gif","https://images-ext-1.discordapp.net/external/PN8l3vqIk1wJOd1DFp7r5dI4LHtd9yVXgi1lW2JlPHQ/https/media.discordapp.net/attachments/687763784902770691/802851374073118750/a_d476bf43667abaf377470c36d2329b15.gif","https://media.discordapp.net/attachments/737803513052266622/798100644471898152/image0.gif","https://images-ext-2.discordapp.net/external/UIH-BscQAOLF0_iog9r78yDW8BGJzYSgmCfYkl58cbI/https/media.discordapp.net/attachments/711468906451304449/802472898911797278/113.gif","https://images-ext-2.discordapp.net/external/KI77fYgjwvpzu9SmAzOG5lxMtuYg_s_n6C2GV3fS9wE/https/media.discordapp.net/attachments/786897044483604490/803870704999202836/ENES_ACAR_GIF_104.gif","https://images-ext-1.discordapp.net/external/HpSNeVjps7wCu_RTWIusHbSEmK1nCmfcGujlGLKxMzs/https/media.discordapp.net/attachments/687763784902770691/802691373501251594/a_aa30aac3dbd5ff455266860294da6b08.gif"];
+client.on("message", async message => {
+if (message.content === `,boy`) {
+	    if (message.author.bot) return;
+   if (!message.channel.guild)
+      return message.reply();
+  message.channel.send({
+    embed: {
+      description: `Boy Gif`,
+		  color: `#0000ff`,
+      image: {
+        url: boy[Math.floor(Math.random() * boy.length)]
+      }
+    }
+  }).catch(e => {
+    client.log.error(e);
+  })
+        }  
+});
+///////
+var girl = ["https://media.discordapp.net/attachments/742107775475253259/820847198630838302/image0.gif","https://media.discordapp.net/attachments/742107775475253259/818633361819435069/image0.gif","https://media.discordapp.net/attachments/787757651752779826/800851572677672960/image0-7.gif","https://images-ext-1.discordapp.net/external/es2uReKk1iYgBEIP-Xe9Y3lg-cs_GoMHAmdecfUwp6g/https/media.discordapp.net/attachments/687763784902770691/802739443278413895/a_aa9109603174f8dd3b0a124cddce1a7b.gif","https://images-ext-1.discordapp.net/external/3h8MvKR2nIN8leQteZg319Eku6OAldTojzTAGkzehPQ/https/media.discordapp.net/attachments/687763784902770691/802943911517356053/a_521d3a12cbda3268bedbb7c27d91fe37.gif","https://media.discordapp.net/attachments/742107775475253259/820488143857647677/image4.gif","https://media.discordapp.net/attachments/742107775475253259/818627946821976084/image1.gif","https://media.discordapp.net/attachments/742107775475253259/766092297049473054/image6.gif","https://media.discordapp.net/attachments/742107775475253259/821167011785605130/image0.gif","https://images-ext-1.discordapp.net/external/_w7dXYt6Iv0lnc_J5Ad6jmy2pDZKQLnyk_qc08BSABw/https/media.discordapp.net/attachments/786897045436366849/804983128527077387/a_177ddfe86ad32b68be6200f007682136.gif","https://images-ext-1.discordapp.net/external/XWs0Kc50FPr4YcT941l91X4i6Tgw2cYIEZnc3WrgVPc/https/media.discordapp.net/attachments/711468868924604537/801935138866331648/1282579cc2b6456322f9954a71bad773.gif","https://images-ext-1.discordapp.net/external/Da6ZwoBscxvcTSV-0Shc6jsAwEcCowxrGT-jL1bdCFA/https/media.discordapp.net/attachments/694695166895849562/796445341045620776/20210106_212054.gif","https://media.discordapp.net/attachments/742107775475253259/818627963863302154/image0.gif","https://images-ext-2.discordapp.net/external/831_ol2wWVvX1n378qkmkQxAJoUVmnDbOgm-O3nktzo/https/media.discordapp.net/attachments/711466145764343899/803298402498117638/a_99da7a830c2e4a2e09705e9d15d70436.gif","https://media.discordapp.net/attachments/742107775475253259/751034233539133460/image2.gif","https://media.discordapp.net/attachments/742107775475253259/820847205291524137/image1.gif","https://images-ext-2.discordapp.net/external/LtT3c1yt9Q8oN1oczXu1PFmpyyhiVGse3UiZOzeDV2s/https/media.discordapp.net/attachments/711466145764343899/803293353549496350/a_e849d11bf3605c4f29baec1df458ee9f.gif","https://media.discordapp.net/attachments/820811352087330828/820954931610910720/image4.gif","https://images-ext-1.discordapp.net/external/L9FRIsxaF2DmB7yi60XugG90Kf-CqQ0ec74CtXqhSgo/https/media.discordapp.net/attachments/687763784902770691/802918910206541824/a_d1aaa887c58b17f8debf2d502213b633.gif","https://media.discordapp.net/attachments/742107775475253259/818630958214283294/image0.gif","https://media.discordapp.net/attachments/742107775475253259/821413314068348988/image0.gif","https://media.discordapp.net/attachments/787757651752779826/800853272482938900/image9.gif"];
+client.on("message", async message => {
+if (message.content === `,girl`) {
+	    if (message.author.bot) return;
+   if (!message.channel.guild)
+      return message.reply();
+  message.channel.send({
+    embed: {
+      description: `Girl Gif`,
+		  color: `#0000ff`,
+      image: {
+        url: girl[Math.floor(Math.random() * girl.length)]
+      }
+    }
+  }).catch(e => {
+    client.log.error(e);
+  })
+        }  
+});
+///////
+var couple = ["https://media.discordapp.net/attachments/694694675679936585/800489743183904810/a_8d1f2e7282347d977a3bd1e0b58b7c20-1.gif","https://images-ext-2.discordapp.net/external/XNfBHzKy7buK63kTXnhneedCZesXjDt4YzXc4aHRyP0/https/media.discordapp.net/attachments/711465242798063706/800617858567634973/image0.gif","https://media.discordapp.net/attachments/694694675679936585/801400692920287252/Enes_Acar_GIF_107.gif","https://media.discordapp.net/attachments/737807251825360977/799658067687637022/image0.gif","https://media.discordapp.net/attachments/787757651752779826/800871282342101053/image2.gif","https://media.discordapp.net/attachments/737807251825360977/805157325647904788/image3.gif","https://media.discordapp.net/attachments/672961356412092416/810960039149305866/a_d8fe322eef2273c659378db6f05023a8.gif","https://media.discordapp.net/attachments/787757651752779826/800874241930297384/image1.gif","https://media.discordapp.net/attachments/694694675679936585/801547963507802112/a_56138fd67f8998f8a1e77747e6d82541.gif","https://media.discordapp.net/attachments/694694675679936585/801547053276200960/a_5868306505ffa5f49799a0311aa68abd.gif","https://media.discordapp.net/attachments/787757651752779826/800874581748875274/image4.gif","https://media.discordapp.net/attachments/694694675679936585/801400823464329236/a_701430cde82e08312c2d1544ab6b5782.gif","https://media.discordapp.net/attachments/787757651752779826/800870670786625586/image4.gif","https://media.discordapp.net/attachments/694694675679936585/800542408604516383/17802afc858cd76c8ab1769025ff4cc0.gif","https://media.discordapp.net/attachments/672961356412092416/809899258290372708/ezgif-4-26f9f6d90b7c.gif","https://media.discordapp.net/attachments/694694675679936585/814521729048379432/EB5BFE2A-0ACE-4675-AE97-17705DD8CAC9.gif","https://media.discordapp.net/attachments/737807251825360977/809513888051232812/image0.gif","https://images-ext-1.discordapp.net/external/zIf3RfN3-RxsvQyPTj8TVeTHefG8InxLGW77azec5XQ/https/media.discordapp.net/attachments/711465242798063706/801762738522685440/a_07530fffa37384ab4766ac78c4539108.gif","https://media.discordapp.net/attachments/694694675679936585/801548135519617044/115.gif","https://media.discordapp.net/attachments/694694675679936585/812828196961517569/image0-20.gif","https://media.discordapp.net/attachments/737807251825360977/805157436281454672/image2.gif","https://images-ext-1.discordapp.net/external/zIf3RfN3-RxsvQyPTj8TVeTHefG8InxLGW77azec5XQ/https/media.discordapp.net/attachments/711465242798063706/801762738522685440/a_07530fffa37384ab4766ac78c4539108.gif"];
+client.on("message", async message => {
+if (message.content === `,couple`) {
+	    if (message.author.bot) return;
+   if (!message.channel.guild)
+      return message.reply();
+  message.channel.send({
+    embed: {
+      description: `Couple Gif`,
+		  color: `#0000ff`,
+      image: {
+        url: couple[Math.floor(Math.random() * couple.length)]
+      }
+    }
+  }).catch(e => {
+    client.log.error(e);
+  })
+        }  
+});
+////////
 function delay(delayInms) {
  return new Promise(resolve => {
    setTimeout(() => {
