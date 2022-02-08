@@ -511,7 +511,7 @@ const replay = [
 'Inspiration is some mysterious blessing which happens when the wheels are turning smoothly. - Quentin Blake',
 'Love is some loving someone whom you will not reach to!',
 'How amazing is it to find someone who wants to hear about all the things that go on in your head',
-'Never bend your head. Always hold it high. Look the world straight in the eye.'
+'Never bend your head. Always hold it high. Look the world straight in the eye.',
 'A tree far away from the forest!',
 'Be patient.sometimes you have to go through the worst to get to the best!',
 'We have a situation here that we cant believe that we dont believe us anymore!',
