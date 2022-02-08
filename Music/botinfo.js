@@ -7,7 +7,7 @@ module.exports = {
   description: "INVITE BOT",
   async execute(message, args, client) {
     let embed = new discord.MessageEmbed()
-      .setAuthor("Bots Information","https://cdn.discordapp.com/avatars/912844825055854623/84ac4c7425a16a0e7b32cd6076dc3e83.png?size=1024","https://discord.gg/zFGGTuEmUD")
+      .setAuthor("Bots Information","https://cdn.discordapp.com/avatars/912844825055854623/84ac4c7425a16a0e7b32cd6076dc3e83.png?size=1024","https://discord.gg/UybeVq66hF")
       .addField("Name", `Emily ✨#1372`)
 
 
