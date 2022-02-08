@@ -5,7 +5,6 @@ module.exports = {
   name: "textkurdish",
   aliases: ["textKurdish"],
   description: "Show text",
-  usage: "text",
   execute(message) {
   let commands = message.client.commands.array();
     
