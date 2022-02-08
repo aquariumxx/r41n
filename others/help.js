@@ -16,7 +16,6 @@ module.exports = {
     .addField("🌎 General", `\`help\`, \`ping\`, \`prefix\`, \`showemoji\`, \`invite\`, \`support\`, \`avatar\``)
     .addField("🎶 Music", `\`filter\`, \`loop\`, \`lyrics\`, \`np\`, \`play\`, \`queue\`, \`remove\`, \`shuffle\`, \`skip\`, \`skipto\`, \`stop\`, \`volume\``)
     .addField("❗ Info", `\`botinfo\`, \`serverinfo\`, \`userinfo\`, \`uptime\``)
-    .addField("<:r41n_text:940658330249101312> Text", `\`textkurdish\`, \`textenglish\`, \`textturkish\`, \`textarabic\``)
     .addField("<:image_mor:940526991063539712> Gif", `\`boy\`, \`girl\`, \`couple\`, \`anime\`, \`animal\``)
     .addField("<:image_juan:940527086039339048> Image", `\`pboy\`, \`pgirl\`, \`pcouple\`,  \`panimal\`, \`panime\``)
     .addField("<:fun_emily:940618427184345099> Fun", `\`kiss\`, \`slap\`, \`hug\`, \`feed\`, \`pat\`, \`poke\`, \`cuddle\``)
