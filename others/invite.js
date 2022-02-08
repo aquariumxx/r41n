@@ -15,11 +15,11 @@ module.exports = {
     let commands = message.client.commands.array();
 
     let helpEmbed = new MessageEmbed()
-    .setThumbnail("https://cdn.discordapp.com/avatars/712414335728615454/e0e64a900ad2587fb899f1c189d10da6.png?size=1024")
-    .setDescription("**Flower Invite Links**")
-    .setAuthor("Flower Bot","https://cdn.discordapp.com/avatars/712414335728615454/e0e64a900ad2587fb899f1c189d10da6.png?size=1024","https://discord.gg/jNuC4n82QF")
-    .addField("Invite Me", "[Click](https://discord.com/api/oauth2/authorize?client_id=712414335728615454&permissions=8&scope=bot)")
-    .addField("Support", "[Click](https://discord.gg/jNuC4n82QF)")
+    .setThumbnail("https://discord.com/api/oauth2/authorize?client_id=912844825055854623&permissions=8&scope=bot")
+    .setDescription("**Emily Links**")
+    .setAuthor("Emily ✨","https://cdn.discordapp.com/avatars/912844825055854623/84ac4c7425a16a0e7b32cd6076dc3e83.png?size=1024","https://discord.gg/UybeVq66hF")
+    .addField("Invite Me", "[Click](https://discord.com/api/oauth2/authorize?client_id=912844825055854623&permissions=8&scope=bot)")
+    .addField("Support", "[Click](https://discord.gg/UybeVq66hF)")
     .setTimestamp()
 
   
