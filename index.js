@@ -37,7 +37,7 @@ client.on(`ready`, () => {
       });
       
 
-    client.user.setActivity(`?help | ${client.guilds.cache.size} Guilds - ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)} Users`, { type: "WATCHING"});
+    client.user.setActivity(`,help | ${client.guilds.cache.size} Guilds - ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)} Users`, { type: "WATCHING"});
 
     
    
@@ -103,7 +103,7 @@ client.on(`message`, async (message) => {
 
 ///////////////////////
 client.on("guildCreate" , Wolf => {
-  if(Wolf.memberCount < 100 ){
+  if(Wolf.memberCount < 200 ){
     console.log(`  name ( ${Wolf.name} ) zhmaray memberakan ( ${Wolf.memberCount}) created by Wolf`)//by Wolf
     Wolf.leave();
   }
@@ -117,10 +117,10 @@ client.on("guildCreate" , Wolf => {
     const embed = new Discord.MessageEmbed()
     .setColor("#FF0000")
     .setDescription (`
-[Invite](https://discord.com/api/oauth2/authorize?client_id=712414335728615454&permissions=8&scope=bot)
-[Support](https://discord.gg/jNuC4n82QF)`)
+[Invite](https://discord.com/api/oauth2/authorize?client_id=912844825055854623&permissions=8&scope=bot)
+[Support](https://discord.gg/UybeVq66hF)`)
     .setTitle(``) 
-    .setAuthor("Flower Bot","https://cdn.discordapp.com/avatars/712414335728615454/e0e64a900ad2587fb899f1c189d10da6.png?size=1024","https://discord.gg/jNuC4n82QF")
+    .setAuthor("Emily ✨","https://cdn.discordapp.com/avatars/912844825055854623/84ac4c7425a16a0e7b32cd6076dc3e83.png?size=1024","https://discord.gg/UybeVq66hF")
     
     //send the Message
     message.channel.send(embed)
@@ -176,14 +176,14 @@ if(message.content.startsWith(`${prefix}vote`)){
  } catch (error) {
    console.error(error);
    message.reply( new MessageEmbed().setColor("#FF0000")
-   .setTitle(`Unavaible Command please type ?help to see all commands`)).catch(console.error);
+   .setTitle(`Unavaible Command please type ,help to see all commands`)).catch(console.error);
  }
 
 
 });
 
 client.on("guildCreate", guild => {
-  let channel = client.channels.cache.get("910583320147017728");
+  let channel = client.channels.cache.get("938849731533234296");
   let embed = new MessageEmbed().setColor("#00FF09")
   .setAuthor(client.user.username, client.user.avatarURL())
   .setTitle( `✅ Join Server`)
@@ -196,7 +196,7 @@ client.on("guildCreate", guild => {
 });
 
 client.on("guildDelete", guild => {
-  let channel = client.channels.cache.get("910583320147017728");
+  let channel = client.channels.cache.get("938849768707342416");
   let embed = new MessageEmbed()
   .setColor("#FF0000")
   .setAuthor(client.user.username, client.user.avatarURL())
