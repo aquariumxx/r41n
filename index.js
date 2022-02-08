@@ -502,6 +502,8 @@ const rply = [
   }
 }); 
 /////
+
+/////
 client.on('message', message => {
 if (message.content.startsWith(PREFIX + 'emojilist')) {
   let Emojis = "";
